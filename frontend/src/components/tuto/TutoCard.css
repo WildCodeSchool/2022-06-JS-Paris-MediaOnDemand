@@ -1,0 +1,40 @@
+.tuto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.tuto-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  width: 110px;
+  height: 110px;
+  border-radius: 70px;
+  margin-left: 30px;
+}
+
+.tuto-card-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(246, 239, 239);
+  width: 110px;
+  height: 110px;
+  border-radius: 70px;
+  align-self: flex-end;
+}
+
+.tuto-card-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 110px;
+  height: 110px;
+  border-radius: 70px;
+  margin-left: 15px;
+}

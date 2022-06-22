@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import TutoCards from "./components/tuto/TutoCards";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <TutoCards />
     </div>
   );
 }
