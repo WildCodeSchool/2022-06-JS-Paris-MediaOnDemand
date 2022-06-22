@@ -1,6 +1,6 @@
 import TutoCards from "./components/tuto/TutoCards";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
