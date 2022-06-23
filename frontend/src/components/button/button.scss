@@ -1,12 +1,39 @@
 button {
-  background-color: transparent;
-  color: goldenrod;
-  height: 60px;
-  width: 280px;
-  font-size: 40px;
-  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
-  color: gold;
+  transform: translateY(-3px);
+  box-shadow: 1px 1px 1px #ebe8d0;
+}
+
+.btn--darkBackground {
+  background-color: transparent;
+  border: 2px solid #9d9877;
+  border-radius: 10px;
+  color: #9d9877;
+}
+
+.btn--lightBackground {
+  background-color: transparent;
+  border: 2px solid #178138;
+  border-radius: 5px;
+  color: #178138;
+}
+
+.btn--small {
+  padding: 5px 15px;
+  width: 50vw;
+  height: auto;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #93c4a3;
+}
+
+.btn--large {
+  padding: 8px 20px;
+  width: 70vw;
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
