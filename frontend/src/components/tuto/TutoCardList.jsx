@@ -1,4 +1,5 @@
 import React from "react";
+import { BasketIcon, CheckBoxIcon, CornucopiaIcon } from "../../assets/svgIcon";
 import TutoCard from "./TutoCard";
 
 const tutoItems = [
@@ -6,19 +7,19 @@ const tutoItems = [
     id: 1,
     tutoName: "LOOK FOR CAT",
     className: "tuto-card-1",
-    img: "",
+    tutoImg: <CheckBoxIcon />,
   },
   {
     id: 2,
     tutoName: "FIND ARTICLES",
     className: "tuto-card-2",
-    img: "",
+    tutoImg: <CornucopiaIcon />,
   },
   {
     id: 3,
     tutoName: "FIND ARTICLES",
     className: "tuto-card-3",
-    img: "",
+    tutoImg: <BasketIcon />,
   },
 ];
 
@@ -30,9 +31,8 @@ function TutoCardList() {
           className={tuto.className}
           key={tuto.id}
           tutoName={tuto.tutoName}
-          // img={tuto.img}
         >
-          {/* <Img /> */}
+          {tuto.tutoImg}
         </TutoCard>
       ))}
     </div>
