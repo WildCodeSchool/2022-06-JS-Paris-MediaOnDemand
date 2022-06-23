@@ -1,0 +1,13 @@
+.select-chexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  transform: scale(2);
+}
+
+label {
+  font-size: 30px;
+}

@@ -4,8 +4,8 @@ export const BasketIcon = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="200"
+      height="200"
       version="1.1"
       viewBox="0 0 341.333 341.333"
       {...props}
