@@ -1,11 +1,12 @@
-import TutoCards from "./components/tuto/TutoCards";
-
+import TutoCardList from "./components/Tuto/TutoCardList";
+import Home from "./pages/Home";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <TutoCards />
+      <Home />
+      <TutoCardList />
     </div>
   );
 }

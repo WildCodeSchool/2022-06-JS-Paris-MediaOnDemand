@@ -1,0 +1,12 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  width: 365px;
+  margin-bottom: 5px;
+}
+
+img {
+  align-self: center;
+  height: 50px;
+}
