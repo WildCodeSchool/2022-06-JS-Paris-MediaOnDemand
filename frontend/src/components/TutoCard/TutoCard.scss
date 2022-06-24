@@ -1,0 +1,27 @@
+.tuto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #93c4a3;
+  border: 3px solid #cdc692;
+  color: #9d9877;
+  font-size: 18px;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.tuto-card-1 {
+  margin-left: 35px;
+}
+
+.tuto-card-2 {
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.tuto-card-3 {
+  margin-top: 170px;
+  margin-left: 20px;
+}
