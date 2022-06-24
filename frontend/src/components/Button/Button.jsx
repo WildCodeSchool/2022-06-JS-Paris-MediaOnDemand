@@ -19,7 +19,7 @@ const SIZES = { small: "btn--small", large: "btn--large" };
 export const Button = ({ children, onClick, buttonStyle, buttonSize }) => {
   return (
     <button
-      className={`${SIZES[buttonSize]} ${STYLES[buttonStyle]}`}
+      className={`theme--movie ${SIZES[buttonSize]} ${STYLES[buttonStyle]}`}
       onClick={onClick}
       type="button"
     >

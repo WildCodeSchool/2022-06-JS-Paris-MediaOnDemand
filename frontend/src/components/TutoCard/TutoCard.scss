@@ -1,11 +1,13 @@
+@import "../../theme.scss";
+
 .tuto-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #93c4a3;
-  border: 3px solid #cdc692;
-  color: #9d9877;
+  background-color: $support--soft;
+  border: 3px solid $main--soft;
+  color: $main--medium;
   font-size: 18px;
   padding: 10px;
   width: 120px;

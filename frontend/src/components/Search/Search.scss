@@ -1,11 +1,13 @@
+@import "../../theme.scss";
+
 #search {
-  background-color: #999;
+  background-color: $body--soft;
   height: 3vh;
   width: 70vw;
 }
 
 #searchBtn {
-  background-color: #5b5b5b;
-  color: #ebe8d0;
+  background-color: $body--medium;
+  color: $main--ligth_soft;
   height: 3vh;
 }

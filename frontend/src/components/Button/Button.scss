@@ -1,3 +1,5 @@
+@import "../../theme.scss";
+
 button {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -5,29 +7,27 @@ button {
 
 button:hover {
   transform: translateY(-3px);
-  box-shadow: 1px 1px 1px #ebe8d0;
+  box-shadow: 1px 1px 1px $main--ligth_soft;
 }
 
 .btn--darkBackground {
   background-color: transparent;
-  border: 2px solid #9d9877;
+  border: 2px solid $main--medium;
   border-radius: 10px;
-  color: #9d9877;
+  color: $main--medium;
 }
-
 .btn--lightBackground {
   background-color: transparent;
-  border: 2px solid #178138;
+  border: 2px solid $support--strong;
   border-radius: 5px;
-  color: #178138;
+  color: $support--strong;
 }
-
 .btn--small {
   padding: 5px 15px;
   width: 50vw;
   height: auto;
   font-size: 1rem;
-  text-shadow: 1px 1px 1px #93c4a3;
+  text-shadow: 1px 1px 1px $support--soft;
 }
 
 .btn--large {

@@ -16,6 +16,21 @@ $themes: (
   ),
 );
 
+// Movie Color
+$movie--soft: #a2b8ff;
+$movie--medium: #80a0ff;
+$movie--strong: #666fff;
+
+// Book Color
+$book--soft: #e0d7aa;
+$book--medium: #ddcf7f;
+$book--strong: #ddd444;
+
+// Music Color
+$music--soft: #b88b7e;
+$music--medium: #b5715b;
+$music--strong: #c33c33;
+
 // Main Body
 $body--strong: #000000;
 $body--medium: #5b5b5b;
@@ -27,7 +42,7 @@ $support--medium: #4d9965;
 $support--soft: #93c4a3;
 
 // Main
-$main--dark--strong: #393729;
+$main--dark_strong: #393729;
 $main--strong: #686443;
 $main--medium: #9d9877;
 $main--soft: #cdc692;
@@ -39,7 +54,22 @@ $main--ligth_soft: #ebe8d0;
       $theme-map: () !global;
 
       @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
       }
+
+      @content;
+
+      $theme-map: null !global;
     }
   }
+}
+
+@function t($key: "strong") {
+  @return map-get($theme-map, $key);
 }
