@@ -1,6 +1,7 @@
 import React from "react";
 import { BasketIcon, CheckBoxIcon, CornucopiaIcon } from "../../assets/svgIcon";
 import TutoCard from "./TutoCard";
+import "./TutoCard.scss";
 
 const tutoItems = [
   {
@@ -17,7 +18,7 @@ const tutoItems = [
   },
   {
     id: 3,
-    tutoName: "FIND ARTICLES",
+    tutoName: "PICK ARTICLES",
     className: "tuto-card-3",
     tutoImg: <BasketIcon />,
   },

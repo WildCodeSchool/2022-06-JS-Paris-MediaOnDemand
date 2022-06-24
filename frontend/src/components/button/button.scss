@@ -1,39 +1,34 @@
-button {
+.btn {
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  background-color: transparent;
 }
 
-button:hover {
+.btn:hover {
   transform: translateY(-3px);
-  box-shadow: 1px 1px 1px #ebe8d0;
 }
 
 .btn--darkBackground {
   background-color: transparent;
-  border: 2px solid #9d9877;
-  border-radius: 10px;
-  color: #9d9877;
+  color: blue;
+  border: 2px solid white;
 }
 
 .btn--lightBackground {
   background-color: transparent;
-  border: 2px solid #178138;
-  border-radius: 5px;
-  color: #178138;
+  color: red;
+  border: 2px solid black;
 }
 
 .btn--small {
-  padding: 5px 15px;
+  padding: 5px;
   width: 50vw;
   height: auto;
-  font-size: 1rem;
-  text-shadow: 1px 1px 1px #93c4a3;
 }
 
 .btn--large {
-  padding: 8px 20px;
+  padding: 10px;
   width: 70vw;
   height: auto;
-  font-size: 1.5rem;
-  font-weight: bold;
 }

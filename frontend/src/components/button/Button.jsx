@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.scss";
+import "./Button.scss";
 
 /* Format d'appel du composant :
 <Button
