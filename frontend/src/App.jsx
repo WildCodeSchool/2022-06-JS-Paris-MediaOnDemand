@@ -1,12 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import SearchPage from "@pages/SearchPage";
 import Home from "./pages/Home/Home";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/go-sophia" element={<SearchPage />} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
