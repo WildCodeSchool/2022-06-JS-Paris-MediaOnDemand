@@ -1,10 +1,10 @@
 import React from "react";
 import homeImage from "../../assets/home.png";
 import homeUtilisateur from "../../assets/utilisateur.png";
-import { SophiaIcon } from "../../assets/svgIcon/SophiaIcon";
-import "./TabBar.css";
+import { SophiaIcon } from "../../assets/svgIcon";
+import "./TabBar.scss";
 
-function TabBar() {
+export const TabBar = () => {
   return (
     <div className="nav-bar">
       <img src={homeImage} alt="home" />
@@ -12,6 +12,4 @@ function TabBar() {
       <img src={homeUtilisateur} alt="utilisateur" />
     </div>
   );
-}
-
-export default TabBar;
+};

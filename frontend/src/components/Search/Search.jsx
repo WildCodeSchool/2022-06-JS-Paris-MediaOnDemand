@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.scss";
 
-function Search({ searchValue, handleSubmit }) {
+export const Search = ({ searchValue, handleSubmit }) => {
   return (
     <form id="searchBlock" onSubmit={() => handleSubmit()}>
       <input
@@ -16,6 +16,4 @@ function Search({ searchValue, handleSubmit }) {
       </button>
     </form>
   );
-}
-
-export default Search;
+};

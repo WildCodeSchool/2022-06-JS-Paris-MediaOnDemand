@@ -1,7 +1,7 @@
 import React from "react";
 import { BasketIcon, CheckBoxIcon, CornucopiaIcon } from "../../assets/svgIcon";
-import TutoCard from "./TutoCard";
-import "./TutoCard.scss";
+import { TutoCard } from "../TutoCard/TutoCard";
+import "./TutoCardList.scss";
 
 const tutoItems = [
   {
@@ -24,7 +24,7 @@ const tutoItems = [
   },
 ];
 
-function TutoCardList() {
+export const TutoCardList = () => {
   return (
     <div className="tuto-container">
       {tutoItems.map((tuto) => (
@@ -38,6 +38,4 @@ function TutoCardList() {
       ))}
     </div>
   );
-}
-
-export default TutoCardList;
+};

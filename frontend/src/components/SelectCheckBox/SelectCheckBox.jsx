@@ -1,13 +1,11 @@
 import React from "react";
-import "./SelectChexbox.css";
+import "./SelectCheckBox.scss";
 
-function SelectChexbox({ idFor, contenu }) {
+export const SelectCheckBox = ({ idFor, contenu }) => {
   return (
     <div className="select-chexbox">
       <input type="checkbox" id={idFor} name={contenu} />
       <label htmlFor={idFor}>{contenu}</label>
     </div>
   );
-}
-
-export default SelectChexbox;
+};

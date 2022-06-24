@@ -1,6 +1,5 @@
 import React from "react";
-import TutoCardList from "../../components/Tuto/TutoCardList";
-import Button from "../../components/button/Button";
+import { Button, TutoCardList } from "@components";
 import "./Home.scss";
 
 const Home = () => {

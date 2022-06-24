@@ -1,8 +1,7 @@
 import React from "react";
 import "./TutoCard.scss";
 
-// eslint-disable-next-line react/prop-types
-function TutoCard({ className, tutoName, children }) {
+export const TutoCard = ({ className, tutoName, children }) => {
   const classNameTutoCard = `tuto-card ${className}`;
 
   return (
@@ -11,6 +10,4 @@ function TutoCard({ className, tutoName, children }) {
       {children}
     </div>
   );
-}
-
-export default TutoCard;
+};
