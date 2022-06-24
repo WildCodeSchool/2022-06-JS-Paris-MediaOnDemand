@@ -1,0 +1,45 @@
+$themes: (
+  "movie": (
+    soft: #a2b8ff,
+    medium: #80a0ff,
+    strong: #666fff,
+  ),
+  "book": (
+    soft: #e0d7aa,
+    medium: #ddcf7f,
+    strong: #ddd444,
+  ),
+  "music": (
+    soft: #b88b7e,
+    medium: #b5715b,
+    strong: #c33c33,
+  ),
+);
+
+// Main Body
+$body--strong: #000000;
+$body--medium: #5b5b5b;
+$body--soft: #999999;
+
+// Support Modules
+$support--strong: #178138;
+$support--medium: #4d9965;
+$support--soft: #93c4a3;
+
+// Main
+$main--dark--strong: #393729;
+$main--strong: #686443;
+$main--medium: #9d9877;
+$main--soft: #cdc692;
+$main--ligth_soft: #ebe8d0;
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+
+      @each $key, $submap in $map {
+      }
+    }
+  }
+}
