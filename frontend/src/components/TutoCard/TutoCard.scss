@@ -52,3 +52,27 @@
     margin-left: 80%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .tuto-card {
+    font-size: 20px;
+    padding: 2%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+
+  .tuto-card-1 {
+    margin-top: 10%;
+    margin-left: 12%;
+  }
+
+  .tuto-card-2 {
+    margin-left: 40%;
+  }
+
+  .tuto-card-3 {
+    margin-top: 15%;
+    margin-left: 70%;
+  }
+}

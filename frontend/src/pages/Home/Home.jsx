@@ -4,11 +4,12 @@ import { Button, TutoCardList } from "@components";
 import "./Home.scss";
 
 const Home = () => {
+  const size = window.innerWidth;
   return (
     <div className="home-container">
       <TutoCardList />
       <Link to="/go-sophia">
-        <Button buttonSize="large" buttonStyle="dark">
+        <Button buttonSize={size < 1400 ? "large" : "small"} buttonStyle="dark">
           Go SOPHIA !
         </Button>
       </Link>
