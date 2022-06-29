@@ -12,14 +12,15 @@ Go SOPHIA !
 </Button>
 */
 
-const STYLES = { dark: "btn--darkBackground", light: "btn--lightBackground" };
-
-const SIZES = { small: "btn--small", large: "btn--large" };
-
-export const Button = ({ children, onClick, buttonStyle, buttonSize }) => {
+export const Button = ({
+  children,
+  onClick,
+  buttonStyle = "ligth",
+  buttonSize = "small",
+}) => {
   return (
     <button
-      className={`theme--movie ${SIZES[buttonSize]} ${STYLES[buttonStyle]}`}
+      className={`btn_size--${buttonSize} btn--${buttonStyle}Background`}
       onClick={onClick}
       type="button"
     >

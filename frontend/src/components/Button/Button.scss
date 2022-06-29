@@ -10,38 +10,42 @@ button:hover {
   box-shadow: 1px 1px 1px $main--ligth_soft;
 }
 
-.btn--darkBackground {
+.btn {
   background-color: transparent;
-  border: 2px solid $main--medium;
   border-radius: 10px;
-  color: $main--medium;
+  border: 2px solid;
+
+  &--darkBackground {
+    @extend .btn;
+    border-color: $main--medium;
+    color: $main--medium;
+  }
+  &--lightBackground {
+    @extend .btn;
+    border-color: $support--strong;
+    color: $support--strong;
+  }
 }
-.btn--lightBackground {
-  background-color: transparent;
-  border: 2px solid $support--strong;
-  border-radius: 5px;
-  color: $support--strong;
-}
-.btn--small {
+
+.btn_size {
   padding: 5px 15px;
-  width: 30vw;
   height: auto;
   font-size: 1.5rem;
   font-weight: bold;
-}
 
-.btn--medium {
-  padding: 5px 15px;
-  width: 50vw;
-  height: auto;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 1px $support--soft;
-}
+  &--small {
+    @extend .btn_size;
+    width: 30vw;
+  }
 
-.btn--large {
-  padding: 8px 20px;
-  width: 70vw;
-  height: auto;
-  font-size: 1.5rem;
-  font-weight: bold;
+  &--medium {
+    @extend .btn_size;
+    width: 50vw;
+  }
+
+  &--large {
+    @extend .btn_size;
+    width: 70vw;
+    padding: 8px 20px;
+  }
 }

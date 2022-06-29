@@ -1,7 +1,7 @@
 import React from "react";
-import "./Search.scss";
+import "./SearchInput.scss";
 
-export const Search = ({ searchValue, handleSubmit }) => {
+export const SearchInput = ({ searchValue, handleSubmit }) => {
   return (
     <form id="searchBlock" onSubmit={() => handleSubmit()}>
       <input
