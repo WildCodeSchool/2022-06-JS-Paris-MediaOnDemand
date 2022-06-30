@@ -10,7 +10,7 @@ export const TabBar = () => {
       <Link to="/">
         <HomeIcon />
       </Link>
-      <SophiaIcon style={{ width: "150" }} />
+      <SophiaIcon />
       <UserIcon />
     </div>
   );

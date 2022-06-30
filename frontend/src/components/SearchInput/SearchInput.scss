@@ -1,13 +1,20 @@
 @import "../../theme.scss";
 
-#search {
-  background-color: $body--soft;
-  height: 3vh;
-  width: 70vw;
-}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 
-#searchBtn {
-  background-color: $body--medium;
-  color: $main--ligth_soft;
-  height: 3vh;
+  &__input {
+    background-color: $body--soft;
+    height: 2rem;
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: $body--medium;
+    color: $main--ligth_soft;
+    height: 2rem;
+  }
 }

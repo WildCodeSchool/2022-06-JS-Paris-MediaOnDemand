@@ -3,15 +3,15 @@ import "./SearchInput.scss";
 
 export const SearchInput = ({ searchValue, handleSubmit }) => {
   return (
-    <form id="searchBlock" onSubmit={() => handleSubmit()}>
+    <form className="search" onSubmit={() => handleSubmit()}>
       <input
         type="search"
-        placeholder="que cherchez vous?"
-        className="search"
+        placeholder="Que cherchez vous?"
+        className="search__input"
         id="search"
         value={searchValue}
       />
-      <button type="submit" id="searchBtn">
+      <button type="submit" className="search__btn">
         SEARCH
       </button>
     </form>
