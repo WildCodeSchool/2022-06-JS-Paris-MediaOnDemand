@@ -4,7 +4,7 @@ export const SophiaIcon = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="604.8"
+      width="150"
       height="110.933"
       version="1.1"
       viewBox="0 0 604.8 110.933"

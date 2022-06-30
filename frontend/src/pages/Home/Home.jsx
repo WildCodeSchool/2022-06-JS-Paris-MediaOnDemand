@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home-container">
       <TutoCardList />
       <Link to="/go-sophia">
-        <Button buttonSize={size < 1400 ? "large" : "small"} buttonStyle="dark">
+        <Button buttonSize={size < 700 ? "large" : "small"} buttonStyle="dark">
           Go SOPHIA !
         </Button>
       </Link>

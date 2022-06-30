@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import SearchPage from "@pages/SearchPage";
 import Home from "./pages/Home/Home";
+// import MediaInfos from "./pages/MediaInfos/MediaInfos";
 import "./App.scss";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/go-sophia" element={<SearchPage />} /> */}
+          {/* <Route path="/" element={<MediaInfos />} /> */}
         </Routes>
       </div>
     </Router>
