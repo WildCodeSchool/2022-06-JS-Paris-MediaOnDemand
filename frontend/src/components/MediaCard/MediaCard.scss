@@ -1,3 +1,5 @@
+@import "../../theme.scss";
+
 .mediaCard {
   height: 80%;
   margin-top: 10%; /* à changer lors de l'implantation */
@@ -7,6 +9,16 @@
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.11);
   padding: 1rem;
+  border: solid 0.5rem;
+  @include themed {
+    border-image: linear-gradient(
+      to bottom right,
+      black 10%,
+      t("strong") 40%,
+      black
+    );
+    border-image-slice: 1;
+  }
 }
 
 .imageMediaCard {
