@@ -3,14 +3,12 @@
 .tab__globalComponent {
   width: 90%;
   height: 80%;
-  //*  padding: 0 auto 50px;
 }
 
 .tab__container {
   display: flex;
   flex-direction: column;
   position: relative;
-  // background: #999999;
   border: 1px solid rgba(0, 0, 0, 0.274);
 }
 
@@ -53,15 +51,15 @@
   background: $main--strong;
 }
 
-// .tab__content-tabs {
-// flex-grow: 1;
-// }
+.tab__content-tabs {
+  flex-grow: 1;
+}
 
 // tous contenus
 .tab__content {
   background: white;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: none;
 }
@@ -89,6 +87,10 @@
     flex-direction: row;
   }
 
+  .tab__content {
+    width: 95.2%;
+  }
+
   .tab__bloc-tabs {
     flex-direction: column;
   }
@@ -110,11 +112,15 @@
   }
 
   .tab__tabs {
-    width: 50%;
+    width: 29.94%;
     border-bottom: none;
   }
 
   .tab__active-tabs::before {
     top: -5px;
+  }
+
+  .tab__content {
+    width: 90%;
   }
 }

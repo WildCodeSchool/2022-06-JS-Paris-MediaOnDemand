@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MediaCard } from "@components/MediaCard/MediaCard";
 import "./Tab.scss";
 
 export const Tab = () => {
@@ -20,23 +21,7 @@ export const Tab = () => {
             }
           >
             <div className="Tab__itemCard">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officiis expedita sapiente possimus libero ducimus totam sequi
-                ab minima neque omnis, magnam fugiat voluptate repudiandae!
-                Repudiandae rerum eos voluptate? Mollitia, qui? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Nemo consequatur
-                accusamus veritatis voluptas impedit magnam dicta eligendi iste
-                id. Exercitationem, aut ducimus repellendus eveniet ad eum
-                blanditiis nobis reiciendis pariatur? Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Dicta alias quaerat nam
-                adipisci. Veritatis, accusantium. Eos excepturi sunt corporis
-                ullam tempora dolore esse officia, ducimus rem itaque dolorum
-                rerum omnis? Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Quia dolor impedit ratione nisi optio quibusdam quasi odit
-                iure blanditiis est, quaerat, recusandae perspiciatis. Esse
-                deleniti adipisci tempore, saepe ratione eaque?
-              </p>
+              <MediaCard />
             </div>
           </div>
           <div
