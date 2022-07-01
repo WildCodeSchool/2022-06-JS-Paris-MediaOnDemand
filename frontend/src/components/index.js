@@ -4,3 +4,6 @@ export { SelectCheckBox } from "./SelectCheckBox/SelectCheckBox";
 export { TabBar } from "./TabBar/TabBar";
 export { TutoCard } from "./TutoCard/TutoCard";
 export { TutoCardList } from "./TutoCardList/TutoCardList";
+export { MediaCard } from "./MediaCard/MediaCard";
+export { VideoCard } from "./VideoCard/VideoCard";
+export { MediaVideo } from "./MediaVideo/MediaVideo";

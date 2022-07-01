@@ -1,9 +1,14 @@
 import React from "react";
-import { TabBar } from "@components";
-// import "./MedIaInfos.scss";
+import { TabBar, VideoCard } from "@components";
+import "./MediaInfos.scss";
 
 const MediaInfos = () => {
-  return <TabBar />;
+  return (
+    <div className="MediaInfos-container">
+      <VideoCard />
+      <TabBar />
+    </div>
+  );
 };
 
 export default MediaInfos;

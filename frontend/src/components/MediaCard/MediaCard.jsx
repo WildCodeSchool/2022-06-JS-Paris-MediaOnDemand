@@ -7,10 +7,12 @@ import { Button } from "@components";
 import { Link } from "react-router-dom";
 import heartIcon from "../../assets/heartIcon.svg";
 
-export const MediaCard =
-  (/* { imgUrl, title, category, current, total } */) => {
-    return (
-      <div className="mediaCard">
+export const MediaCard = (
+  /* { imgUrl, title, category, current, total } */ { isMediaInfo }
+) => {
+  return (
+    <div className="mediaCard">
+      {!isMediaInfo && (
         <div className="imageMediaCard">
           <div className="iconUpMediaCard">
             <div className="counter">
@@ -20,13 +22,14 @@ export const MediaCard =
           </div>
           <PlusIcon />
         </div>
-        <div className="titleMediaCard">title</div>
-        <div className="categoriesMediaCard">categories</div>
-        <Link to="/">
-          <Button buttonSize="small" buttonStyle="dark">
-            infos
-          </Button>
-        </Link>
-      </div>
-    );
-  };
+      )}
+      <div className="titleMediaCard">title</div>
+      <div className="categoriesMediaCard">categories</div>
+      <Link to="/">
+        <Button buttonSize="small" buttonStyle="dark">
+          infos
+        </Button>
+      </Link>
+    </div>
+  );
+};
