@@ -8,7 +8,7 @@ import MediaInfos from "@pages/MediaInfos/MediaInfos";
 function App() {
   return (
     <Router>
-      <div className="theme--movie App">
+      <div className="theme--music App">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="/go-sophia" element={<SearchPage />} /> */}
