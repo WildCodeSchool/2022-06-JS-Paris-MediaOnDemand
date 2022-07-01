@@ -11,7 +11,12 @@
   padding: 1rem;
   border: solid 0.5rem;
   @include themed {
-    border-image: linear-gradient(to bottom right, black 10%, t("strong"));
+    border-image: linear-gradient(
+      to bottom right,
+      black 10%,
+      t("strong") 40%,
+      black
+    );
     border-image-slice: 1;
   }
 }
