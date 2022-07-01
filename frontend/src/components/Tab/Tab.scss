@@ -1,0 +1,120 @@
+@import "../../theme.scss";
+
+.tab__globalComponent {
+  width: 90%;
+  height: 80%;
+  //*  padding: 0 auto 50px;
+}
+
+.tab__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  // background: #999999;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+// bloc onglets
+.tab__bloc-tabs {
+  display: flex;
+  background-color: transparent;
+}
+
+// tous onglets
+.tab__tabs {
+  padding: 7px;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  background-color: #999999;
+  color: black;
+}
+.tab__tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+// onglet actif
+.tab__active-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+.tab__active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: $main--strong;
+}
+
+// .tab__content-tabs {
+// flex-grow: 1;
+// }
+
+// tous contenus
+.tab__content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+// contenu actif
+.tab__active-content {
+  display: block;
+}
+
+.tab__color1 {
+  background-color: $movie--soft;
+}
+
+.tab__color2 {
+  background-color: $book--soft;
+}
+
+.tab__color3 {
+  background-color: $music--soft;
+}
+
+@media screen and (min-width: 768px) {
+  // tabs on right side
+  .tab__container {
+    flex-direction: row;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: column;
+  }
+
+  .tab__tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    width: 82%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  // tabs on top;
+  .tab__container {
+    flex-direction: column-reverse;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: initial;
+  }
+
+  .tab__tabs {
+    width: 50%;
+    border-bottom: none;
+  }
+
+  .tab__active-tabs::before {
+    top: -5px;
+  }
+}
