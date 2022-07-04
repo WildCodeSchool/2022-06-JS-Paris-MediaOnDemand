@@ -7,3 +7,6 @@ export { TutoCard } from "./TutoCard/TutoCard";
 export { TutoCardList } from "./TutoCardList/TutoCardList";
 export { SelectCat } from "./SelectCat/SelectCat";
 export { SelectCatList } from "./SelectCatList/SelectCatList";
+export { MediaCard } from "./MediaCard/MediaCard";
+export { VideoCard } from "./VideoCard/VideoCard";
+export { MediaVideo } from "./MediaVideo/MediaVideo";

@@ -3,18 +3,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 98%;
   height: 95%;
 }
 
 @media screen and (min-width: 768px) {
   .home-container {
-    width: 90%;
+    a {
+      margin: 0% 40% 5% 0%;
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  a {
-    margin-right: 40%;
-    margin-bottom: 20%;
+  .home-container {
+    a {
+      margin: 0% 40% 5% 0%;
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .home-container {
+    a {
+      margin: 0% 0% 0% 0%;
+    }
   }
 }
