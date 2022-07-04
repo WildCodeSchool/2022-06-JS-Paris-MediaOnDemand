@@ -32,12 +32,8 @@ export const Tab = () => {
             }
           >
             <div className="tab__itemCard">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci provident odio eaque iste, a sequi placeat minus porro
-                nobis quisquam officia quos modi debitis libero! Nobis alias et
-                ea minima!
-              </p>
+              <MediaCard />
+              <MediaCard />
             </div>
           </div>
           <div
@@ -48,12 +44,9 @@ export const Tab = () => {
             }
           >
             <div className="tab__itemCard">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique nisi minus magnam blanditiis, voluptatibus ipsa ut
-                molestiae doloribus vitae, mollitia nesciunt suscipit quam harum
-                asperiores ipsam accusantium repellendus rem quo.
-              </p>
+              <MediaCard />
+              <MediaCard />
+              <MediaCard />
             </div>
           </div>
         </div>

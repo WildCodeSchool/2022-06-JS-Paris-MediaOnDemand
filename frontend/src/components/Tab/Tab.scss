@@ -81,6 +81,13 @@
   background-color: $music--soft;
 }
 
+.tab__itemCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 768px) {
   // tabs on right side
   .tab__container {
@@ -122,5 +129,11 @@
 
   .tab__content {
     width: 90%;
+  }
+
+  .tab__itemCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
