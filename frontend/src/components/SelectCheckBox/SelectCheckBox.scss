@@ -1,13 +1,29 @@
+@import "../../theme.scss";
+
 .select-checkbox {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  &__input {
-    transform: scale(2);
+  &__label {
+    font-size: 1.5rem;
+  }
+}
+
+.select-checkbox__input {
+  transform: scale(1.5);
+  &--movie {
+    @extend .select-checkbox__input;
+    accent-color: $movie--soft;
   }
 
-  &__label {
-    font-size: 30px;
+  &--book {
+    @extend .select-checkbox__input;
+    accent-color: $book--soft;
+  }
+
+  &--music {
+    @extend .select-checkbox__input;
+    accent-color: $music--soft;
   }
 }

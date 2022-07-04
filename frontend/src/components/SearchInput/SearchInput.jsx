@@ -12,7 +12,7 @@ export const SearchInput = ({ searchValue, handleSubmit }) => {
         value={searchValue}
       />
       <button type="submit" className="search__btn">
-        SEARCH
+        GO!
       </button>
     </form>
   );

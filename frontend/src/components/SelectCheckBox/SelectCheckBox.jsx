@@ -5,7 +5,7 @@ export const SelectCheckBox = ({ value, label }) => {
   return (
     <div className="select-checkbox">
       <input
-        className="select-checkbox__input"
+        className={`select-checkbox__input--${value}`}
         type="checkbox"
         id={value}
         name={value}

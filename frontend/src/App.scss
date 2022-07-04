@@ -1,3 +1,4 @@
+@import "./theme.scss";
 html,
 body,
 div,
@@ -144,7 +145,7 @@ code {
   background-position: center;
   background-color: black;
   background-size: 250px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
