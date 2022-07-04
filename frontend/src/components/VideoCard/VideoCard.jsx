@@ -6,15 +6,15 @@ import heartIcon from "@assets/heartIcon.svg";
 
 export const VideoCard = () => {
   return (
-    <div className="videoCard-container">
+    <div className="videoCard__container">
       <MediaVideo />
-      <div className="videoCard-logo">
+      <div className="videoCard__logo">
         <ArrowIcon />
         <PlusIcon />
         <img src={heartIcon} alt="favori" />
       </div>
-      <div className="videoCard-info">Info</div>
-      <div className="videoCard-about">About</div>
+      <div className="videoCard__info">Info</div>
+      <div className="videoCard__about">About</div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "./Home.scss";
 
 const Home = () => {
   const size = window.innerWidth;
+
   return (
     <div className="home-container">
       <TutoCardList />

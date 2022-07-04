@@ -4,7 +4,7 @@ import "./MediaInfos.scss";
 
 const MediaInfos = () => {
   return (
-    <div className="MediaInfos-container">
+    <div className="media-infos-container">
       <VideoCard />
       <TabBar />
     </div>

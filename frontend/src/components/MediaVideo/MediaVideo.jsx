@@ -8,7 +8,7 @@ export const MediaVideo = () => {
   // const internalSource = "./billet.mp4";
 
   return (
-    <div className="player-contenaire">
+    <div className="player-container">
       <ReactPlayer
         url={externalSource}
         controls

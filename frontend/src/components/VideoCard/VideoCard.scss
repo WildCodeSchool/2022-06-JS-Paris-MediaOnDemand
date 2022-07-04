@@ -1,4 +1,4 @@
-.videoCard-container {
+.videoCard__container {
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -7,17 +7,17 @@
   margin-top: 3%;
 }
 
-.videoCard-logo {
+.videoCard__logo {
   display: flex;
   justify-content: space-between;
 }
 
-.videoCard-info {
+.videoCard__info {
   height: 10%;
   border: 1px solid white;
 }
 
-.videoCard-about {
+.videoCard__about {
   height: 38%;
   border: 1px solid white;
 }

@@ -6,20 +6,23 @@ import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { Link } from "react-router-dom";
 
-export const MediaCard = () => {
+export const MediaCard = ({ count, total, title, categories, image }) => {
   return (
     <div className="mediaCard">
-      <div className="imageMediaCard">
+      <div
+        style={{ backgroundImage: `url(${image})` }}
+        className="imageMediaCard"
+      >
         <div className="iconUpMediaCard">
           <div className="counter">
-            <span>0/0</span>
+            <span>{`${count}/${total}`}</span>
           </div>
           <HeartIcon />
         </div>
         <PlusIcon />
       </div>
-      <div className="titleMediaCard">title</div>
-      <div className="categoriesMediaCard">categories</div>
+      <div className="titleMediaCard">{title}</div>
+      <div className="categoriesMediaCard">{categories}</div>
       <Link to="/">
         <Button buttonSize="small" buttonStyle="dark">
           infos
