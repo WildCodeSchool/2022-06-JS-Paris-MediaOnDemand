@@ -11,6 +11,7 @@ import "./SearchPage.scss";
 const mediaCatSearch = [
   {
     mediaName: "Film",
+    mediaCatName: "movie",
     mediaSelectList: [
       {
         selectId: "annee-select",
@@ -46,6 +47,7 @@ const mediaCatSearch = [
   },
   {
     mediaName: "Musique",
+    mediaCatName: "music",
     mediaSelectList: [
       {
         selectId: "annee-select",
@@ -101,6 +103,7 @@ const mediaCatSearch = [
   },
   {
     mediaName: "Livre",
+    mediaCatName: "book",
     mediaSelectList: [
       {
         selectId: "annee-select",
@@ -158,11 +161,13 @@ const mediaCatSearch = [
 
 export const SearchPage = () => {
   const [isCatOpen, setIsCatOpen] = useState(false);
+  const [mediasSelected, setMediasSelected] = useState([]);
+
   return (
     <div className="search-page">
       <div className="search-page__header">
         <SearchInput />
-        <SelectCheckBoxList />
+        <SelectCheckBoxList setMediasSelected={setMediasSelected} />
         <Button
           buttonSize="medium"
           buttonStyle="dark"
@@ -171,11 +176,16 @@ export const SearchPage = () => {
           Catégories
         </Button>
       </div>
-      <div className="search-page__select-list">
-        {mediaCatSearch.map((mediaCat) => (
-          <SelectCatList mediaCat={mediaCat} />
-        ))}
-      </div>
+      {isCatOpen && (
+        <div className="search-page__select-list">
+          {mediaCatSearch.map(
+            (mediaCat) =>
+              mediasSelected.includes(mediaCat.mediaCatName) && (
+                <SelectCatList key={mediaCat.mediaName} mediaCat={mediaCat} />
+              )
+          )}
+        </div>
+      )}
       <TabBar />
     </div>
   );

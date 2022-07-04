@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectCheckBox.scss";
 
-export const SelectCheckBox = ({ value, label }) => {
+export const SelectCheckBox = ({ value, label, handleSelect }) => {
   return (
     <div className="select-checkbox">
       <input
@@ -9,6 +9,7 @@ export const SelectCheckBox = ({ value, label }) => {
         type="checkbox"
         id={value}
         name={value}
+        onChange={(e) => handleSelect(e)}
       />
       <label className="select-checkbox__label" htmlFor={value}>
         {label}

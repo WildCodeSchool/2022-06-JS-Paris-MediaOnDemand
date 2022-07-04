@@ -4,8 +4,8 @@ export const UserIcon = ({ colorIcon = "#ccc591" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
+      width="43"
+      height="43"
       version="1.1"
       viewBox="0 0 48 48"
     >
