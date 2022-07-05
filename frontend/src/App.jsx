@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SearchPage } from "@pages/SearchPage/SearchPage";
-import Home from "@pages/Home/Home";
+import React, { useState, useEffect } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { SearchPage } from "@pages/SearchPage/SearchPage";
+// import Home from "@pages/Home/Home";
 import "./App.scss";
 import apiRequest from "@services/apiRequest/apiRequest";
 import { MediaCard } from "./components";
@@ -17,28 +17,28 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="theme--music App">
-        {result.results && (
-          <>
-            {result.results.map((valeur, index) => (
-              <MediaCard
-                key={valeur.id}
-                count={index + 1}
-                total={result.results.length}
-                title={valeur.title}
-                categories={valeur.original_title}
-                image={`https://image.tmdb.org/t/p/w500${valeur.poster_path}`}
-              />
-            ))}
-          </>
-        )}
-        {/* <Routes>
+    // <Router>
+    <div className="theme--music App">
+      {result.results && (
+        <>
+          {result.results.map((valeur, index) => (
+            <MediaCard
+              key={valeur.id}
+              count={index + 1}
+              total={result.results.length}
+              title={valeur.title}
+              categories={valeur.original_title}
+              image={`https://image.tmdb.org/t/p/w500${valeur.poster_path}`}
+            />
+          ))}
+        </>
+      )}
+      {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/go-sophia" element={<SearchPage />} />
             </Routes> */}
-      </div>
-    </Router>
+    </div>
+    // </Router>
   );
 }
 
