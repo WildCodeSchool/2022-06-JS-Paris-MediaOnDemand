@@ -7,6 +7,7 @@ import {
   Button,
 } from "@components";
 import "./SearchPage.scss";
+import { v4 as uuidv4 } from "uuid";
 
 const mediaCatSearch = [
   {
@@ -14,6 +15,7 @@ const mediaCatSearch = [
     mediaCatName: "movie",
     mediaSelectList: [
       {
+        uuidSelect: uuidv4(),
         selectId: "annee-select",
         selectLabel: "Année",
         defaultOption: "Choisis une Année",
@@ -24,16 +26,18 @@ const mediaCatSearch = [
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "genre-select",
         selectLabel: "Genre",
         defaultOption: "Choisis un Genre",
         selectOptions: [
           { value: "fiction", text: "Fiction" },
-          { value: "action", text: "action" },
+          { value: "action", text: "Action" },
           { value: "romance", text: "Romance" },
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "pay-select",
         selectLabel: "Pays",
         defaultOption: "Choisis un Pays",
@@ -50,6 +54,7 @@ const mediaCatSearch = [
     mediaCatName: "music",
     mediaSelectList: [
       {
+        uuidSelect: uuidv4(),
         selectId: "annee-select",
         selectLabel: "Année",
         defaultOption: "Choisis une Année",
@@ -60,16 +65,18 @@ const mediaCatSearch = [
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "genre-select",
         selectLabel: "Genre",
         defaultOption: "Choisis un Genre",
         selectOptions: [
           { value: "fiction", text: "Fiction" },
-          { value: "action", text: "action" },
+          { value: "action", text: "Action" },
           { value: "romance", text: "Romance" },
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "pay-select",
         selectLabel: "Pays",
         defaultOption: "Choisis un Pays",
@@ -80,16 +87,18 @@ const mediaCatSearch = [
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "genre-select",
         selectLabel: "Genre",
         defaultOption: "Choisis un Genre",
         selectOptions: [
           { value: "fiction", text: "Fiction" },
-          { value: "action", text: "action" },
+          { value: "action", text: "Action" },
           { value: "romance", text: "Romance" },
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "pay-select",
         selectLabel: "Pays",
         defaultOption: "Choisis un Pays",
@@ -106,6 +115,7 @@ const mediaCatSearch = [
     mediaCatName: "book",
     mediaSelectList: [
       {
+        uuidSelect: uuidv4(),
         selectId: "annee-select",
         selectLabel: "Année",
         defaultOption: "Choisis une Année",
@@ -116,16 +126,18 @@ const mediaCatSearch = [
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "genre-select",
         selectLabel: "Genre",
         defaultOption: "Choisis un Genre",
         selectOptions: [
           { value: "fiction", text: "Fiction" },
-          { value: "action", text: "action" },
+          { value: "action", text: "Action" },
           { value: "romance", text: "Romance" },
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "pay-select",
         selectLabel: "Pays",
         defaultOption: "Choisis un Pays",
@@ -136,16 +148,18 @@ const mediaCatSearch = [
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "genre-select",
         selectLabel: "Genre",
         defaultOption: "Choisis un Genre",
         selectOptions: [
           { value: "fiction", text: "Fiction" },
-          { value: "action", text: "action" },
+          { value: "action", text: "Action" },
           { value: "romance", text: "Romance" },
         ],
       },
       {
+        uuidSelect: uuidv4(),
         selectId: "pay-select",
         selectLabel: "Pays",
         defaultOption: "Choisis un Pays",
@@ -162,7 +176,11 @@ const mediaCatSearch = [
 export const SearchPage = () => {
   const [isCatOpen, setIsCatOpen] = useState(false);
   const [mediasSelected, setMediasSelected] = useState([]);
-
+  const [setFiltersSelected] = useState({
+    book: [],
+    music: [],
+    movie: [],
+  });
   return (
     <div className="search-page">
       <div className="search-page__header">
@@ -181,7 +199,11 @@ export const SearchPage = () => {
           {mediaCatSearch.map(
             (mediaCat) =>
               mediasSelected.includes(mediaCat.mediaCatName) && (
-                <SelectCatList key={mediaCat.mediaName} mediaCat={mediaCat} />
+                <SelectCatList
+                  key={mediaCat.mediaName}
+                  mediaCat={mediaCat}
+                  setFiltersSelected={setFiltersSelected}
+                />
               )
           )}
         </div>

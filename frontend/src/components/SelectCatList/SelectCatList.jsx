@@ -2,8 +2,9 @@ import React from "react";
 import "./SelectCatList.scss";
 import { SelectCat } from "..";
 
-export const SelectCatList = ({ mediaCat }) => {
-  const { mediaName, mediaSelectList } = mediaCat;
+export const SelectCatList = ({ mediaCat, setFiltersSelected }) => {
+  const { mediaName, mediaCatName, mediaSelectList } = mediaCat;
+
   return (
     <div className="cat-list">
       <h3>{mediaName}</h3>
@@ -11,10 +12,12 @@ export const SelectCatList = ({ mediaCat }) => {
         {mediaSelectList?.map((mediaSelect) => (
           <SelectCat
             selectLabel={mediaSelect.selectLabel}
-            key={mediaSelect.label}
+            key={mediaSelect.uuidSelect}
             defaultOption={mediaSelect.defaultOption}
             selectOptions={mediaSelect.selectOptions}
             selectId={mediaSelect.selectId}
+            setFiltersSelected={setFiltersSelected}
+            mediaCatName={mediaCatName}
           />
         ))}
       </div>
