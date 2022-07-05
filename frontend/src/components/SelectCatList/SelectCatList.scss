@@ -1,0 +1,22 @@
+@import "../../theme.scss";
+.cat-list {
+  width: 80%;
+  padding: 0.5rem 0;
+
+  &__select {
+    height: auto;
+    padding: 0.5em;
+    width: 100%;
+    text-overflow: ellipsis;
+    margin-top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.4);
+    // color: $main--dark_strong;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

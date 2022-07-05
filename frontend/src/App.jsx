@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router /* , Routes, Route */,
-} from "react-router-dom";
-// import Home from "./pages/Home/Home";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { SearchPage } from "@pages/SearchPage/SearchPage";
+import Home from "@pages/Home/Home";
 import "./App.scss";
 import apiRequest from "@services/apiRequest/apiRequest";
 import { MediaCard } from "./components";
@@ -36,7 +35,8 @@ function App() {
         )}
         {/* <Routes>
           <Route path="/" element={<Home />} />
-        </Routes> */}
+          <Route path="/go-sophia" element={<SearchPage />} />
+            </Routes> */}
       </div>
     </Router>
   );

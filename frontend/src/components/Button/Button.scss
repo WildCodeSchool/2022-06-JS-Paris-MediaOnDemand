@@ -1,19 +1,16 @@
 @import "../../theme.scss";
 
-button {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 1px 1px 1px $main--ligth_soft;
-}
-
 .btn {
   background-color: transparent;
   border-radius: 10px;
   border: 2px solid;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 1px $main--ligth_soft;
+  }
 
   &--darkBackground {
     @extend .btn;
