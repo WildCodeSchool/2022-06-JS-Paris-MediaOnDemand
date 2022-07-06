@@ -1,0 +1,174 @@
+@import "../../theme.scss";
+
+.tab__globalComponent {
+  width: 100%;
+  height: 80%;
+}
+
+.tab__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+// bloc onglets
+.tab__bloc-tabs {
+  display: flex;
+  background-color: transparent;
+}
+
+// tous onglets
+.tab__tabs {
+  padding: 7px;
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  color: $support--medium;
+}
+
+// onglet actif
+.tab__active-tabs {
+  border-bottom: 1px solid transparent;
+  max-height: 70%;
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px whitesmoke;
+}
+
+.tab__active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  background: $main--strong;
+}
+
+// tous contenus
+.tab__content {
+  // background: white;
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+  display: none;
+}
+
+// contenu actif
+.tab__active-content {
+  display: block;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.tab__color1 {
+  border-top: 3px solid $movie--strong;
+  border-left: 3px solid $movie--strong;
+  border-right: 3px solid $movie--strong;
+  background-color: transparent;
+  color: $movie--soft;
+}
+
+.tab__color2 {
+  border-top: 3px solid $book--strong;
+  border-left: 3px solid $book--strong;
+  border-right: 3px solid $book--strong;
+  background-color: transparent;
+  color: $book--soft;
+}
+
+.tab__color3 {
+  border-top: 3px solid $music--strong;
+  border-left: 3px solid $music--strong;
+  border-right: 3px solid $music--strong;
+  background-color: transparent;
+  color: $music--soft;
+}
+
+.tab__itemCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 380px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  // tabs on right side
+  .tab__container {
+    flex-direction: row;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: column;
+  }
+
+  .tab__tabs {
+    width: 82%;
+  }
+
+  .tab__color1 {
+    border-right: none;
+    border-bottom: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-right: none;
+    border-bottom: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-right: none;
+    border-bottom: 3px solid $music--strong;
+  }
+
+  .tab__itemCard {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  // tabs on top;
+  .tab__container {
+    flex-direction: column-reverse;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: initial;
+  }
+
+  .tab__tabs {
+    width: 29.94%;
+  }
+
+  .tab__active-tabs::before {
+    top: -5px;
+  }
+
+  .tab__color1 {
+    border-top: none;
+    border-right: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-top: none;
+    border-right: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-top: none;
+    border-right: 3px solid $music--strong;
+  }
+
+  .tab__active-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab__itemCard {
+    flex-wrap: wrap;
+    overflow-y: auto;
+    min-width: 1200px;
+  }
+}

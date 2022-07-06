@@ -5,6 +5,7 @@ export { SelectCheckBoxList } from "./SelectCheckBoxList/SelectCheckBoxList";
 export { TabBar } from "./TabBar/TabBar";
 export { TutoCard } from "./TutoCard/TutoCard";
 export { TutoCardList } from "./TutoCardList/TutoCardList";
+export { Tab } from "./Tab/Tab";
 export { SelectCat } from "./SelectCat/SelectCat";
 export { SelectCatList } from "./SelectCatList/SelectCatList";
 export { MediaCard } from "./MediaCard/MediaCard";
