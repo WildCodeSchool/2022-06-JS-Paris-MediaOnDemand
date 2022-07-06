@@ -2,31 +2,32 @@ import React from "react";
 import "../../theme.scss";
 import "./MediaCard.scss";
 import "@components/Button/Button.scss";
-import { PlusIcon } from "@assets/iconsCard";
+import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { Link } from "react-router-dom";
-import heartIcon from "../../assets/heartIcon.svg";
 
-export const MediaCard =
-  (/* { imgUrl, title, category, current, total } */) => {
-    return (
-      <div className="mediaCard">
-        <div className="imageMediaCard">
-          <div className="iconUpMediaCard">
-            <div className="counter">
-              <span>*/*</span>
-            </div>
-            <img src={heartIcon} alt="add" />
+export const MediaCard = ({ count, total, title, categories, image }) => {
+  return (
+    <div className="mediaCard">
+      <div
+        style={{ backgroundImage: `url(${image})` }}
+        className="imageMediaCard"
+      >
+        <div className="iconUpMediaCard">
+          <div className="counter">
+            <span>{`${count}/${total}`}</span>
           </div>
-          <PlusIcon />
+          <HeartIcon />
         </div>
-        <div className="titleMediaCard">title</div>
-        <div className="categoriesMediaCard">categories</div>
-        <Link to="/">
-          <Button buttonSize="small" buttonStyle="dark">
-            infos
-          </Button>
-        </Link>
+        <PlusIcon />
       </div>
-    );
-  };
+      <div className="titleMediaCard">{title}</div>
+      <div className="categoriesMediaCard">{categories}</div>
+      <Link to="/">
+        <Button buttonSize="small" buttonStyle="dark">
+          infos
+        </Button>
+      </Link>
+    </div>
+  );
+};

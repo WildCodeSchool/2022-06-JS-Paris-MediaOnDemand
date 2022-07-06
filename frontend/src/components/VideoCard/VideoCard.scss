@@ -1,0 +1,23 @@
+.videoCard__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 95%;
+  height: 90%;
+  margin-top: 3%;
+}
+
+.videoCard__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoCard__info {
+  height: 10%;
+  border: 1px solid white;
+}
+
+.videoCard__about {
+  height: 38%;
+  border: 1px solid white;
+}

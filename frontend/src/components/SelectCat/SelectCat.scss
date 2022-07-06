@@ -1,0 +1,28 @@
+@import "../../theme.scss";
+.select-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 0.5rem 0;
+
+  &__label {
+    text-shadow: 0 0 10px black;
+  }
+
+  &__select {
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: 0.25em;
+    text-overflow: ellipsis;
+
+    margin-top: 0.5em;
+    background-color: $main--ligth_soft;
+    color: $main--dark_strong;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
