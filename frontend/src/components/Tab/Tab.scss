@@ -1,7 +1,7 @@
 @import "../../theme.scss";
 
 .tab__globalComponent {
-  width: 90%;
+  width: 100%;
   height: 80%;
 }
 
@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.274);
 }
 
 // bloc onglets
@@ -22,21 +21,21 @@
 .tab__tabs {
   padding: 7px;
   text-align: center;
-  width: 50%;
+  width: 20%;
   cursor: pointer;
   box-sizing: content-box;
   position: relative;
   outline: none;
-  background-color: #999999;
-  color: black;
-}
-.tab__tabs:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
+  background-color: transparent;
+  color: $support--medium;
 }
 
 // onglet actif
 .tab__active-tabs {
   border-bottom: 1px solid transparent;
+  max-height: 70%;
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px whitesmoke;
 }
 
 .tab__active-tabs::before {
@@ -44,20 +43,12 @@
   display: block;
   position: absolute;
   bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
   background: $main--strong;
-}
-
-.tab__content-tabs {
-  flex-grow: 1;
 }
 
 // tous contenus
 .tab__content {
-  background: white;
+  // background: white;
   padding: 20px;
   width: 90%;
   height: 100%;
@@ -67,25 +58,40 @@
 // contenu actif
 .tab__active-content {
   display: block;
+  justify-content: center;
+  padding-left: 5%;
 }
 
 .tab__color1 {
-  background-color: $movie--soft;
+  border-top: 3px solid $movie--strong;
+  border-left: 3px solid $movie--strong;
+  border-right: 3px solid $movie--strong;
+  background-color: transparent;
+  color: $movie--soft;
 }
 
 .tab__color2 {
-  background-color: $book--soft;
+  border-top: 3px solid $book--strong;
+  border-left: 3px solid $book--strong;
+  border-right: 3px solid $book--strong;
+  background-color: transparent;
+  color: $book--soft;
 }
 
 .tab__color3 {
-  background-color: $music--soft;
+  border-top: 3px solid $music--strong;
+  border-left: 3px solid $music--strong;
+  border-right: 3px solid $music--strong;
+  background-color: transparent;
+  color: $music--soft;
 }
 
 .tab__itemCard {
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 380px;
+  overflow: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,17 +100,31 @@
     flex-direction: row;
   }
 
-  .tab__content {
-    width: 95.2%;
-  }
-
   .tab__bloc-tabs {
     flex-direction: column;
   }
 
   .tab__tabs {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
     width: 82%;
+  }
+
+  .tab__color1 {
+    border-right: none;
+    border-bottom: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-right: none;
+    border-bottom: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-right: none;
+    border-bottom: 3px solid $music--strong;
+  }
+
+  .tab__itemCard {
+    max-width: 800px;
   }
 }
 
@@ -120,20 +140,35 @@
 
   .tab__tabs {
     width: 29.94%;
-    border-bottom: none;
   }
 
   .tab__active-tabs::before {
     top: -5px;
   }
 
-  .tab__content {
-    width: 90%;
+  .tab__color1 {
+    border-top: none;
+    border-right: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-top: none;
+    border-right: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-top: none;
+    border-right: 3px solid $music--strong;
+  }
+
+  .tab__active-content {
+    display: flex;
+    justify-content: center;
   }
 
   .tab__itemCard {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    overflow-y: auto;
+    min-width: 1200px;
   }
 }

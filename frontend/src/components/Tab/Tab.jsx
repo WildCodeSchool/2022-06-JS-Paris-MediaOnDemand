@@ -20,7 +20,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <div className="Tab__itemCard">
+            <div className="tab__itemCard">
               <MediaCard />
             </div>
           </div>
@@ -33,7 +33,6 @@ export const Tab = () => {
           >
             <div className="tab__itemCard">
               <MediaCard />
-              <MediaCard />
             </div>
           </div>
           <div
@@ -44,8 +43,6 @@ export const Tab = () => {
             }
           >
             <div className="tab__itemCard">
-              <MediaCard />
-              <MediaCard />
               <MediaCard />
             </div>
           </div>
