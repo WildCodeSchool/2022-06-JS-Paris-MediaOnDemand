@@ -1,13 +1,21 @@
 import axios from "axios";
 
-// const MOVIE_API = import.meta.env.VITE_MOVIE_API;
-// const baseUrl = `https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-01-01&primary_release_date.lte=2020-01-01&api_key=${MOVIE_API}`;
+const MOVIE_API = import.meta.env.VITE_MOVIE_API;
 
-export const fetchMovie = (url, setState) => {
+export const fetchMovie = (option, filters, setState) => {
+  const BASE_URL = `https://api.themoviedb.org/3/${option}/movie?api_key=${MOVIE_API}&language=fr-FR`;
+
+  let finalUrl = BASE_URL;
+
+  if (filters.length) {
+    const filtersQuery = filters.join("");
+    finalUrl = `${BASE_URL}${filtersQuery}`;
+  }
+
   axios
-    .get(`${url}`)
+    .get(finalUrl)
     .then((response) => response.data)
     .then((data) => {
-      setState(data);
+      setState(data.results);
     });
 };
