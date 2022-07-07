@@ -1,0 +1,402 @@
+[
+  {
+    "id": "1",
+    "title": "Charlie et la Chocolaterie",
+    "author": "Roald Dahl",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Le métier de visseur de capuchons de tubes de dentifrice ne permettait pas à Mr Bucket de subvenir aux besoins de sa nombreuse famille : Mrs Bucket son épouse, grand-maman Joséphine et grand-papa Joe, grand-papa Georges et grand-maman Georgina. Sans oublier son fils Charlie dont le rêve le plus fou était de manger du chocolat ! Aussi, quelle ne fut pas l'émotion du jeune garçon en apprenant que Willy Wonka invitait cinq enfants à visiter sa merveilleuse chocolaterie, la plus célèbre du monde entier. Les cinq enfants qui découvriraient un ticket d'or caché dans cinq bâtons de chocolat..."
+  },
+  {
+    "id": "2",
+    "title": "Jurassic Park",
+    "author": "Michael Crichton",
+    "cover": "https://www.babelio.com/couv/CVT_Jurassic-Park_5882.jpeg",
+    "genre": ["fantastic", "action"],
+    "description": "Que s'est-il donc passé sur Isla Nublar, durant ces deux jours d'août 1989, pour obliger l'armée à venir 'faire le ménage' ? Le programme dont cette île est le théâtre avait pourtant tout du paradis scientifique: un immense complexe naturel où s'ébattent, aux yeux de tous, les plus féroces sauriens du Jurassique, génétiquement ramenés à la vie... Quelques jours avant le chaos, le paléontologue Alan Grant et Ian Malcolm, mathématicien de renom, chargés de délivrer une caution universitaire au projet, embarquent pour ce bout de terre perdu au large du Pacifique. Bientôt, le petit groupe invité par le créateur du parc doit se rendre à l'évidence: au cœur d'une jungle primitive et farouchement hostile, l'être humain n'est plus l'espèce dominante, mais la proie... Et la science se révèle vite impuissante face à la sauvagerie d'un écosystème disparu, un monde oublié qui cherche à reprendre ses droits. Dès lors, l'évolution impose sa loi, unique, éternelle, terrifiante ; survivre..."
+  },
+  {
+    "id": "3",
+    "title": "Hunger Games",
+    "author": "Suzanne Collins",
+    "cover": "https://www.babelio.com/couv/21033_1540830.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Les Hunger Games ont commencé. Le vainqueur deviendra riche et célèbre. Les autres mourront... Dans un futur sombre, sur les ruines des États-Unis, un jeu télévisé est créé pour contrôler le peuple par la terreur. Douze garçons et douze filles tirés au sort participent à cette sinistre téléréalité, que tout le monde est forcé de regarder en direct. Une seule règle dans l'arène: survivre, à tout prix. Quand sa petite sœur est appelée pour participer aux Hunger Games, Katniss n'hésite pas une seconde. Elle prend sa place, consciente du danger. À seize ans, Katniss a déjà été confrontée plusieurs fois à la mort. Chez elle, survivre est comme une seconde nature..."
+  },
+  {
+    "id": "4",
+    "title": "Le Seigneur des Anneaux",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://www.babelio.com/couv/CVT_Le-Seigneur-des-Anneaux-Tome-1--La-Communaute-de-_7762.jpg",
+    "genre": ["fantastic"],
+    "description": "Le Tiers Age touche à sa fin, et la Terre du Milieu à son crépuscule. La Compagnie de l'Anneau va donc tâcher de déjouer les projets infernaux de Sauron, force du mal d'autant plus difficile à combattre qu'elle est désincarnée. Qui, des cinq héros, mènera à bien la mission ? Gandalf, grand sage qui seul mesure la portée de la quête ? Aragorn, qui dissimule ses origines princières sous les traits d'un rôdeur taciturne ? Frodon et Sam, qui sont chargés de la phase finale de la mission ou Gollum, créature abjecte qui fut un temps dépositaire de l'anneau ? Mais quel est donc le pouvoir de cet anneau tant convoité ? Quelle est donc la signification de l'énigme qui figure en première page, en manière d'épigraphe ? Tant de questions qui ne sont qu'une infime partie du mystère féerique qui, depuis 1954, ravit l'imagination, autorisée pour un temps à s'attarder dans un séjour magique aux forêts profondes et ancestrales, aux paysages argentés peuplés d'êtres aériens, de jeunes guerrières intrépides, de destriers sauvages ayant la fierté de leurs maîtres, de viles créatures dont la laideur physique reflète la méchanceté... Tous, nous avons rêvé de ce repos de l'âme, de même que nous avons craint, enfants, la menace sourde et inexplicable. Tolkien, lui, a su nommer cet univers, et en faire une épopée passionnante, quête initiatique où l'errance humaine est regardée avec une tolérance rassurante. Mais quels sont ces petits êtres rigolos et surprenants, ces 'hobbits' ? D'où viennent ces accents folkloriques, ce langage essentiel, cette mélancolie onirique qui teinte l'esprit d'un brouillard étrange une fois le volume refermé ? Tant de questions auxquelles, heureusement, Tolkien ne répond jamais tout à fait malgré les cartes, généalogies, lexiques et autres appendices passionnants que son imagination prolifique a fournis sur La Terre du Milieu."
+  },
+  {
+    "id": "5",
+    "title": "Harry Potter",
+    "author": "J. K. Rowling",
+    "cover": "https://www.babelio.com/couv/bm_9068_aj_m_5285.jpg",
+    "genre": ["fantastic", "family"],
+    "description": "Harry Potter est un garçon ordinaire. Mais, le jour de ses onze ans, son existence bascule : un géant vient le chercher pour l'emmener dans une école de sorciers. Voler à cheval sur des balais, jeter des sorts, combattre les Trolls: Harry Potter se révèle être un sorcier vraiment doué. Mais quel mystère entoure donc sa naissance et qui est l'effroyable V..., le mage noir dont personne n'ose prononcer le nom ?"
+  },
+  {
+    "id": "6",
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "cover": "https://www.babelio.com/couv/CVT_Dracula_1027.jpeg",
+    "genre": ["fantastic", "horror"],
+    "description": "Jonathan Harker, jeune notaire, est envoyé en Transylvanie pour rencontrer un client, le Comte Dracula, nouveau propriétaire d'un domaine à Londres. A son arrivée, il découvre un pays mystérieux et menaçant, dont les habitants se signent au nom de Dracula. Malgré la bienveillance de son hôte, le jeune clerc ne peut qu'éprouver une angoisse grandissante. Très vite, il se rend à la terrifiante évidence : il est prisonnier d'un homme qui n'est pas un homme. Et qui partira bientôt hanter les nuits de Londres... Grand classique de la littérature de vampires, best-seller de tous les temps après la Bible, 'Dracula' est une source d'inspiration inépuisable."
+  },
+  {
+    "id": "7",
+    "title": "Alice au pays des merveilles",
+    "author": "Lewis Carroll",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/5134PwKKI0L._SX210_.jpg",
+    "genre": ["fantastic", "family"],
+    "description": ""
+  },
+  {
+    "id": "8",
+    "title": "Gatsby le magnifique",
+    "author": "Francis Scott Fitzgerald",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41tdlvMG7GL._SX210_.jpg",
+    "genre": ["drama"],
+    "description": "Raconté par un voisin devenu son ami, le roman tourne autour du personnage de Gatsby, jeune millionnaire charmant au passé trouble qui vit luxueusement dans une villa toujours pleine d'invités. Par certains aspects, le livre peut paraître une critique complexe de la bourgeoisie, de son opulence et de sa superficialité, où chaque personnage est prêt à tout pour parvenir à ses fins. Nick Carraway, un jeune homme américain du Middle West atteignant la trentaine, se rend à New York pour travailler dans la finance comme agent de change. Par hasard, il trouve à louer une petite bicoque à Long Island, zone résidentielle très huppée et snob de la banlieue new-yorkaise. Sa demeure, presque invisible, est située dans West Egg entre deux énormes et luxueuses villas. De là, la vue est imprenable sur East Egg, l'endroit le plus cossu et sélect de toute la zone. C'est là qu'habitent Daisy, sa cousine germaine et Tom Buchanan, son mari, issu de la même promotion que Nick à l'université Yale. Nick se rend un soir chez les Buchanan, qu'il connaît à peine, sur invitation de Daisy. Tom, beau et riche colosse, mais quelque peu bourru paraît végéter auprès de Daisy, laquelle semble tout autant s'ennuyer ferme avec son mari. Elle passe le plus clair de son temps avec son amie Jordan Baker, joueuse de golf professionnelle. Tom, peu de temps après, demande à Nick de l'accompagner pour lui présenter sa maîtresse, Myrtle Wilson, la femme d'un garagiste sur la route qui relie New York à Long Island. Nick, témoin de l'inconstance de Tom, de l'enlisement du couple qu'il forme avec Daisy, n'aurait guère d'intérêt à fréquenter les Buchanan s'il n'y avait le rapprochement de plus en plus sensible avec la belle Jordan. Celle-ci s'étonne qu'il ne connaisse pas Gatsby puisqu'il habite West Egg, comme lui, et qu'on ne parle que de cet homme à la richesse fabuleuse. Gatsby, justement, c'est son voisin. C'est lui qui possède l'immense maison très animée qui occulte celle misérable de Nick. Gatsby donne fréquemment des réceptions somptueuses qui accueillent des centaines de convives. Mais qui est Jay Gatsby? D'où vient-il? Que fait-il? Les rumeurs les plus folles circulent sur son passé et sa fortune, même au sein de sa propre maison. C'est ce que Nick brûle de découvrir lorsqu'un jour il reçoit une invitation pour passer la soirée chez Gatsby. Une incroyable histoire va lier Nick, Tom, Gatsby, Jordan, Myrtle et Daisy pendant cet été 1922..."
+  },
+  {
+    "id": "9",
+    "title": "Millénium",
+    "author": "Stieg Larsson",
+    "cover": "https://www.babelio.com/couv/bm_39602_1863657.jpg",
+    "genre": ["polar", "thriller", "drama"],
+    "description": "Ancien rédacteur de Millénium, revue d'investigations sociales et économiques, Mikael Blomkvist est contacté par un gros industriel pour relancer une enquête abandonnée depuis quarante ans. Dans le huis clos d'une île, la petite nièce de Henrik Vanger a disparu, probablement assassinée, et quelqu'un se fait un malin plaisir de le lui rappeler à chacun de ses anniversaires. Secondé par Lisbeth Salander, jeune femme rebelle et perturbée, placée sous contrôle social mais fouineuse hors pair, Mikael Blomkvist, cassé par un procès en diffamation qu'il vient de perdre, se plonge sans espoir dans les documents cent fois examinés, jusqu'au jour où une intuition lui fait reprendre un dossier. Régulièrement bousculés par de nouvelles informations, suivant les méandres des haines familiales et des scandales financiers, lancés bientôt dans le monde des tueurs psychopathes, le journaliste tenace et l'écorchée vive vont résoudre l'affaire des fleurs séchées et découvrir ce qu'il faudrait peut-être taire. A la fin de ce volume, le lecteur se doute qu'il rencontrera à nouveau les personnages et la revue Millénium. Des fils ont été noués, des portes ouvertes. Impatient, haletant, on retrouvera Mikael et sa hargne sous une allure débonnaire, et Lisbeth avec les zones d'ombre qui l'entourent, dans - Millénium 2 - La fille qui rêvait d'un bidon d'essence et d'une allumette ; Millénium 3 - La Reine dans le palais des courants d'air."
+  },
+  {
+    "id": "10",
+    "title": "La Planète des singes",
+    "author": "Pierre Boulle",
+    "cover": "https://www.babelio.com/couv/CVT_La-Planete-des-singes_3175.jpeg",
+    "genre": ["fantastic", "SF"],
+    "description": "Y a-t-il des êtres humains ailleurs que dans notre galaxie ? C'est la question que se pose Ulysse Mérou, lorsque, de leur vaisseau spatial, ils observent le paysage d'une planète proche de Bételgeuse : on y aperçoit des villes, des routes curieusement semblables à celle de notre terre. Après s'y être posés, les trois hommes découvrent que la planète est habitée par des singes. Ceux-ci s'emparent d'Ulysse Mérou et se livrent sur lui à des expériences. Il faudra que le journaliste fasse, devant les singes, la preuve de son humanité..."
+  },
+  {
+    "id": "11",
+    "title": "La route",
+    "author": "Cormac McCarthy",
+    "cover": "https://www.babelio.com/couv/CVT_La-route_4035.jpeg",
+    "genre": ["post-apocalyptic", "drama"],
+    "description": "L'apocalypse a eu lieu. Le monde est dévasté, couvert de cendres et de cadavres. Parmi les survivants, un père et son fils errent sur une route, poussant un caddie rempli d'objets hétéroclites. Dans la pluie, la neige et le froid, ils avancent vers les côtes du Sud, la peur au ventre : des hordes de sauvages cannibales terrorisent ce qui reste de l'humanité. Survivront-ils à leur voyage ? Un cataclysme inconnu a dévasté le monde. Des incendies géants ont ravagé les villes et les campagnes tandis que la faune a disparu. Ce qui ressemble à un hiver nucléaire masque en permanence le soleil et des cendres recouvrent le paysage. L'humanité a presque disparu, les quelques survivants se terrent tels des bêtes ou, ayant apparemment régressé, pratiquent le meurtre et le cannibalisme. Dans ce décor apocalyptique, un père et son fils, que l'auteur ne dénommera jamais autrement que « l'homme » et « le petit », errent en direction du sud, leurs maigres possessions rassemblées dans un chariot de supermarché et des sacs à dos."
+  },
+  {
+    "id": "12",
+    "title": "Le Silence des agneaux",
+    "author": "Thomas Harris",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/418G94GFGML._SX210_.jpg",
+    "genre": ["drama", "horror", "thriller"],
+    "description": "Le 'Silence des Agneaux' nous porte aux limites incertaines du génie et de la monstruosité, de la perversion et des manipulations mentales : seule avec sa peur, Clarice Starling, jeune agent du FBI, descend dans les enfers de la folie criminelle. Entre Hannibal le Cannibale et Buffalo Bill, elle mène une chasse à mort où la logique de la démence entraîne au-delà de la terreur. "
+  },
+  {
+    "id": "13",
+    "title": "Shutter Island",
+    "author": "Dennis Lehane",
+    "cover": "https://www.babelio.com/couv/6217_397836.gif",
+    "genre": ["polar", "drama", "thriller"],
+    "description": "Shutter Island est un îlot au large de Boston où un hôpital psychiatrique semblable à une forteresse accueille des pensionnaires atteints de troubles mentaux graves et coupables de crimes abominables. Un matin de septembre 1954, le marshall Teddy Daniels et son équipier Chuck Aule débarquent sur cette île pour enquêter sur l’évasion de Rachel, une patiente internée après avoir noyé ses trois enfants. Dès leur arrivée, les deux policiers perçoivent l’étrange atmosphère de ce lieu clos. Ils comprennent vite que personne ne les aidera dans leur mission et ils se posent plusieurs questions : quel rôle jouent sur l’île les médecins qui dirigent cet hôpital et quelles méthodes expérimentent-ils sur leurs patients ? À quoi sert le phare qui domine l’îlot et dont l’entrée semble inaccessible? Persuadés que l’évadée a bénéficié de complicités, les deux marshalls vont ruser pour découvrir tout ce qu’on leur cache mais un message codé laissé par Rachel les enfonce davantage en plein mystère. Petit à petit, ce drame fait ressurgir chez Teddy des éléments de son passé : il a connu la douleur de perdre sa femme dans un incendie criminel. Mais lorsque Chuck Aule découvre que le pyromane responsable des malheurs de son collègue se trouve interné sur l’île, il s’interroge sur Teddy : celui-ci est-il venu pour enquêter ou pour se venger ? Dennis Lehane a construit un puzzle diabolique et subtil dans l’intention de jouer jusqu’au bout avec les nerfs de ses lecteurs qui vont s’interroger tout au long d’un récit où les apparences sont souvent trompeuses et la vérité entrevue, contredite au chapitre suivant."
+  },
+  {
+    "id": "14",
+    "title": "World War Z",
+    "author": "Max Brooks",
+    "cover": "https://www.babelio.com/couv/bm_5953_1035294.jpg",
+    "genre": ["fantastic", "horror", "SF", "thriller", "action", "drama"],
+    "description": "La guerre des Zombies a eu lieu, et elle a failli éradiquer l'ensemble de l'humanité. L'auteur, en mission pour l'ONU - ou ce qu'il en reste - et poussé par l'urgence de préserver les témoignages directs des survivants de ces années apocalyptiques, a voyagé dans le monde entier pour les rencontrer, des cités en ruine qui jadis abritaient des millions d'âmes jusqu'aux coins les plus inhospitaliers de la planète. Il a recueilli les paroles d'hommes, de femmes, parfois d'enfants, ayant dû faire face à l'horreur ultime. Jamais auparavant nous n'avions eu accès à un document de première main aussi saisissant sur la réalité de l'existence - de la survivance - humaine au cours de ces années maudites. Depuis le désormais tristement célèbre village de Nouveau-Dachang, en Chine, là où l'épidémie a débuté avec un patient zéro de douze ans, jusqu'aux forêts du Nord dans lesquelles - à quel prix ! - nombre d'entre nous ont trouvé refuge, en passant par les Etats-Unis d'Afrique du Sud où a été élaboré l'odieux plan Redecker qui finirait pourtant par sauver l'humanité, cette chronique des années de guerre reflète sans faux-semblants la réalité de l'épidémie. Prendre connaissance de ces comptes-rendus parfois à la limite du supportable demandera un certain courage au lecteur. Mais l'effort en vaut la peine, car rien ne dit que la Ze Guerre mondiale sera la dernière."
+  },
+  {
+    "id": "15",
+    "title": "Le Monde de Narnia",
+    "author": "C.S. Lewis",
+    "cover": "https://www.babelio.com/couv/bm_5684_285671.jpg",
+    "genre": ["fantastic", "family"],
+    "description": "Au fond d’une armoire magique se trouve l’entrée de l’extraordinaire pays de Narnia. Aslan, le noble lion, a créé ce monde enchanté et tous les êtres qui y vivent. Or, il y a quarante ans, la Sorcière blanche a plongé Narnia dans un hiver éternel. Depuis, le royaume attend d’être libéré de l’emprise de la belle et plus-méchante-que-méchante sorcière. L’arrivée miraculeuse de quatre enfants, Peter, Susan, Edmund et Lucy, futurs rois et reines de Narnia, fait renaître l’espoir... Retrouvez, réunis en un seul ouvrage, les sept volumes du 'Monde de Narnia'. Guidés par le Lion Aslan, découvrez dans son intégralité la saga fantastique du grand romancier, ami de Tolkien."
+  },
+  {
+    "id": "16",
+    "title": "Entretien avec un vampire",
+    "author": "Anne Rice",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41B0KSYRBHL._SX210_.jpg",
+    "genre": ["polar", "fantastic", "horror"],
+    "description": "Dans une pièce sombre se déroule lentement l'histoire d'un être que le temps délaisse et que le soleil blesse... De nos jours, à la Nouvelle-Orléans, un jeune homme a été convoqué dans l'obscurité d'une chambre d'hôtel pour écouter la plus étrange histoire qui soit. Tandis que tourne le magnétophone, son mystérieux interlocuteur raconte sa vie, sa vie de vampire. Comme l'intervieweur, nous nous laissons subjuguer, fasciner et entraîner à travers les siècles dans un monde sensuel et terrifiant où l'atroce le dispute au sublime. Livre culte, devenu block-buster au cinéma avec Tom Cruise et Brad Pitt, premier volet des désormais incontournables Chroniques des vampires, Entretien avec un vampire renouvelle totalement l'un des mythes les plus riches et les plus ambigus du fantastique et marque l'avénement d'un genre à succès, la bit-lit, littérature de la morsure..."
+  },
+  {
+    "id": "17",
+    "title": "L'Ecume des jours",
+    "author": "Boris Vian",
+    "cover": "https://media.senscritique.com/media/000008969025/160/L_Ecume_des_jours.jpg",
+    "genre": ["drama", "fantastic"],
+    "description": "Dans un univers mêlant quotidien et onirisme, ce premier roman conte les aventures de Colin, de Chick, d’Alise et de la belle Chloé. Deux histoires d’amour s’entremêlent : Colin est un jeune homme élégant, rentier, qui met fin à son célibat en épousant Chloé, rencontrée à une fête, tandis que son ami Chick, fanatique transi du philosophe vedette Jean-Sol Partre, entretient une relation avec Alise. Tout irait pour le mieux sans les forces conjuguées de la maladie (Chloé est victime d’un « nénuphar » qui lui dévore le poumon) et du consumérisme (Chick consume ses ressources dans sa passion pour Jean-Sol Partre) qui s’acharnent sur les quatre amis. La plume alerte de Boris Vian, qui multiplie les néologismes poétiques et les jeux de mots (le pianocktail, le biglemoi, les doublezons…) semble le faire par politesse, car sous ses dehors de roman d’amour pour éternels adolescents, l’Ecume des Jours est un piège qui étouffe petit à petit le lecteur et les personnages. A l’image de la maladie de Chloé qui s’étend, la légèreté et l’innocence qui ouvrent le roman sont progressivement contaminées par le drame. Un classique moderne, salué à sa sortie par Raymond Queneau comme 'le plus poignant des romans d'amour contemporains'. "
+  },
+  {
+    "id": "18",
+    "title": "Le Journal de Bridget Jones",
+    "author": "Helen Fielding",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/410qFRhwbFL._SX210_.jpg",
+    "genre": ["comedy", "family"],
+    "description": "Bon Dieu, pourquoi suis-je aussi moche ? Dire que je me suis persuadée que je me gardais tout mon weekend pour travailler alors que j'étais simplement en faction devant le téléphone à attendre que Daniel m'appelle. Atroce ! Pourquoi n'a-t-il pas appelé ? Qu'est-ce qui cloche chez moi ? Bridget a presque trente ans et n'est toujours pas mariée. Entre une mère égoïste et des amis plus ou moins en couple, elle cherche le prince charmant qui changera sa vie, son regard sur elle-même et sur le monde. Comment s'y prendre avec les hommes ? Par où commencer ? Avec humour décapant, Helen Fielding trace le portrait d'une génération femmes socialement responsables, financièrement autonomes, affectivement... frustrées ! Une comédie sentimentale, ironique et tendre."
+  },
+  {
+    "id": "19",
+    "title": "Da Vinci Code",
+    "author": "Dan Brown",
+    "cover": "https://www.babelio.com/couv/33921_1616188.jpeg",
+    "genre": ["polar", "thriller"],
+    "description": "Robert Langdon, un éminent spécialiste de symbologie de Harvard, est convoqué d'urgence au Louvre. On a découvert un message codé sur le cadavre du conservateur en chef, retrouvé assassiné au milieu de la Grande Galerie. Pour examiner la série de pictogrammes, il est épaulé par Sophie Neveu, une brillante cryptographe membre de la police. A leur grande surprise, les premiers indices les conduisent à l'œuvre de Léonard de Vinci. En déchiffrant le code, Langdon va mettre à jour l'un des plus grands mystères de notre temps... et devenir un homme traqué."
+  },
+  {
+    "id": "20",
+    "title": "Je suis une légende",
+    "author": "Richard Matheson",
+    "cover": "https://www.babelio.com/couv/CVT_Je-suis-une-legende_5125.jpeg",
+    "genre": ["post-apocalyptic", "horror"],
+    "description": "Chaque jour, il doit organiser son existence solitaire dans une cité à l'abandon, vidée de ses habitants par une étrange épidémie. Un virus incurable qui contraint les hommes à se nourrir de sang et les oblige à fuir les rayons du soleil... Chaque nuit, les vampires le traquent jusqu'aux portes de sa demeure, frêle refuge contre une horde aux visages familiers de ses anciens voisins ou de sa propre femme. Chaque nuit est un cauchemar pour le dernier homme, l'ultime survivant d'une espèce désormais légendaire."
+  },
+  {
+    "id": "21",
+    "title": "Orange mécanique",
+    "author": "Anthony Burgess",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41eLggZSAEL._SX210_.jpg",
+    "genre": ["polar", "drama", "SF"],
+    "description": "Le décor inquiétant de cette fable anti-utopique, nous le connaissons bien : c'est celui de la banlieue concentrationnaire qui va recouvrir peu à peu la surface habitable de la planète. Une immense zone urbaine d'ennui, de désolation et de peur. Sur ce monde déshumanisé et ses habitants asservis, Alex, le voyou au charme pervers féru de musique classique et de langues anciennes, entend régner par la violence et la terreur. A la tête de sa horde adolescente, il matraque, viole, brûle, torture, et s'acharne à détruire une société programmée pour le bonheur et le progrès. Archange du Mal à l'état pur, il hante à jamais les pages cruelles de cet inoubliable thriller métaphysique. L'orange mécanique , dont on a pu lire des extraits en feuilleton dans ' Le Nouvel Observateur ' , restera sûrement l'un des romans les plus marquants de son temps , parce qu'il est notre époque . Ne serait-ce qu'à ce titre , on peut assurer qu'il demeurera , tout comme le film qu'on en a tiré ( Stanley Kubrick ) longtemps d'actualité . Alex ' l'humble narrateur et martyr ' et aussi le héros de l'histoire , est le parfait produit d'une civilisation où la violence est devenue habituelle , non pas l'expression d'une révolte , mais l'expression tout court , manifestée par le langage et les actes de certains , exercée en représailles par les gens du Bien et de l'Ordre , passivement subie par la masse . Civilisation d'aveugles titubant et distribuant ou recevant les coups dans une nuit absolue . Les adolescents comme Alex ( il n'a pas quinze ans ) ont été élevés dans cette violence . Leurs bandes terrorisent la métropole et se terrorisent entre elles . mais le jour où Alex , qui est un pur à sa façon , est lâché par ses ' Drougs ' ( ses copains ) et arrêté par les ' milichiens ' de la ' rosse ' ( la police ) , c'est pour être jeté dans une autre violence , celle des prisons . Et quand on essaie sur lui des méthodes nouvelles de ' récupération ' sociale et et de rédemption , c'est au viol de sa conscience que procède scientifiquement , par le conditionnement , et à des fins de propagande politique ..... L'orange mécanique , ce serait le livre du désespoir de notre temps , s'il n'éclatait d'humour à chaque page , au point d'en être profondément salubre . Et puis , il y a le langage ' révolutionnaire ' , c'est le moins qu'on puisse dire , et si le contagieux qu'on ne saurait pas étonné d'e entendre bientôt les échos dans la rue . "
+  },
+  {
+    "id": "22",
+    "title": "La Guerre des boutons",
+    "author": "Louis Pergaud",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/51bIpqH9ncL._SX210_.jpg",
+    "genre": ["comedy", "family"],
+    "description": "Il commença par la blouse, il arracha les agrafes métalliques du col, coupa les boutons des manches ainsi que ceux qui fermaient le devant de la blouse, puis il fendit entièrement les boutonnières, ensuite de quoi Camus fit sauter ce vêtement inutile ; les boutons du tricot et les boutonnières subirent un sort pareil ; les bretelles n'échappèrent point, on fit sauter le tricot. Ce fut ensuite le tour de la chemise : du col au plastron et aux manches, pas un bouton ni une boutonnière n'échappa... - T'as pas de ' caleçon ? ' non ! repris Lebrac, en vérifiant l'intérieur de la culotte qui dégringolait sur les jarrets. - Eh bien, maintenant, fous le camp ! Cela fait des générations que les enfants de deux villages voisins se font la guerre. Les uns sont de Longeverne, les autres de Velrans. Face à Lebrac, dit le grand Braque, et ses fidèles lieutenants se dressent l'Aztec des Gués et ses troupes. Le jour où une insulte jusque-là inconnue est lancée par ceux de Longeverne, une guerre aussi terrible qu'inattendue est déclarée : l'impitoyable guerre des boutons. Cette épopée truculente de Louis Pergaud, devenue un classique, évoque l'amitié, parfois mêlée de cruauté avec une verve réjouissante."
+  },
+  {
+    "id": "23",
+    "title": "Shining",
+    "author": "Stephen King",
+    "cover": "https://www.babelio.com/couv/CVT_Shining_3445.jpeg",
+    "genre": ["fantastic", "thriller"],
+    "description": "Quand on propose à Jack Torrance, ancien professeur et ancien alcoolique, un poste de gardien pour l'hiver à l'hôtel Overlook dans les montagnes du Colorado, il croit tenir là une chance de se racheter aux yeux de sa famille. Il s'y installe avec Wendy, sa femme, et leur fils Danny, en espérant profiter de cette occasion pour écrire la pièce de théâtre qui le révélera au monde.Mais les démons de l'hôtel trouvent en Jack une proie presque trop facile pour poursuivre leur œuvre de mal, et il faudra le courage et le sixième sens étrange de son fils pour sauver in extremis ce qui pourra l'être. Car Danny possède ce don de lumière de même que l'ancien cuisinier de l'hôtel, Dick Hallorann, et la conjugaison des deux fera reculer les forces du mal. Pendant un certain temps... Porté à l'écran par Kubrick avec Jack Nicholson dans le rôle principal, 'Shining' est avant tout l'histoire de la lente déchéance d'un homme rongé par la haine."
+  },
+  {
+    "id": "24",
+    "title": "La guerre des mondes",
+    "author": "H.G. Wells",
+    "cover": "https://www.babelio.com/couv/CVT_La-guerre-des-mondes_2361.jpeg",
+    "genre": ["drama", "SF", "thriller"],
+    "description": "Je voyais maintenant que c'étaient les créatures les moins terrestres qu'il soit possible de concevoir. Ils étaient formés d'un grand corps rond, ou plutôt d'une grande tête ronde d'environ quatre pieds de diamètre et pourvue d'une figure. Cette face n'avait pas de narines - à vrai dire les Martiens ne semblent pas avoir été doués d'odorat - mais possédait deux grands yeux sombres, au-dessous desquels se trouvait immédiatement une sorte de bec cartilagineux. La guerre des mondes est un récit passionnant qui relate l'invasion de la Terre par des Martiens. C'est un témoin extérieur qui nous montre le désarroi et la lutte désespérée des hommes face à un cataclysme directement sorti de l'enfer. Si les Martiens sont d'abord présentés comme des êtres faibles (la gravité terrestre, trois fois plus forte que celle de Mars, les empêche effectivement de se mouvoir rapidement), ils ne vont pas tarder à dévoiler leur puissance, qui n'aura d'égale que leur cruauté. Chef-d'œuvre de la science-fiction moderne, ce roman est le premier à décrire des extraterrestres à l'identité propre, intelligents et totalement inhumains. La guerre des mondes fait partie de ces textes qui traversent le temps, et il a inspiré à Steven Spielberg son nouveau film à grand spectacle."
+  },
+  {
+    "id": "25",
+    "title": "Psychose",
+    "author": "Robert Bloch",
+    "cover": "https://www.babelio.com/couv/CVT_Psychose_2626.jpg",
+    "genre": ["thriller"],
+    "description": "Sa mère est folle. Norman le sait, mais il l'aime trop pour l'envoyer à l'asile. Alors, il se débarrasse des cadavres. Mary vient de dérober 40 000 dollars à son patron. Partie retrouver son fiancé, elle s'arrête pour la nuit dans un motel isolé. Le propriétaire, un grand garçon à l'air timide, finit, par accepter de lui donner une chambre. Epuisée par dix-huit heures de route, elle décide de s'accorder une douche bien méritée... "
+  },
+  {
+    "id": "26",
+    "title": "Les trois mousquetaires",
+    "author": "Alexandre Dumas",
+    "cover": "https://www.babelio.com/couv/bm_CVT_Les-Trois-mousquetaires_2855.jpg",
+    "genre": ["adventure", "drama"],
+    "description": "Aux trois gentilshommes mousquetaires Athos, Porthos et Aramis, toujours prêts à en découdre avec les gardes du Cardinal de Richelieu, s'associe le jeune gascon d'Artagnan fraîchement débarqué de sa province avec pour ambition de servir le roi Louis XIII. Engagé dans le corps des mousquetaires, d'Artagnan s'éprend de l'angélique Constance Bonacieux. En lutte contre la duplicité et l'intrigue politique, les quatre compagnons trouveront en face d'eux une jeune anglaise démoniaque et très belle, Milady, la redoutable espionne du Cardinal. D'Artagnan seul échappe à ses agents. Mais rapportera-t-il à temps à la Reine de France, Anne d'Autriche, les ferrets qu'elle a remis à son amant, le duc de Buckingham ?"
+  },
+  {
+    "id": "27",
+    "title": "Les Rivières pourpres",
+    "author": "Jean-Christophe Grangé",
+    "cover": "https://www.babelio.com/couv/CVT_Les-Rivieres-pourpres_6488.jpeg",
+    "genre": ["polar", "thriller"],
+    "description": "Un cadavre, horriblement mutilé, suspendu entre ciel et terre dans les montagnes de la région grenobloise. Une tombe, celle d'un petit garçon, mystérieusement « visitée » pendant la nuit, cependant que les dossiers le concernant disparaissaient de son école. Deux énigmes, que vont s'attacher à résoudre deux flics hors normes : Pierre Niémans, policier génial, dont les méthodes peu orthodoxes ont compromis la carrière. Et Karim Abdouf, l'ancien délinquant devenu flic, dont la couleur de peau et les dreadlocks suscitent plutôt la défiance dans le trou de province où on l'a nommé… Les deux affaires vont se rejoindre, et les deux hommes se reconnaître. Ensemble, ils vont remonter vers le terrifiant secret des rivières pourpres. Un secret qui ne nous sera livré qu'aux dernières pages de ce thriller exceptionnel, dû à l'auteur du 'Vol des cigognes' et porté à l'écran par Mathieu Kassovitz."
+  },
+  {
+    "id": "28",
+    "title": "La Ligne Verte",
+    "author": "Stephen King",
+    "cover": "https://www.babelio.com/couv/5953_1812880.jpeg",
+    "genre": ["drama", "thriller"],
+    "description": "Octobre 1932, pénitencier d'État, Cold Mountain, Louisiane. Le bloc E, celui des condamnés à mort, reçoit un nouveau pensionnaire: John Caffey rejoint ceux qui attendent de franchir la ligne verte pour rencontrer la chaise électrique, Miss Cent Mille Volts. Mais Caffey n'est pas comme les autres. D'accord, on l'a retrouvé auprès des cadavres ensanglantés de deux petites filles, mais il est étrangement absent. Jusqu'au jour où Paul, le gardien-chef, tombe malade et alors une terrible vérité semble s'esquisser. Qui est ce prétendu meurtrier aux pouvoirs étranges? Qui dresse Mister Jingles, l'étrange souris, bien trop intelligente? Quand Paul commence à répondre à ces questions, il sent que personne dans le bloc E ne sortira indemne de la rencontre avec John Caffey. Renouant avec la tradition des feuilletonistes, Stephen King, le prolifique auteur de fantastique, propose un récit troublant, initialement en six volumes, entre roman noir et conte de fées, dont a été tiré un film, 'La Ligne verte', avec Tom Hanks."
+  },
+  {
+    "id": "29",
+    "title": "Le Pianiste",
+    "author": "Wladyslaw Szpilman",
+    "cover": "https://www.babelio.com/couv/bm_19078_1229079.jpg",
+    "genre": ["historic", "drama"],
+    "description": "Septembre 1939: Varsovie est écrasée sous les bombes allemandes. Avant d'être réduite au silence, la radio nationale réalise sa dernière émission. Les accords du 'Nocturne en ut dièse mineur' de Chopin s'élèvent. L'interprète s'appelle Wladyslaw Szpilman. Il est juif. Pour lui, c'est une longue nuit qui commence ... Quand, gelé et affamé, errant de cachette en cachette, il est à un pouce de la mort, apparaît le plus improbable des sauveteurs : un officier allemand, un Juste nommé Wilm Hosenfeld. Hanté par l'atrocité des crimes de son peuple, il protégera et sauvera le pianiste. Après avoir été directeur de la radio nationale polonaise, Wladyslaw Szpilman a eu une carrière internationale de compositeur et de pianiste. Il est mort à Varsovie en juillet 2000. Il aura fallu plus de cinquante ans pour que l'on redécouvre enfin ce texte étrangement distancié, à la fois sobre et émouvant."
+  },
+  {
+    "id": "30",
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "cover": "https://www.babelio.com/couv/bm_CVT_Coraline_2836.jpg",
+    "genre": ["fantastic", "family"],
+    "description": "Coraline vient de déménager et découvre son environnement, une étrange maison qu'elle et ses parents partagent avec des voisins peu communs: deux anciennes actrices et un vieux toqué éleveur de souris savantes. 'Je suis une exploratrice !', clame Coraline. Gare pourtant : derrière la porte condamnée, un monde magique et effrayant l'attend. Attention, grand frisson."
+  },
+  {
+    "id": "31",
+    "title": "Persepolis",
+    "author": "Marjane Satrapi",
+    "cover": "https://www.babelio.com/couv/bm_CVT_Persepolis_3436.jpg",
+    "genre": ["drama"],
+    "description": "A L’Association, on n’aime pas beaucoup le terme d’intégrale, alors on ne va pas en plus l’écrire sur le livre (certains n’hésitent pas). On préfère parler de monovolume (on ne l’écrira pas dessus non plus). Bref, ce livre rassemble les quatre volumes du Persepolis de Marjane Satrapi. On ne fera pas non plus le visuel de la couverture avec l’affiche du film, comme cela se pratique dans ces cas-là. Car il y a bel et bien un long-métrage d’animation de Persepolis qui sortira sur les écrans au moment du festival de Cannes, que Marjane a réalisé elle-même avec Winshluss, et qui sera aussi un événement. Que l’édition de Persepolis en un volume soit prête à cette occasion était la moindre des choses."
+  },
+  {
+    "id": "32",
+    "title": "James Bond",
+    "author": "Ian Fleming",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41IQnZj8m5L._SX210_.jpg",
+    "genre": ["polar", "action"],
+    "description": "Le trafiquant d'or international Golfinger a monté le coup le plus audacieux qu'on puisse imaginer : mettre la main sur la réserve d'or des Etats-Unis en s'emparant de la banque Fort-Knox. Ses moyens sont gigantesques : laboratoires spéciaux, gaz miracle, pilotes-amazones ... sans oublier son terrible garde du corps coréen. Face à lui, James Bond ne dispose que de ruse et d'audace. De sa séduction, aussi, puisque, pour l'amour de lui, la belle Pussy trahira son patron... C'est également dans ce roman, publié en 1963, qu'apparaît la célèbre Aston Morris truffée de gadgets. "
+  },
+  {
+    "id": "33",
+    "title": "La liste de Schindler",
+    "author": "Thomas Keneally",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/51KRH7ZTM1L._SX210_.jpg",
+    "genre": ["drama", "historic"],
+    "description": "'Les survivants se rappellent cette liste avec une telle émotion que la réalité se brouille. La liste, c'était le bien absolu. C'était la vie. Au-delà de ces quelques feuillets bourrés de noms, il n'y avait plus qu'un trou noir. ' Traité comme un roman, 'La liste de Schindler' est un hommage à l'Allemand Oskar Schindler. Durant la Seconde Guerre mondiale, ce dernier utilisa sa position dominante et ses relations parmi les SS pour sauver mille deux cents Juifs d'une mort certaine. La liste recensait les ouvriers qu'il comptait faire transférer de Pologne en Tchécoslovaquie, et pour lesquels il n'hésita pas à dépenser plus de cent mille reichmarks en pots-de-vin. Aujourd'hui, un arbre à Jérusalem porte son nom. "
+  },
+  {
+    "id": "34",
+    "title": "Le prestige",
+    "author": "Christopher Priest",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/51aAQ7quq5L._SX210_.jpg",
+    "genre": ["fantastic", "drama", "thriller"],
+    "description": "Alfred Borden et Rupert Angier, deux prestidigitateurs hors du commun, s'affrontent dans un duel sans merci. Trois générations plus tard, au cours d'une enquête sur une secte, le journaliste Andrew Wesley fait la connaissance de Kate Angier. Elle lui révèle qu'il s'appelle en fait Andrew Borden et qu'une guerre oppose leurs deux familles depuis la fin du XXe siècle. Quand Andrew découvre le rôle exact joué par le scientifique Tesla dans toute cette affaire, sa vie en est bouleversée à jamais... Ce roman a reçu le World Fantasy Award, catégorie 'Meilleur roman'"
+  },
+  {
+    "id": "35",
+    "title": "Le nom de la rose",
+    "author": "Umberto Eco",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41mei%2BItZBL._SX210_.jpg",
+    "genre": ["polar", "historic"],
+    "description": "An de grâce 1327, la chrétienté est en crise. L'ex-inquisiteur Guillaume de Baskerville se rend dans une abbaye bénédictine du Sud de la France pour participer à une rencontre entre franciscains prônant la pauvreté du Christ et partisans d'un pape amateur de richesses. Dès son arrivée, il se voit prié par l'abbé de découvrir au plus vite la raison de la mort violente d'un de ses moines, retrouvé assassiné. L'inquisiteur Bernard Gui, dont la réputation de cruauté n'est plus à faire, est attendu, et l'abbé craint pour l'avenir de son abbaye. Tel un ancêtre de Sherlock Holmes, Baskerville se met à l'ouvrage, assisté du jeune Adso de Melk. D'autres morts vont venir compliquer sa tâche. Porté à l'écran par Jean-Jacques Annaud avec Sean Connery dans le rôle de Guillaume, 'Le Nom de la Rose' fait date dans l'histoire des romans policiers historiques. Umberto Eco n'est pas seulement un romancier, c'est surtout un érudit qui connaît son sujet sur le bout des doigts. Il entraîne le lecteur dans une aventure à la fois philosophique et policière, où il est question d'Aristote, de liberté, d'injustice et de cyanure. Un roman exceptionnel. "
+  },
+  {
+    "id": "36",
+    "title": "Gone, Baby, Gone",
+    "author": "Dennis Lehane",
+    "cover": "https://www.babelio.com/couv/CVT_Gone-Baby-Gone_3698.gif",
+    "genre": ["drama", "polar"],
+    "description": "Patrick Kenzie et Angela Gennaro, les deux héros de Dennis Lehane, sont chargés de retrouver une petite fille de quatre ans, Amanda, mystérieusement disparue un soir d’automne. Curieusement, la mère d’Amanda paraît peu concernée par ce qui est arrivé à sa fille, qu’elle avait laissée seule le soir du drame pour aller dans un bar. Sa vie semble régie par la télévision, l’alcool et la drogue. Patrick et Angie découvrent d’ailleurs que la jeune femme dealait pour le compte d’un dénommé Cheddar Olamon et qu’elle aurait détourné les deux cent mille dollars de sa dernière livraison. Olamon se serait-il vengé en kidnappant la fille de son 'employée' ? Cette quatrième aventure de Kenzie et Gennaro distille une petite musique déchirante et se termine par une chute aussi inattendue que bouleversante."
+  },
+  {
+    "id": "37",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/41jZBLyk0kL._SX195_.jpg",
+    "genre": ["fantastic", "horror"],
+    "description": "Au XVIIIe siècle, Robert Walton quitte Londres pour un voyage d'exploration en direction du pôle Nord. Après avoir réuni plusieurs marins pour l'accompagner, il part vers une région encore inexplorée par l'Homme. Alors que les membres de l'équipage sont entourés de glace, ils aperçoivent une silhouette de forme humaine de stature gigantesque assise dans un chariot tiré par des chiens. Peu après, dérive vers eux un homme en perdition dans un traîneau semblable. Secouru par les matelots, l'homme du nom de Victor Frankenstein perd connaissance. Après avoir repris quelques forces, il raconte son étrange histoire à Robert Walton. Élevé à Genève dans une famille aisée, Frankenstein vit une enfance on ne peut plus heureuse. Cependant, ce bonheur est altéré par le décès de sa mère lorsqu'il a 17 ans. Le jeune garçon part peu après suivre des études à l'université d'Ingolstadt en Allemagne. Passionné de sciences, il se met dans l'idée de créer un être humain. Pour réaliser son projet, il réunit des os dans les charniers et récupère des matériaux dans la salle de dissection de son école. Les dimensions réduites de certaines parties du corps humain l'empêchant d'avancer, il conçoit une créature de taille gigantesque. Après deux ans de travail acharné, sa création prend enfin vie. Mais à sa vue, Frankenstein est horrifié et s'enfuit de chez lui. Une fois de retour dans son appartement avec son ami Henry Clerval, Victor Frankenstein est surpris de voir que le monstre a disparu. Choqué, il tombe malade et ne récupère qu'au bout de plusieurs mois. Un jour, il reçoit une lettre de son père lui apprenant que son petit frère a été assassiné. La coupable présumée est Justine, une jeune femme recueillie par la famille Frankenstein. Le jeune savant rentre à Genève et ne tarde pas à s'apercevoir que Justine est innocente. Le véritable coupable est le monstre qu'il a conçu. Persuadé que personne ne le croira, le scientifique garde le secret. Justine est finalement jugée coupable et tuée. Rempli de remords, Frankenstein est désespéré. Lors d'une promenade au sommet de Montanvert, le jeune homme rencontre sa créature. Très en colère contre lui, le monstre raconte les raisons pour lesquelles il est devenu aussi cruel. Rejeté par tous les Hommes, il a fini par être en colère contre eux et par se sentir désespérément seul. Après avoir trouvé le journal de Frankenstein, il a décidé de partir vers sa ville natale. C'est pourquoi il demande au savant de lui créer une compagne en lui promettant qu'ensuite il le laissera tranquille. Dans le cas contraire, il lui fera vivre un enfer et tuera tous ses proches. Après de longues hésitations, Frankenstein se laisse convaincre et accepte."
+  },
+  {
+    "id": "38",
+    "title": "Sherlock Holmes",
+    "author": "Sir Arthur Conan Doyle",
+    "cover": "https://www.babelio.com/couv/cvt_Sherlock-Holmes_7902.jpeg",
+    "genre": ["polar", "action", "adventure"],
+    "description": "Cet ouvrage a fait l'objet d'un véritable travail en vue d'une édition numérique. Un travail typographique le rend facile et agréable à lire. Attention, cet ouvrage de plusieurs milliers de pages peut être long à télécharger et à s'ouvrir lors de la première consultation. Il comprend les 9 volumes (également proposés séparément) des romans et nouvelles de Sherlock Holmes édité aux Éditions PoliceMania. "
+  },
+  {
+    "id": "39",
+    "title": "Le Cercle des poètes disparus",
+    "author": "N. H. Kleinbaum",
+    "cover": "https://www.babelio.com/couv/cvt_Le-Cercle-des-poetes-disparus_2612.jpeg",
+    "genre": ["drama"],
+    "description": "À Welton, un austère collège du Vermont, dans les années 1960, la vie studieuse des pensionnaires est bouleversée par l'arrivée d'un nouveau professeur de lettres, M.Keating. Ce pédagogue peu orthodoxe va leur communiquer sa passion de la poésie, de la liberté, de l'anticonformisme, et secouer la poussière des autorités parentale, académique et sociale. Même si un drame met un terme à cette expérience unique, Keating restera pour tous celui qui leur a fait découvrir le sens de la vie."
+  },
+  {
+    "id": "40",
+    "title": "Le livre de la jungle",
+    "author": "Rudyard Kipling",
+    "cover": "https://www.babelio.com/couv/CVT_Le-livre-de-la-jungle_218.gif",
+    "genre": ["family", "adventure"],
+    "description": "Mowgli, un bébé orphelin abandonné dans la jungle, est recueilli et élevé par une meute de loups. Passant son enfance parmi les animaux, il apprend la loi de la jungle au côté de ses amis, l'ours Baloo, la panthère Bagheera et la louve Rashka. Dans ce milieu hostile, la vie est une lutte de chaque instant, et il doit sans cesse affronter ses ennemis, le peuple des singes et le tigre Sher Khan, pour survivre. Il finit par rencontrer des hommes et doit choisir entre ses vraies origines ou sa vie dans la jungle."
+  },
+  {
+    "id": "41",
+    "title": "Forrest Gump",
+    "author": "Winston Groom",
+    "cover": "https://m.media-amazon.com/images/I/51yYPkpiBHL._SX195_.jpg",
+    "genre": ["drama"],
+    "description": "Je m'appelle Forrest Gump et je suis pas malin. C'est pour ça que m'man se faisait du souci pour moi et qu'elle m'a mis dans cette école spéciale. Et là, je vous dis pas. Tous des baveux, des qui font des grimaces, qui poussent des cris d'animaux. Je suis peut-être pas Einstein, mais quand même... N'empêche que je me suis retrouvé à l'université. Après, ça a été l'armée. Et puis après... Après, c'est toute une histoire ! "
+  },
+  {
+    "id": "42",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "cover": "https://m.media-amazon.com/images/I/416aswdXWWL._SX195_.jpg",
+    "genre": ["fantastic", "SF", "adventure"],
+    "description": "Voici l'épopée prodigieuse de Paul Atréides, connu comme prophète sous le nom de Paul Muad'Dib, seigneur d'Arrakis et empereur appelé à devenir le messie de Dune. Avec le cycle de Dune, Frank Herbert a brossé une fresque immense, digne, par l'intensité dramatique et le foisonnement des personnages, des plus grands chefs-d'oeuvre du roman historique classique."
+  },
+  {
+    "id": "43",
+    "title": "Le parfum",
+    "author": "Patrick Süskind",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/517SbYIQvbL._SX210_.jpg",
+    "genre": ["thriller", "drama", "fantastic"],
+    "description": "Au XVIIIème siècle vécut en France un homme qui compta parmi les personnages les plus géniaux et les plus horribles de son époque. Il s'appelait Jean-Baptiste Grenouille. Sa naissance, son enfance furent épouvantables et tout autre que lui n'aurait pas survécu. Mais Grenouille n'avait besoin que d'un minimum de nourriture et de vêtements, et son âme n'avait besoin de rien. Or ce monstre de Grenouille avait un don, ou plutôt un nez unique au monde, et il entendait bien devenir, même par les moyens les plus atroces, le Dieu tout-puissant de l'univers, car 'qui maîtrisait les odeurs, maîtrisait le cœur des hommes'. C'est son histoire abominable… et drolatique, qui nous est racontée dans Le Parfum, un best-seller mondial. "
+  },
+  {
+    "id": "44",
+    "title": "Orgueil et préjugés",
+    "author": "Jane Austen",
+    "cover": "https://www.babelio.com/couv/CVT_Orgueil-et-prejuges_2475.jpeg",
+    "genre": ["drama"],
+    "description": "Mr et Mrs Bennett ont cinq filles à marier. À l’arrivée d’un nouveau et riche voisin, la famille espère que l’une d’entre elles pourra lui plaire… Au-delà des aventures sentimentales des cinq filles Bennett, Jane Austen dépeint les rigidités de la société anglaise au tournant du XIXe siècle. Le comportement et les réflexions d’Elizabeth Bennett, son personnage principal, révèlent les problèmes auxquels sont confrontées les femmes de la gentry campagnarde pour s’assurer sécurité financière et statut social : la solution passe en effet par le mariage. Drôle et romanesque, ce chef-d’oeuvre de Jane Austen continue à jouir d’une vive popularité et a donné lieu à de nombreuses adaptations."
+  },
+  {
+    "id": "45",
+    "title": "La Guerre du feu",
+    "author": "J.-H. Rosny aîné",
+    "cover": "https://www.babelio.com/couv/bm_11518_668060.jpg",
+    "genre": ["historic", "adventure"],
+    "description": "'Le Feu !... Naoh apporte le Feu ! Ce fut un vaste saisissement. Plusieurs s'arrêtèrent, comme frappés d'un coup de hache. D'autres bondirent avec un rauquement frénétique - et le Feu était là.' C'est sur la conquête du feu que s'achève ce roman préhistorique, prodigieux voyage imaginaire à l'aube de l'humanité qui met en scène les hommes, les bêtes, la pierre, les cavernes et l'attente d'un âge meilleur."
+  },
+  {
+    "id": "46",
+    "title": "Voyage au centre de la Terre",
+    "author": "Jules Verne",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/51KhSeOgW6L._SX210_.jpg",
+    "genre": ["adventure", "fantastic"],
+    "description": "Ce livre raconte l'histoire d'un scientifique, le Professeur Lidenbrock, et de son neveu Axel, qui découvrent le mystérieux parchemin d'un certain Arne Saknussemme. Dans ce parchemin, ils découvriront qu'il est maintenant possible d'aller au centre de la Terre. Alors ils décideront de se lancer dans cette aventure, avec leur guide. Là-bas ils découvriront un monde aussi époustouflant que terrifiant.... "
+  },
+  {
+    "id": "47",
+    "title": "Le Procès",
+    "author": "Franz Kafka",
+    "cover": "https://www.babelio.com/couv/CVT_Le-Proces_1932.gif",
+    "genre": ["drama"],
+    "description": "Le jour de son arrestation, K. ouvre la porte de sa chambre pour s'informer de son petit-déjeuner et amorce ainsi une dynamique du questionnement qui s'appuie, tout au long du roman, sur cette métaphore de la porte. Accusé d'une faute qu'il ignore par des juges qu'il ne voit jamais et conformément à des lois que personne ne peut lui enseigner, il va pousser un nombre ahurissant de portes pour tenter de démêler la situation. À mesure que le procès prend de l'ampleur dans sa vie, chaque porte ouverte constitue une fermeture plus aliénante sur le monde de la procédure judiciaire, véritable source d'enfermement et de claustrophobie. L'instruction suit son cours sur environ un an durant lequel l'absence d'événements est vue uniquement à travers les yeux de K. Sa lucidité, dérisoire et inutile jusqu'à la fin, contrairement à celle du héros de 'La Métamorphose', n'apporte aucun soulagement. Le Procès, pièce charnière dans l'oeuvre de ce génie de l'absurde, renonce au ressort du surnaturel pour évoquer l'angoisse de l'obsession. "
+  },
+  {
+    "id": "48",
+    "title": "La Machine à explorer le temps",
+    "author": "H.G. Wells",
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/51RB3TZ2NTL._SX210_.jpg",
+    "genre": ["fantastic", "SF", "family"],
+    "description": "La Terre en l'an 802.701 avait pourtant toutes les apparences d'un paradis. Les apparences seulement. Car derrière ces jardins magnifiques, ces bosquets somptueux, cet éternel été où les hommes devenus oisifs n'ont à se préoccuper de rien, se cache un horrible secret. Ainsi témoigne l'explorateur du temps face à des auditeurs incrédules. Depuis la conception de son incroyable machine jusqu'à son voyage au bout de l'Histoire, là où l'humanité s'est scindée en deux. D'un côté les Éloïms, qui vivent en surface, petits êtres gracieux, doux et décérébrés. De l'autre les terribles Morlocks qui ont fui la lumière pour s'enterrer dans un gigantesque et inhospitalier monde souterrain. Un monde où l'Explorateur du Temps devra s'aventurer s'il souhaite répondre à ses questions, et surtout revenir à son époque. Inutile d'insister sur le fait qu'il s'agit d'un chef-d'œuvre. Wells demeure avec Jules Verne le grand ancêtre de la science-fiction, celui qui lui a donné ses lettres de noblesse, avec des œuvres aussi importantes que 'L'Île du Docteur Moreau', 'L'Homme invisible' ou 'La Guerre des mondes'. Un grand classique, précurseurs dans bien des domaines, qui reste indépassable. À lire ou à relire."
+  },
+  {
+    "id": "49",
+    "title": "2001 : L'Odyssée de l'espace",
+    "author": "Arthur C. Clarke",
+    "cover": "https://www.babelio.com/couv/bm_17888_892936.jpg",
+    "genre": ["SF", "drama"],
+    "description": "Le vaisseau Explorateur 1 fait route vers Saturne. À son bord, deux astronautes et le plus puissant ordinateur jamais conçu. Cinq ans plus tôt, un étrange monolithe noir a été découvert sur la Lune. La première preuve d'une existence extraterrestre. Et bien longtemps avant, à l'aube de l'humanité, un objet similaire s'était posé sur Terre et avait parlé aux premiers hommes. On détecte un nouveau signe de cette présence aux abords de Saturne. Que sont ces mystérieuses sentinelles ? Quel message doivent-elles délivrer ? Nous sommes en 2001, l'humanité a rendez-vous avec son destin..."
+  },
+  {
+    "id": "50",
+    "title": "Starship Troopers",
+    "author": "Robert A. Heinlein",
+    "cover": "https://m.media-amazon.com/images/I/51pFBjDMVJL._SX195_.jpg",
+    "genre": ["SF", "horror", "action", "comedy"],
+    "description": "Pour impressionner une fille et contrarier son père, le jeune Juan Rico s’engage dans l’Infanterie mobile, le corps d’armée réputé le plus dangereux. Après tout, il n’en a que pour deux ans, et la guerre est loin, aux confins de la galaxie. Mais tandis qu’il effectue ses classes et découvre la discipline sévère d’un bataillon d’élite, le conflit prend une nouvelle dimension, et le voilà embarqué dans une série de batailles mortelles qui le transformeront à jamais. "
+  }
+]
