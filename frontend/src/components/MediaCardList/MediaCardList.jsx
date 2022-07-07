@@ -12,6 +12,7 @@ export const MediaCardList = ({ mediaList }) => {
       showStatus={false}
       showIndicators={false}
       showThumbs={false}
+      selectedItem={0}
     >
       {mediaList &&
         mediaList.map((movie, index) => (
