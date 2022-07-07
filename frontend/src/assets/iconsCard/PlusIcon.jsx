@@ -1,6 +1,6 @@
 import React from "react";
 
-export const PlusIcon = ({ colorIcon = "#ccc591" }) => {
+export const PlusIcon = (props, { colorIcon = "#ccc591" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ export const PlusIcon = ({ colorIcon = "#ccc591" }) => {
       height="48"
       version="1.1"
       viewBox="0 0 37.333 37.333"
+      {...props}
     >
       <path
         fill={colorIcon}

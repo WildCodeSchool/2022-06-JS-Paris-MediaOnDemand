@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HeartIcon = () => {
+export const HeartIcon = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ export const HeartIcon = () => {
       height="42.667"
       version="1.1"
       viewBox="0 0 45.333 42.667"
+      {...props}
     >
       <g>
         <path

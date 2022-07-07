@@ -7,7 +7,7 @@ import "./TabBar.scss";
 export const TabBar = () => {
   return (
     <div className="nav-bar">
-      <Link to="/">
+      <Link to="/go-sophia">
         <HomeIcon />
       </Link>
       <SophiaIcon />
