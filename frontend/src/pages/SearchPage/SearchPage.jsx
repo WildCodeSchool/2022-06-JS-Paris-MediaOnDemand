@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import {
   SearchInput,
   TabBar,
@@ -10,7 +10,7 @@ import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovie } from "@services/apiRequest/fetchMovie";
 import { useNavigate } from "react-router-dom";
-import { MovieContext } from "../../context/MovieContext";
+import { useMovieContext } from "../../context/MovieContext";
 
 const mediaCatSearch = [
   {
@@ -185,7 +185,7 @@ export const SearchPage = () => {
     music: [],
     movie: [],
   });
-  const { setMovies } = useContext(MovieContext);
+  const { setMovies } = useMovieContext();
   const navigate = useNavigate();
   const handleFetchMediaInput = (e) => {
     e.preventDefault();

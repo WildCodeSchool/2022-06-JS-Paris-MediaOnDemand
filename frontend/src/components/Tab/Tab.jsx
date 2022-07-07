@@ -1,11 +1,11 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { MediaCardList } from "@components";
-import { MovieContext } from "../../context/MovieContext";
+import { useMovieContext } from "../../context/MovieContext";
 import "./Tab.scss";
 
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
-  const { movies } = useContext(MovieContext);
+  const { movies } = useMovieContext();
 
   const toggleTab = (index) => {
     setToggleTabs(index);
