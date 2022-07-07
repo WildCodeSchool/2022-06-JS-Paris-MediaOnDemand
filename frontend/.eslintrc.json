@@ -32,7 +32,8 @@
     "react/function-component-definition": "off",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "react/jsx-no-constructed-context-values": "off"
   },
   "settings": {
     "import/resolver": {

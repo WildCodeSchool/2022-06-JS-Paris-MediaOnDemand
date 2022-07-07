@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { MediaCard } from "@components/MediaCard/MediaCard";
+import { MovieContext } from "../../context/MovieContext";
 import "./Tab.scss";
 
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
+  const { movies } = useContext(MovieContext);
 
   const toggleTab = (index) => {
     setToggleTabs(index);
@@ -21,7 +23,16 @@ export const Tab = () => {
             }
           >
             <div className="tab__itemCard">
-              <MediaCard />
+              {movies &&
+                movies.map((movie, index) => (
+                  <MediaCard
+                    key={movie.id}
+                    title={movie.title}
+                    count={index + 1}
+                    total={movies.length}
+                    image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                  />
+                ))}
             </div>
           </div>
           <div

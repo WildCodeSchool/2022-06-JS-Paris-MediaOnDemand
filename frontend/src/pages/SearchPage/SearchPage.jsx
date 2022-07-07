@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   SearchInput,
   TabBar,
@@ -8,6 +8,9 @@ import {
 } from "@components";
 import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
+import { fetchMovie } from "@services/apiRequest/fetchMovie";
+import { useNavigate } from "react-router-dom";
+import { MovieContext } from "../../context/MovieContext";
 
 const mediaCatSearch = [
   {
@@ -174,6 +177,7 @@ const mediaCatSearch = [
 ];
 
 export const SearchPage = () => {
+  const [searchInputValue, setSearchInputValue] = useState("");
   const [isCatOpen, setIsCatOpen] = useState(false);
   const [mediasSelected, setMediasSelected] = useState([]);
   const [setFiltersSelected] = useState({
@@ -181,10 +185,23 @@ export const SearchPage = () => {
     music: [],
     movie: [],
   });
+  const { setMovies } = useContext(MovieContext);
+  const navigate = useNavigate();
+  const handleFetchMediaInput = (e) => {
+    e.preventDefault();
+    const option = searchInputValue ? "search" : "discover";
+    const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
+    fetchMovie(option, [searchQuery], setMovies);
+    navigate("../display", { replace: true });
+  };
   return (
     <div className="search-page">
       <div className="search-page__header">
-        <SearchInput />
+        <SearchInput
+          searchValue={searchInputValue}
+          onChange={setSearchInputValue}
+          handleSubmit={handleFetchMediaInput}
+        />
         <SelectCheckBoxList setMediasSelected={setMediasSelected} />
         <Button
           buttonSize="medium"
