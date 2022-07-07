@@ -9,5 +9,6 @@ export { Tab } from "./Tab/Tab";
 export { SelectCat } from "./SelectCat/SelectCat";
 export { SelectCatList } from "./SelectCatList/SelectCatList";
 export { MediaCard } from "./MediaCard/MediaCard";
+export { MediaCardList } from "./MediaCardList/MediaCardList";
 export { VideoCard } from "./VideoCard/VideoCard";
 export { MediaVideo } from "./MediaVideo/MediaVideo";

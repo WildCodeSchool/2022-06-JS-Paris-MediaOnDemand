@@ -3,18 +3,30 @@
 .tab__globalComponent {
   width: 100%;
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .tab__container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.tab__content-tabs {
+  height: 100%;
 }
 
 // bloc onglets
 .tab__bloc-tabs {
   display: flex;
   background-color: transparent;
+  align-self: flex-start;
+  padding: 0 5%;
 }
 
 // tous onglets
@@ -28,6 +40,7 @@
   outline: none;
   background-color: transparent;
   color: $support--medium;
+  padding: 0.5rem 1rem;
 }
 
 // onglet actif
@@ -48,9 +61,8 @@
 
 // tous contenus
 .tab__content {
-  // background: white;
-  padding: 20px;
-  width: 90%;
+  padding: 1.25rem;
+  width: 90vw;
   height: 100%;
   display: none;
 }
@@ -59,7 +71,6 @@
 .tab__active-content {
   display: block;
   justify-content: center;
-  padding-left: 5%;
 }
 
 .tab__color1 {

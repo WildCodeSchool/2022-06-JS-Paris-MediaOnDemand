@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { MediaCard } from "@components/MediaCard/MediaCard";
+import { MediaCardList } from "@components";
 import { MovieContext } from "../../context/MovieContext";
 import "./Tab.scss";
 
@@ -22,18 +22,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <div className="tab__itemCard">
-              {movies &&
-                movies.map((movie, index) => (
-                  <MediaCard
-                    key={movie.id}
-                    title={movie.title}
-                    count={index + 1}
-                    total={movies.length}
-                    image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
-                  />
-                ))}
-            </div>
+            <MediaCardList mediaList={movies} />
           </div>
           <div
             className={
@@ -42,9 +31,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <div className="tab__itemCard">
-              <MediaCard />
-            </div>
+            <MediaCardList mediaList={movies} />
           </div>
           <div
             className={
@@ -53,9 +40,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <div className="tab__itemCard">
-              <MediaCard />
-            </div>
+            <MediaCardList mediaList={movies} />
           </div>
         </div>
 
