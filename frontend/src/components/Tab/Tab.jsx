@@ -1,11 +1,13 @@
 import React, { useState, useContext } from "react";
-import { MediaCardList } from "@components";
+import { BookCardList, MediaCardList } from "@components";
 import { MovieContext } from "../../context/MovieContext";
+import { BookContext } from "../../context/BookContext";
 import "./Tab.scss";
 
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
   const { movies } = useContext(MovieContext);
+  const { books } = useContext(BookContext);
 
   const toggleTab = (index) => {
     setToggleTabs(index);
@@ -31,7 +33,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MediaCardList mediaList={movies} />
+            <BookCardList bookList={books} />
           </div>
           <div
             className={

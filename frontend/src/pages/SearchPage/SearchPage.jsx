@@ -9,8 +9,10 @@ import {
 import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovies } from "@services/apiRequest/fetchMovie";
+import { fetchBooks } from "@services/apiRequest/fetchBook";
 import { useNavigate } from "react-router-dom";
 import { MovieContext } from "../../context/MovieContext";
+import { BookContext } from "../../context/BookContext";
 
 const mediaCatSearch = [
   {
@@ -186,14 +188,18 @@ export const SearchPage = () => {
     movie: [],
   });
   const { setMovies } = useContext(MovieContext);
+  const { setBooks } = useContext(BookContext);
+
   const navigate = useNavigate();
   const handleFetchMediaInput = (e) => {
     e.preventDefault();
     const option = searchInputValue ? "search" : "discover";
     const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
     fetchMovies(option, [searchQuery], setMovies);
+    fetchBooks(searchInputValue, setBooks);
     navigate("../display", { replace: true });
   };
+
   return (
     <div className="search-page">
       <div className="search-page__header">

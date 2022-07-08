@@ -11,4 +11,5 @@ export { SelectCatList } from "./SelectCatList/SelectCatList";
 export { MediaCard } from "./MediaCard/MediaCard";
 export { MediaCardList } from "./MediaCardList/MediaCardList";
 export { VideoCard } from "./VideoCard/VideoCard";
+export { BookCardList } from "./MediaCardList/BookCardList";
 export { MediaVideo } from "./MediaVideo/MediaVideo";
