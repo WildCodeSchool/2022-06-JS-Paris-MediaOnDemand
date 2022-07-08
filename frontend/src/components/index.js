@@ -10,5 +10,7 @@ export { SelectCat } from "./SelectCat/SelectCat";
 export { SelectCatList } from "./SelectCatList/SelectCatList";
 export { MediaCard } from "./MediaCard/MediaCard";
 export { MediaCardList } from "./MediaCardList/MediaCardList";
+export { MovieCardList } from "./MediaCardList/MovieCardList";
+export { MusicCardList } from "./MediaCardList/MusicCardList";
 export { VideoCard } from "./VideoCard/VideoCard";
 export { MediaVideo } from "./MediaVideo/MediaVideo";

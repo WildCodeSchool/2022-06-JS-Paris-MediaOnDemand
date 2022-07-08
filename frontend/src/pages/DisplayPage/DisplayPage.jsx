@@ -4,7 +4,6 @@ import { TabBar } from "@components/";
 import "./DisplayPage.scss";
 
 const DisplayPage = () => {
-  //  const size = window.innerWidth;
   return (
     <div className="display-container">
       <Tab />

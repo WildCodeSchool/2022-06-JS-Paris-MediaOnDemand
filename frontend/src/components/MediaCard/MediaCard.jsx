@@ -24,7 +24,7 @@ export const MediaCard = ({ count, total, title, image }) => {
       <h3 className="mediaCard__title">{title}</h3>
       <Link to="/">
         <Button buttonSize="small" buttonStyle="dark">
-          infos
+          Infos
         </Button>
       </Link>
     </div>

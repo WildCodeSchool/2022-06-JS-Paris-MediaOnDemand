@@ -15,7 +15,6 @@ export const fetchMovie = (option, filters, setState) => {
   axios
     .get(finalUrl)
     .then((response) => response.data)
-    .then((data) => {
-      setState(data.results);
-    });
+    .then((data) => setState(data.results))
+    .catch((error) => console.error(error));
 };

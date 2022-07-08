@@ -9,8 +9,9 @@ import {
 import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovie } from "@services/apiRequest/fetchMovie";
+import { fetchMusic } from "@services/apiRequest/fetchMusic";
 import { useNavigate } from "react-router-dom";
-import { useMovieContext } from "../../context/MovieContext";
+import { useMovieContext, useMusicContext } from "../../context";
 
 const mediaCatSearch = [
   {
@@ -185,15 +186,39 @@ export const SearchPage = () => {
     music: [],
     movie: [],
   });
+  const isMediaSelected = (mediaName) => {
+    return mediasSelected.includes(mediaName);
+  };
+
   const { setMovies } = useMovieContext();
+  const { setMusic } = useMusicContext();
   const navigate = useNavigate();
-  const handleFetchMediaInput = (e) => {
-    e.preventDefault();
+
+  const handleFetchMovie = () => {
     const option = searchInputValue ? "search" : "discover";
     const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
-    fetchMovie(option, [searchQuery], setMovies);
+    if (isMediaSelected("movie")) {
+      fetchMovie(option, [searchQuery], setMovies);
+    } else {
+      setMovies([]);
+    }
+  };
+
+  const handleFetchMusic = () => {
+    if (isMediaSelected("music")) {
+      fetchMusic(searchInputValue, setMusic);
+    } else {
+      setMusic([]);
+    }
+  };
+
+  const handleFetchMediaInput = (e) => {
+    e.preventDefault();
+    handleFetchMovie();
+    handleFetchMusic();
     navigate("../display", { replace: true });
   };
+
   return (
     <div className="search-page">
       <div className="search-page__header">
