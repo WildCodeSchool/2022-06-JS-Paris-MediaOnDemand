@@ -398,5 +398,117 @@
     "cover": "https://m.media-amazon.com/images/I/51pFBjDMVJL._SX195_.jpg",
     "genre": ["SF", "horror", "action", "comedy"],
     "description": "Pour impressionner une fille et contrarier son père, le jeune Juan Rico s’engage dans l’Infanterie mobile, le corps d’armée réputé le plus dangereux. Après tout, il n’en a que pour deux ans, et la guerre est loin, aux confins de la galaxie. Mais tandis qu’il effectue ses classes et découvre la discipline sévère d’un bataillon d’élite, le conflit prend une nouvelle dimension, et le voilà embarqué dans une série de batailles mortelles qui le transformeront à jamais. "
+  },
+  {
+    "id": "51",
+    "title": "Le Seigneur des Anneaux, Le Retour du Roi",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://livre.fnac.com/a1458827/David-Brawn-Le-Seigneur-des-Anneaux-Le-Retour-du-Roi",
+    "genre": ["fantastic"],
+    "description": "Tandis que le continent se couvre de ténèbres, annonçant pour tous l'aube d'une nouvelle ère, Frodo poursuit son entreprise : il lui faut à tout prix atteindre la Montagne du Feu. Mais le Seigneur Sombre mobilise ses troupes. L'ennemi est partout et Frodo doit s'engager dans un dangereux périple à travers le Pays Noir... Les derniers combats de la Guerre de l'Anneau s'achèvent dans un fracas d'apocalypse..."
+  },
+  {
+    "id": "52",
+    "title": "Le Seigneur des Anneaux 2, Les deux tours",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic"],
+    "description": "Dispersée dans les terres de l'Ouest, la Communauté de l'Anneau affronte les périls de la guerre, tandis que Frodo, accompagné du fidèle Sam, poursuit une quête presque désespérée : détruire l'Anneau Unique en le jetant dans les crevasses de l'Orodruin, le Mont Destin. Mais aux frontières du Pays de Mordor, une mystérieuse créature les épie... pour les perdre ou pour les sauver ?"
+  },
+  {
+    "id": "53",
+    "title": "Harry Potter et le prisonnier d'Azkaban",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Sirius Black, le dangereux criminel qui s'est échappé de la forteresse d'Azkaban, recherche Harry Potter. C'est donc sous bonne garde que l'apprenti sorcier fait sa troisième rentrée. Au programme : des cours de divination, la fabrication d'une potion de Ratatinage, le dressage des hippogriffes... Mais Harry est-il vraiment à l'abri du danger qui le menace ?"
+  },
+  {
+    "id": "54",
+    "title": "Harry Potter et la Chambre des Secrets",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Harry Potter fait une deuxième rentrée fracassante en voiture volante à l'école des sorciers. Cette deuxième année ne s'annonce pas de tout repos... surtout depuis qu'une étrange malédiction s'est abattue sur les élèves. Entre les cours de potion magique, les matchs de Quidditch et les combats de mauvais sorts, Harry trouvera-t-il le temps de percer le mystère de la Chambre des Secrets ?Un livre magique pour sorciers et sorcières confirmés !"
+  },
+  {
+    "id": "55",
+    "title": "Harry Potter et la Coupe de Feu",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Après un horrible été chez les Dursley, Harry Potter entre en quatrième année au collège de Poudlard. À quatorze ans, il voudrait simplement être un jeune sorcier comme les autres, retrouver ses amis Ron et Hermione, assister avec eux à la Coupe du Monde de quidditch, apprendre de nouveaux sortilèges et essayer des potions inconnues. Une grande nouvelle l'attend à son arrivée : la tenue à Poudlard d'un tournoi de magie entre les plus célèbres écoles de sorcellerie. Déjà les spectaculaires délégations étrangères font leur entrée… Harry se réjouit. Trop vite. Il va se trouver plongé au cœur des événements les plus dramatiques qu'il ait jamais eu à affronter."
+  },
+  {
+    "id": "56",
+    "title": "Harry Potter et l'Ordre du Phénix",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "À quinze ans, Harry s'apprête à entrer en cinquième année à Poudlard. Et s'il est heureux de retrouver le monde des sorciers, il n'a jamais été aussi anxieux. L'adolescence, la perspective des examens importants en fin d'année et ces étranges cauchemars... Car Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom est de retour et, plus que jamais, Harry sent peser sur lui une terrible menace. Une menace que le ministère de la Magie ne semble pas prendre au sérieux, contrairement à Dumbledore. Poudlard devient alors le terrain d'une véritable lutte de pouvoir. La résistance s'organise autour de Harry qui va devoir compter sur le courage et la fidélité de ses amis de toujours..."
+  },
+  {
+    "id": "57",
+    "title": "Harry Potter et les Reliques de la Mort",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Cet été-là, Harry atteint ses dix-sept ans, l'âge de la majorité pour un sorcier, et s'apprête à faire face à son destin. Soutenu par Ron et Hermione, Harry se consacre pleinement à la mission confiée par Dumbledore avant de mourir, la chasse aux Horcruxes. Mais le Seigneur des Ténèbres règne désormais en maître absolu. Traqués, en exil, les trois fidèles amis vont connaître une solitude sans précédent, où leur courage, leurs choix et leurs sacrifices seront déterminants dans la lutte contre les forces du mal. Leur quête croisera celle des Reliques de la Mort, et fera surgir du passé des révélations capitales et parfois douloureuses. Ces épreuves conduiront Harry, sans détour, vers sa destinée, l'affrontement final avec Lord Voldemort..."
+  },
+  {
+    "id": "58",
+    "title": "Harry Potter et le Prince de Sang-Mêlé",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Dans un monde de plus en plus inquiétant, Harry se prépare à retrouver Ron et Hermione. Bientôt, ce sera la rentrée à Poudlard, avec les autres étudiants de sixième année. Mais pourquoi le professeur Dumbledore vient-il en personne chercher Harry chez les Dursley ?Harry, Ron et Hermione entrent en sixième année à Poudlard où ils vont vivre leur dernière année avant la majorité qui est fixée, chez les sorciers, à l'âge de dix-sept ans. Des événements particulièrement marquants vont contribuer à faire passer Harry du statut d'adolescent à celui d'homme. Ce tome, sur fond de guerre contre un Voldemort plus puissant que jamais, se révèle plus sombre que les précédents..."
+  },
+  {
+    "id": "59",
+    "title": "Hunger Games, L'embrasement",
+    "author": "Suzanne Collins",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Après le succès des derniers Hunger Games, le peuple de Panem est impatient de retrouver Katniss et Peeta pour la Tournée de la victoire. Mais pour Katniss, il s'agit surtout d'une tournée de la dernière chance. Celle qui a osé défier le Capitole est devenue le symbole d'une rébellion qui pourrait bien embraser Panem. Si elle échoue à ramener le calme dans les districts, le président Snow n'hésitera pas à noyer dans le sang le feu de la révolte. À l'aube des Jeux de l'Expiation, le piège du Capitole se referme sur Katniss..."
+  },
+  {
+    "id": "60",
+    "title": "Hunger Games, La révolte",
+    "author": "Suzanne Collins",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Contre toute attente, Katniss a survécu une seconde fois aux Hunger Games. Mais le Capitole crie vengeance. Katniss doit payer les humiliations qu'elle lui a fait subir. Et le président Snow a été très clair : Katniss n'est pas la seule à risquer sa vie. Sa famille, ses amis et tous les anciens habitants du district Douze sont visés par la colère sanglante du pouvoir. Pour sauver les siens, Katniss doit redevenir le geai moqueur, le symbole de la rébellion. Quel que soit le prix à payer..."
+  },
+  {
+    "id": "61",
+    "title": "Le labyrinthe, La Terre brûlée",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Dans ce second volet du cycle littéraire L'épreuve nous découvrons ce monde brûlé qui existe au-delà du labyrinthe : la Terre ravagée par des éruptions solaires, parcourues par des hordes de gens infectés devenus fous. Thomas et les autres survivants du Bloc vont devoir affronter cet environnement hostile pour espérer trouver refuge et surtout trouver un remède conte la Braise. Une impitoyable course contre la montre se met en place. James Dashner a créé un univers unique, un classique de la littérature pour ados..."
+  },
+  {
+    "id": "62",
+    "title": "Le Labyrinthe, L'épreuve",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Enfermés tels des rats de laboratoire dans un labyrinthe peuplé de monstres, des adolescents doivent en trouver l'issue. Un récit à suspense aussi effrayant en roman qu'au cinéma ! Des adolescents se réveillent un jour dans un labyrinthe peuplé de monstres. Ils n'ont qu'un objectif : retrouver la liberté. Un roman haletant qui revisite le mythe antique du labyrinthe..."
+  },
+  {
+    "id": "63",
+    "title": "Le labyrinthe, Le Remède mortel",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Voici le temps de l'ultime épreuve pour Thomas. Même si le Wicked semble lui avoir tout pris, il lui reste des lambeaux de souvenirs, lui permettant de faire face aux mensonges. Il va désormais tout faire pour sauver ses amis et faire éclater la vérité. Avec « Le remède mortel », James Dashner conclue de main de maître sa trilogie « L'épreuve ». L'auteur y confirme son talent de conteur, servi par un style efficace et addictif. Ces nombreux lecteurs seront littéralement happés par une intrigue aussi riche que surprenante..."
+  },
+  {
+    "id": "64",
+    "title": "Le Labyrinthe, Avant le Labyrinthe (prequel)",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Ce préquel au cycle littéraire L'épreuve nous propulse sur Terre, treize ans avant le début des évènements du « Labyrinthe ». Le monde entier a été ravagé par les éruptions solaires et une épidémie se répand : elle rend les gens fous. Mark et Trina qui ont survécu à l'Apocalypse vont devoir affronter la plus grande des menaces : leurs congénères. Mené à un rythme haletant et regorgeant de scènes d'actions trépidantes, ce volet nous comble de visons cauchemardesques et de scènes inoubliables..."
   }
 ]
