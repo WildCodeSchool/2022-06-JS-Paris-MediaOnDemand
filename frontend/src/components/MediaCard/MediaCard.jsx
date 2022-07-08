@@ -6,11 +6,18 @@ import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { useNavigate } from "react-router-dom";
 
-export const MediaCard = ({ count, total, title, image, mediaId }) => {
+export const MediaCard = ({
+  count,
+  total,
+  title,
+  image,
+  mediaCat,
+  mediaId,
+}) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`../media-info/${mediaId}`);
+    navigate(`../${mediaCat}/${mediaId}`);
   };
 
   return (

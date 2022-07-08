@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/display" element={<DisplayPage />} />
             <Route path="/go-sophia" element={<SearchPage />} />
-            <Route path="/media-info/:mediaId" element={<MediaInfos />} />
+            <Route path="/:mediaCat/:mediaId" element={<MediaInfos />} />
           </Routes>
         </div>
       </Router>
