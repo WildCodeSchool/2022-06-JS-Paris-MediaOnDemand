@@ -8,7 +8,7 @@ import {
 } from "@components";
 import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
-import { fetchMovie } from "@services/apiRequest/fetchMovie";
+import { fetchMovies } from "@services/apiRequest/fetchMovie";
 import { useNavigate } from "react-router-dom";
 import { MovieContext } from "../../context/MovieContext";
 
@@ -191,7 +191,7 @@ export const SearchPage = () => {
     e.preventDefault();
     const option = searchInputValue ? "search" : "discover";
     const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
-    fetchMovie(option, [searchQuery], setMovies);
+    fetchMovies(option, [searchQuery], setMovies);
     navigate("../display", { replace: true });
   };
   return (

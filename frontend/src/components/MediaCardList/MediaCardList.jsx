@@ -15,13 +15,14 @@ export const MediaCardList = ({ mediaList }) => {
       selectedItem={0}
     >
       {mediaList &&
-        mediaList.map((movie, index) => (
+        mediaList.map((media, index) => (
           <MediaCard
-            key={movie.id}
-            title={movie.title}
+            key={media.id}
+            title={media.title}
             count={index + 1}
             total={mediaList.length}
-            image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+            image={`https://image.tmdb.org/t/p/original${media.poster_path}`}
+            mediaId={media.id}
           />
         ))}
     </Carousel>

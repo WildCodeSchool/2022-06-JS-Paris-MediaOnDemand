@@ -3,14 +3,12 @@ import ReactPlayer from "react-player";
 import "./MediaVideo.scss";
 
 export const MediaVideo = () => {
-  const externalSource = "https://www.youtube.com/watch?v=ysz5S6PUM-U";
-
   // const internalSource = "./billet.mp4";
 
   return (
     <div className="player-container">
       <ReactPlayer
-        url={externalSource}
+        url=""
         controls
         playing
         muted
