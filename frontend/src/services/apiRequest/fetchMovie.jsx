@@ -27,7 +27,6 @@ export const fetchMovieInfo = (movieId, setState) => {
     .get(BASE_URL)
     .then((response) => response.data)
     .then((data) => {
-      console.log("data: ", data);
       setState(data);
     });
 };
