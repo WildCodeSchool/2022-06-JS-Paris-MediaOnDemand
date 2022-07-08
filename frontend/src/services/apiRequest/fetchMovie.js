@@ -2,7 +2,7 @@ import axios from "axios";
 
 const MOVIE_API = import.meta.env.VITE_MOVIE_API;
 
-export const fetchMovie = (option, filters, setState) => {
+export const fetchMovies = (option, filters, setState) => {
   const BASE_URL = `https://api.themoviedb.org/3/${option}/movie?api_key=${MOVIE_API}&language=fr-FR`;
 
   let finalUrl = BASE_URL;
@@ -17,4 +17,15 @@ export const fetchMovie = (option, filters, setState) => {
     .then((response) => response.data)
     .then((data) => setState(data.results))
     .catch((error) => console.error(error));
+};
+
+export const fetchMovieInfo = (movieId, setState) => {
+  const BASE_URL = ` https://api.themoviedb.org/3/movie/${movieId}?api_key=${MOVIE_API}&language=fr-FR`;
+
+  axios
+    .get(BASE_URL)
+    .then((response) => response.data)
+    .then((data) => {
+      setState(data);
+    });
 };

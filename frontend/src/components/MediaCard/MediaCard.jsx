@@ -4,9 +4,22 @@ import "./MediaCard.scss";
 import "@components/Button/Button.scss";
 import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export const MediaCard = ({ count, total, title, image }) => {
+export const MediaCard = ({
+  count,
+  total,
+  title,
+  image,
+  mediaCat,
+  mediaId,
+}) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`../${mediaCat}/${mediaId}`);
+  };
+
   return (
     <div className="mediaCard">
       <div
@@ -22,11 +35,15 @@ export const MediaCard = ({ count, total, title, image }) => {
         <PlusIcon width="32px" height="32px" />
       </div>
       <h3 className="mediaCard__title">{title}</h3>
-      <Link to="/">
-        <Button buttonSize="small" buttonStyle="dark">
-          Infos
-        </Button>
-      </Link>
+      {/* <Link to="/"> */}
+      <Button
+        buttonSize="small"
+        buttonStyle="dark"
+        onClick={() => handleClick()}
+      >
+        Infos
+      </Button>
+      {/* </Link> */}
     </div>
   );
 };
