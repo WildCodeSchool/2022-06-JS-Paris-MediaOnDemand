@@ -17,11 +17,13 @@ export const MusicCardList = ({ mediaList }) => {
       {mediaList &&
         mediaList.map((music, index) => (
           <MediaCard
-            key={music.id}
-            title={music.title}
+            key={music.iAlbum}
+            title={music.strAlbum}
             count={index + 1}
             total={mediaList.length}
-            image={music.poster_path}
+            image={music.strAlbumThumb}
+            mediaId={music.idAlbum}
+            mediaCat="musique"
           />
         ))}
     </Carousel>

@@ -1,20 +1,22 @@
-// import React, { useState, useEffect } from "react";
-import { TabBar, VideoCard } from "@components";
+import React, { useState, useEffect } from "react";
+import { TabBar, MediaCardInfo } from "@components";
 import "./MediaInfos.scss";
-// import { useParams } from "react-router-dom";
-// import { fetchMovieInfo } from "@services/apiRequest/fetchMovie";
+import { useParams } from "react-router-dom";
+import { fetchMovieInfo } from "@services/apiRequest/fetchMovie";
+import { fetchMusicInfo } from "@services/apiRequest/fetchMusic";
 
 const MediaInfos = () => {
-  // const { mediaId } = useParams();
+  const { mediaId, mediaCat } = useParams();
 
-  // const [movieInfo, setMovieInfo] = useState();
-  // useEffect(() => {
-  //   fetchMovieInfo(mediaId, setMovieInfo);
-  // }, []);
+  const [mediaInfo, setMediaInfo] = useState();
+  useEffect(() => {
+    if (mediaCat === "film") fetchMovieInfo(mediaId, setMediaInfo);
+    if (mediaCat === "musique") fetchMusicInfo(mediaId, setMediaInfo);
+  }, []);
 
   return (
-    <div className="media-infos-container">
-      <VideoCard />
+    <div className="mediaInfoPage">
+      {mediaInfo && <MediaCardInfo media={mediaInfo} />}
       <TabBar />
     </div>
   );

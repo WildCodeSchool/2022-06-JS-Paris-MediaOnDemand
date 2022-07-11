@@ -20,7 +20,7 @@ export const fetchMovies = (option, filters, setState) => {
 };
 
 export const fetchMovieInfo = (movieId, setState) => {
-  const BASE_URL = ` https://api.themoviedb.org/3/movie/${movieId}?api_key=${MOVIE_API}&language=fr-FR`;
+  const BASE_URL = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${MOVIE_API}&language=fr-FR`;
 
   axios
     .get(BASE_URL)
@@ -28,4 +28,16 @@ export const fetchMovieInfo = (movieId, setState) => {
     .then((data) => {
       setState(data);
     });
+};
+
+export const fetchMovieTrailer = (movieId, setState) => {
+  const BASE_URL = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${MOVIE_API}&language=fr-FR`;
+
+  axios
+    .get(BASE_URL)
+    .then((response) => response.data)
+    .then((data) => data.results[0])
+    .then((trailer) =>
+      setState(`https://www.youtube.com/watch?v=${trailer.key}`)
+    );
 };

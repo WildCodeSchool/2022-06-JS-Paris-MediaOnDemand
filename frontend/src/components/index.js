@@ -12,5 +12,5 @@ export { MediaCard } from "./MediaCard/MediaCard";
 export { MediaCardList } from "./MediaCardList/MediaCardList";
 export { MovieCardList } from "./MediaCardList/MovieCardList";
 export { MusicCardList } from "./MediaCardList/MusicCardList";
-export { VideoCard } from "./VideoCard/VideoCard";
-export { MediaVideo } from "./MediaVideo/MediaVideo";
+export { MediaCardInfo } from "./MediaCardInfo/MediaCardInfo";
+export { MediaCover } from "./MediaCover/MediaCover";
