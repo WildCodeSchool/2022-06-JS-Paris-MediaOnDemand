@@ -31,7 +31,6 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            {/* <MediaCardList mediaList={movies} /> */}
             <MovieCardList mediaList={movies} />
           </div>
           <div

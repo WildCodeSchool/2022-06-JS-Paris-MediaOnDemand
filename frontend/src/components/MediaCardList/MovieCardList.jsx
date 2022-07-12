@@ -22,6 +22,8 @@ export const MovieCardList = ({ mediaList }) => {
             count={index + 1}
             total={mediaList.length}
             image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+            mediaId={movie.id}
+            mediaCat="film"
           />
         ))}
     </Carousel>

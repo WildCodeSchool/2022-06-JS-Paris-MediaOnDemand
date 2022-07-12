@@ -210,7 +210,13 @@ export const SearchPage = () => {
     }
   };
 
-  fetchBooks(searchInputValue, setBooks);
+  const handleFetchBook = () => {
+    if (isMediaSelected("book")) {
+      fetchBooks(searchInputValue, setBooks);
+    } else {
+      setBooks([]);
+    }
+  };
 
   const handleFetchMusic = () => {
     if (isMediaSelected("music")) {
@@ -223,6 +229,7 @@ export const SearchPage = () => {
   const handleFetchMediaInput = (e) => {
     e.preventDefault();
     handleFetchMovie();
+    handleFetchBook();
     handleFetchMusic();
     navigate("../display", { replace: true });
   };

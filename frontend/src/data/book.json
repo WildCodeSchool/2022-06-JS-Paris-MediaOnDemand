@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Charlie et la Chocolaterie",
+    "strTitle": "Charlie et la Chocolaterie",
     "author": "Roald Dahl",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "title": "Jurassic Park",
+    "strTitle": "Jurassic Park",
     "author": "Michael Crichton",
     "cover": "https://www.babelio.com/couv/CVT_Jurassic-Park_5882.jpeg",
     "genre": ["fantastic", "action"],
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "title": "Hunger Games",
+    "strTitle": "Hunger Games",
     "author": "Suzanne Collins",
     "cover": "https://www.babelio.com/couv/21033_1540830.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "title": "Le Seigneur des Anneaux",
+    "strTitle": "Le Seigneur des Anneaux",
     "author": "J.R.R. Tolkien",
     "cover": "https://www.babelio.com/couv/CVT_Le-Seigneur-des-Anneaux-Tome-1--La-Communaute-de-_7762.jpg",
     "genre": ["fantastic"],
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "title": "Harry Potter",
+    "strTitle": "Harry Potter",
     "author": "J. K. Rowling",
     "cover": "https://www.babelio.com/couv/bm_9068_aj_m_5285.jpg",
     "genre": ["fantastic", "family"],
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "title": "Dracula",
+    "strTitle": "Dracula",
     "author": "Bram Stoker",
     "cover": "https://www.babelio.com/couv/CVT_Dracula_1027.jpeg",
     "genre": ["fantastic", "horror"],
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "title": "Alice au pays des merveilles",
+    "strTitle": "Alice au pays des merveilles",
     "author": "Lewis Carroll",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/5134PwKKI0L._SX210_.jpg",
     "genre": ["fantastic", "family"],
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "title": "Gatsby le magnifique",
+    "strTitle": "Gatsby le magnifique",
     "author": "Francis Scott Fitzgerald",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41tdlvMG7GL._SX210_.jpg",
     "genre": ["drama"],
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "title": "Millénium",
+    "strTitle": "Millénium",
     "author": "Stieg Larsson",
     "cover": "https://www.babelio.com/couv/bm_39602_1863657.jpg",
     "genre": ["polar", "thriller", "drama"],
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "title": "La Planète des singes",
+    "strTitle": "La Planète des singes",
     "author": "Pierre Boulle",
     "cover": "https://www.babelio.com/couv/CVT_La-Planete-des-singes_3175.jpeg",
     "genre": ["fantastic", "SF"],
@@ -81,7 +81,7 @@
   },
   {
     "id": "11",
-    "title": "La route",
+    "strTitle": "La route",
     "author": "Cormac McCarthy",
     "cover": "https://www.babelio.com/couv/CVT_La-route_4035.jpeg",
     "genre": ["post-apocalyptic", "drama"],
@@ -89,7 +89,7 @@
   },
   {
     "id": "12",
-    "title": "Le Silence des agneaux",
+    "strTitle": "Le Silence des agneaux",
     "author": "Thomas Harris",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/418G94GFGML._SX210_.jpg",
     "genre": ["drama", "horror", "thriller"],
@@ -97,7 +97,7 @@
   },
   {
     "id": "13",
-    "title": "Shutter Island",
+    "strTitle": "Shutter Island",
     "author": "Dennis Lehane",
     "cover": "https://www.babelio.com/couv/6217_397836.gif",
     "genre": ["polar", "drama", "thriller"],
@@ -105,7 +105,7 @@
   },
   {
     "id": "14",
-    "title": "World War Z",
+    "strTitle": "World War Z",
     "author": "Max Brooks",
     "cover": "https://www.babelio.com/couv/bm_5953_1035294.jpg",
     "genre": ["fantastic", "horror", "SF", "thriller", "action", "drama"],
@@ -113,7 +113,7 @@
   },
   {
     "id": "15",
-    "title": "Le Monde de Narnia",
+    "strTitle": "Le Monde de Narnia",
     "author": "C.S. Lewis",
     "cover": "https://www.babelio.com/couv/bm_5684_285671.jpg",
     "genre": ["fantastic", "family"],
@@ -121,7 +121,7 @@
   },
   {
     "id": "16",
-    "title": "Entretien avec un vampire",
+    "strTitle": "Entretien avec un vampire",
     "author": "Anne Rice",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41B0KSYRBHL._SX210_.jpg",
     "genre": ["polar", "fantastic", "horror"],
@@ -129,7 +129,7 @@
   },
   {
     "id": "17",
-    "title": "L'Ecume des jours",
+    "strTitle": "L'Ecume des jours",
     "author": "Boris Vian",
     "cover": "https://media.senscritique.com/media/000008969025/160/L_Ecume_des_jours.jpg",
     "genre": ["drama", "fantastic"],
@@ -137,7 +137,7 @@
   },
   {
     "id": "18",
-    "title": "Le Journal de Bridget Jones",
+    "strTitle": "Le Journal de Bridget Jones",
     "author": "Helen Fielding",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/410qFRhwbFL._SX210_.jpg",
     "genre": ["comedy", "family"],
@@ -145,7 +145,7 @@
   },
   {
     "id": "19",
-    "title": "Da Vinci Code",
+    "strTitle": "Da Vinci Code",
     "author": "Dan Brown",
     "cover": "https://www.babelio.com/couv/33921_1616188.jpeg",
     "genre": ["polar", "thriller"],
@@ -153,7 +153,7 @@
   },
   {
     "id": "20",
-    "title": "Je suis une légende",
+    "strTitle": "Je suis une légende",
     "author": "Richard Matheson",
     "cover": "https://www.babelio.com/couv/CVT_Je-suis-une-legende_5125.jpeg",
     "genre": ["post-apocalyptic", "horror"],
@@ -161,7 +161,7 @@
   },
   {
     "id": "21",
-    "title": "Orange mécanique",
+    "strTitle": "Orange mécanique",
     "author": "Anthony Burgess",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41eLggZSAEL._SX210_.jpg",
     "genre": ["polar", "drama", "SF"],
@@ -169,7 +169,7 @@
   },
   {
     "id": "22",
-    "title": "La Guerre des boutons",
+    "strTitle": "La Guerre des boutons",
     "author": "Louis Pergaud",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51bIpqH9ncL._SX210_.jpg",
     "genre": ["comedy", "family"],
@@ -177,7 +177,7 @@
   },
   {
     "id": "23",
-    "title": "Shining",
+    "strTitle": "Shining",
     "author": "Stephen King",
     "cover": "https://www.babelio.com/couv/CVT_Shining_3445.jpeg",
     "genre": ["fantastic", "thriller"],
@@ -185,7 +185,7 @@
   },
   {
     "id": "24",
-    "title": "La guerre des mondes",
+    "strTitle": "La guerre des mondes",
     "author": "H.G. Wells",
     "cover": "https://www.babelio.com/couv/CVT_La-guerre-des-mondes_2361.jpeg",
     "genre": ["drama", "SF", "thriller"],
@@ -193,7 +193,7 @@
   },
   {
     "id": "25",
-    "title": "Psychose",
+    "strTitle": "Psychose",
     "author": "Robert Bloch",
     "cover": "https://www.babelio.com/couv/CVT_Psychose_2626.jpg",
     "genre": ["thriller"],
@@ -201,7 +201,7 @@
   },
   {
     "id": "26",
-    "title": "Les trois mousquetaires",
+    "strTitle": "Les trois mousquetaires",
     "author": "Alexandre Dumas",
     "cover": "https://www.babelio.com/couv/bm_CVT_Les-Trois-mousquetaires_2855.jpg",
     "genre": ["adventure", "drama"],
@@ -209,7 +209,7 @@
   },
   {
     "id": "27",
-    "title": "Les Rivières pourpres",
+    "strTitle": "Les Rivières pourpres",
     "author": "Jean-Christophe Grangé",
     "cover": "https://www.babelio.com/couv/CVT_Les-Rivieres-pourpres_6488.jpeg",
     "genre": ["polar", "thriller"],
@@ -217,7 +217,7 @@
   },
   {
     "id": "28",
-    "title": "La Ligne Verte",
+    "strTitle": "La Ligne Verte",
     "author": "Stephen King",
     "cover": "https://www.babelio.com/couv/5953_1812880.jpeg",
     "genre": ["drama", "thriller"],
@@ -225,7 +225,7 @@
   },
   {
     "id": "29",
-    "title": "Le Pianiste",
+    "strTitle": "Le Pianiste",
     "author": "Wladyslaw Szpilman",
     "cover": "https://www.babelio.com/couv/bm_19078_1229079.jpg",
     "genre": ["historic", "drama"],
@@ -233,7 +233,7 @@
   },
   {
     "id": "30",
-    "title": "Coraline",
+    "strTitle": "Coraline",
     "author": "Neil Gaiman",
     "cover": "https://www.babelio.com/couv/bm_CVT_Coraline_2836.jpg",
     "genre": ["fantastic", "family"],
@@ -241,7 +241,7 @@
   },
   {
     "id": "31",
-    "title": "Persepolis",
+    "strTitle": "Persepolis",
     "author": "Marjane Satrapi",
     "cover": "https://www.babelio.com/couv/bm_CVT_Persepolis_3436.jpg",
     "genre": ["drama"],
@@ -249,7 +249,7 @@
   },
   {
     "id": "32",
-    "title": "James Bond",
+    "strTitle": "James Bond",
     "author": "Ian Fleming",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41IQnZj8m5L._SX210_.jpg",
     "genre": ["polar", "action"],
@@ -257,7 +257,7 @@
   },
   {
     "id": "33",
-    "title": "La liste de Schindler",
+    "strTitle": "La liste de Schindler",
     "author": "Thomas Keneally",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51KRH7ZTM1L._SX210_.jpg",
     "genre": ["drama", "historic"],
@@ -265,7 +265,7 @@
   },
   {
     "id": "34",
-    "title": "Le prestige",
+    "strTitle": "Le prestige",
     "author": "Christopher Priest",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51aAQ7quq5L._SX210_.jpg",
     "genre": ["fantastic", "drama", "thriller"],
@@ -273,7 +273,7 @@
   },
   {
     "id": "35",
-    "title": "Le nom de la rose",
+    "strTitle": "Le nom de la rose",
     "author": "Umberto Eco",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41mei%2BItZBL._SX210_.jpg",
     "genre": ["polar", "historic"],
@@ -281,7 +281,7 @@
   },
   {
     "id": "36",
-    "title": "Gone, Baby, Gone",
+    "strTitle": "Gone, Baby, Gone",
     "author": "Dennis Lehane",
     "cover": "https://www.babelio.com/couv/CVT_Gone-Baby-Gone_3698.gif",
     "genre": ["drama", "polar"],
@@ -289,7 +289,7 @@
   },
   {
     "id": "37",
-    "title": "Frankenstein",
+    "strTitle": "Frankenstein",
     "author": "Mary Shelley",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41jZBLyk0kL._SX195_.jpg",
     "genre": ["fantastic", "horror"],
@@ -297,7 +297,7 @@
   },
   {
     "id": "38",
-    "title": "Sherlock Holmes",
+    "strTitle": "Sherlock Holmes",
     "author": "Sir Arthur Conan Doyle",
     "cover": "https://www.babelio.com/couv/cvt_Sherlock-Holmes_7902.jpeg",
     "genre": ["polar", "action", "adventure"],
@@ -305,7 +305,7 @@
   },
   {
     "id": "39",
-    "title": "Le Cercle des poètes disparus",
+    "strTitle": "Le Cercle des poètes disparus",
     "author": "N. H. Kleinbaum",
     "cover": "https://www.babelio.com/couv/cvt_Le-Cercle-des-poetes-disparus_2612.jpeg",
     "genre": ["drama"],
@@ -313,7 +313,7 @@
   },
   {
     "id": "40",
-    "title": "Le livre de la jungle",
+    "strTitle": "Le livre de la jungle",
     "author": "Rudyard Kipling",
     "cover": "https://www.babelio.com/couv/CVT_Le-livre-de-la-jungle_218.gif",
     "genre": ["family", "adventure"],
@@ -321,7 +321,7 @@
   },
   {
     "id": "41",
-    "title": "Forrest Gump",
+    "strTitle": "Forrest Gump",
     "author": "Winston Groom",
     "cover": "https://m.media-amazon.com/images/I/51yYPkpiBHL._SX195_.jpg",
     "genre": ["drama"],
@@ -329,7 +329,7 @@
   },
   {
     "id": "42",
-    "title": "Dune",
+    "strTitle": "Dune",
     "author": "Frank Herbert",
     "cover": "https://m.media-amazon.com/images/I/416aswdXWWL._SX195_.jpg",
     "genre": ["fantastic", "SF", "adventure"],
@@ -337,7 +337,7 @@
   },
   {
     "id": "43",
-    "title": "Le parfum",
+    "strTitle": "Le parfum",
     "author": "Patrick Süskind",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/517SbYIQvbL._SX210_.jpg",
     "genre": ["thriller", "drama", "fantastic"],
@@ -345,7 +345,7 @@
   },
   {
     "id": "44",
-    "title": "Orgueil et préjugés",
+    "strTitle": "Orgueil et préjugés",
     "author": "Jane Austen",
     "cover": "https://www.babelio.com/couv/CVT_Orgueil-et-prejuges_2475.jpeg",
     "genre": ["drama"],
@@ -353,7 +353,7 @@
   },
   {
     "id": "45",
-    "title": "La Guerre du feu",
+    "strTitle": "La Guerre du feu",
     "author": "J.-H. Rosny aîné",
     "cover": "https://www.babelio.com/couv/bm_11518_668060.jpg",
     "genre": ["historic", "adventure"],
@@ -361,7 +361,7 @@
   },
   {
     "id": "46",
-    "title": "Voyage au centre de la Terre",
+    "strTitle": "Voyage au centre de la Terre",
     "author": "Jules Verne",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51KhSeOgW6L._SX210_.jpg",
     "genre": ["adventure", "fantastic"],
@@ -369,7 +369,7 @@
   },
   {
     "id": "47",
-    "title": "Le Procès",
+    "strTitle": "Le Procès",
     "author": "Franz Kafka",
     "cover": "https://www.babelio.com/couv/CVT_Le-Proces_1932.gif",
     "genre": ["drama"],
@@ -377,7 +377,7 @@
   },
   {
     "id": "48",
-    "title": "La Machine à explorer le temps",
+    "strTitle": "La Machine à explorer le temps",
     "author": "H.G. Wells",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51RB3TZ2NTL._SX210_.jpg",
     "genre": ["fantastic", "SF", "family"],
@@ -385,7 +385,7 @@
   },
   {
     "id": "49",
-    "title": "2001 : L'Odyssée de l'espace",
+    "strTitle": "2001 : L'Odyssée de l'espace",
     "author": "Arthur C. Clarke",
     "cover": "https://www.babelio.com/couv/bm_17888_892936.jpg",
     "genre": ["SF", "drama"],
@@ -393,7 +393,7 @@
   },
   {
     "id": "50",
-    "title": "Starship Troopers",
+    "strTitle": "Starship Troopers",
     "author": "Robert A. Heinlein",
     "cover": "https://m.media-amazon.com/images/I/51pFBjDMVJL._SX195_.jpg",
     "genre": ["SF", "horror", "action", "comedy"],
@@ -401,7 +401,7 @@
   },
   {
     "id": "51",
-    "title": "Le Seigneur des Anneaux, Le Retour du Roi",
+    "strTitle": "Le Seigneur des Anneaux, Le Retour du Roi",
     "author": "J.R.R. Tolkien",
     "cover": "https://livre.fnac.com/a1458827/David-Brawn-Le-Seigneur-des-Anneaux-Le-Retour-du-Roi",
     "genre": ["fantastic"],
@@ -409,7 +409,7 @@
   },
   {
     "id": "52",
-    "title": "Le Seigneur des Anneaux 2, Les deux tours",
+    "strTitle": "Le Seigneur des Anneaux 2, Les deux tours",
     "author": "J.R.R. Tolkien",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic"],
@@ -417,7 +417,7 @@
   },
   {
     "id": "53",
-    "title": "Harry Potter et le prisonnier d'Azkaban",
+    "strTitle": "Harry Potter et le prisonnier d'Azkaban",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -425,7 +425,7 @@
   },
   {
     "id": "54",
-    "title": "Harry Potter et la Chambre des Secrets",
+    "strTitle": "Harry Potter et la Chambre des Secrets",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -433,7 +433,7 @@
   },
   {
     "id": "55",
-    "title": "Harry Potter et la Coupe de Feu",
+    "strTitle": "Harry Potter et la Coupe de Feu",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -441,7 +441,7 @@
   },
   {
     "id": "56",
-    "title": "Harry Potter et l'Ordre du Phénix",
+    "strTitle": "Harry Potter et l'Ordre du Phénix",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -449,7 +449,7 @@
   },
   {
     "id": "57",
-    "title": "Harry Potter et les Reliques de la Mort",
+    "strTitle": "Harry Potter et les Reliques de la Mort",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -457,7 +457,7 @@
   },
   {
     "id": "58",
-    "title": "Harry Potter et le Prince de Sang-Mêlé",
+    "strTitle": "Harry Potter et le Prince de Sang-Mêlé",
     "author": "J.K. Rowling",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -465,7 +465,7 @@
   },
   {
     "id": "59",
-    "title": "Hunger Games, L'embrasement",
+    "strTitle": "Hunger Games, L'embrasement",
     "author": "Suzanne Collins",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -473,7 +473,7 @@
   },
   {
     "id": "60",
-    "title": "Hunger Games, La révolte",
+    "strTitle": "Hunger Games, La révolte",
     "author": "Suzanne Collins",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -481,7 +481,7 @@
   },
   {
     "id": "61",
-    "title": "Le labyrinthe, La Terre brûlée",
+    "strTitle": "Le labyrinthe, La Terre brûlée",
     "author": "James Dashner",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -489,7 +489,7 @@
   },
   {
     "id": "62",
-    "title": "Le Labyrinthe, L'épreuve",
+    "strTitle": "Le Labyrinthe, L'épreuve",
     "author": "James Dashner",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -497,7 +497,7 @@
   },
   {
     "id": "63",
-    "title": "Le labyrinthe, Le Remède mortel",
+    "strTitle": "Le labyrinthe, Le Remède mortel",
     "author": "James Dashner",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -505,7 +505,7 @@
   },
   {
     "id": "64",
-    "title": "Le Labyrinthe, Avant le Labyrinthe (prequel)",
+    "strTitle": "Le Labyrinthe, Avant le Labyrinthe (prequel)",
     "author": "James Dashner",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["SF", "fantastic", "action"],
