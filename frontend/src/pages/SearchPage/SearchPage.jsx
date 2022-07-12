@@ -12,7 +12,11 @@ import { fetchMovies } from "@services/apiRequest/fetchMovie";
 import { fetchMusic } from "@services/apiRequest/fetchMusic";
 import { isMediaSelected } from "@tools/utils";
 import { useNavigate } from "react-router-dom";
-import { useMovieContext, useMusicContext } from "../../context";
+import {
+  useMovieContext,
+  useMusicContext,
+  useMediaSelectedContext,
+} from "@context";
 
 const mediaCatSearch = [
   {
@@ -181,7 +185,7 @@ const mediaCatSearch = [
 export const SearchPage = () => {
   const [searchInputValue, setSearchInputValue] = useState("");
   const [isCatOpen, setIsCatOpen] = useState(false);
-  const [mediasSelected, setMediasSelected] = useState([]);
+
   const [setFiltersSelected] = useState({
     book: [],
     music: [],
@@ -190,6 +194,7 @@ export const SearchPage = () => {
 
   const { setMovies } = useMovieContext();
   const { setMusic } = useMusicContext();
+  const { mediasSelected, setMediasSelected } = useMediaSelectedContext();
   const navigate = useNavigate();
 
   const handleFetchMovie = () => {

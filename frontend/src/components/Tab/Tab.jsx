@@ -1,16 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MediaCardList, MovieCardList, MusicCardList } from "@components";
-import { useMovieContext, useMusicContext } from "../../context";
+import {
+  useMovieContext,
+  useMusicContext,
+  useMediaSelectedContext,
+} from "@context";
+import { isMediaSelected } from "@tools/utils";
 import "./Tab.scss";
 
+// const TabMedia = ({ toggleTabs, setToggleTabs, mediaTitle, tabIdx }) => {
+//   const toggleTab = (index) => {
+//     setToggleTabs(index);
+//   };
+//   return (
+//     <div
+//       role="button"
+//       tabIndex={0}
+//       className={
+//         toggleTabs === { tabIdx }
+//           ? `tab__tabs tab__active-tabs tab__color${tabIdx}`
+//           : "tab__tabs"
+//       }
+//       onClick={() => toggleTab({ tabIdx })}
+//       onKeyPress={() => toggleTab({ tabIdx })}
+//     >
+//       <h3>{mediaTitle}</h3>
+//     </div>
+//   );
+// };
 export const Tab = () => {
-  const [toggleTabs, setToggleTabs] = useState(1);
+  const [toggleTabs, setToggleTabs] = useState();
   const { movies } = useMovieContext();
   const { music } = useMusicContext();
+  const { mediasSelected } = useMediaSelectedContext();
 
   const toggleTab = (index) => {
     setToggleTabs(index);
   };
+
+  useEffect(() => {
+    setToggleTabs(mediasSelected[0]);
+    return () => setToggleTabs("");
+  }, []);
 
   return (
     <div className="tab__globalComponent">
@@ -18,7 +49,7 @@ export const Tab = () => {
         <div className="tab__content-tabs">
           <div
             className={
-              toggleTabs === 1
+              toggleTabs === "movie"
                 ? "tab__content tab__active-content tab__color1"
                 : "tab__content"
             }
@@ -27,7 +58,7 @@ export const Tab = () => {
           </div>
           <div
             className={
-              toggleTabs === 2
+              toggleTabs === "book"
                 ? "tab__content tab__active-content tab__color2"
                 : "tab__content"
             }
@@ -36,7 +67,7 @@ export const Tab = () => {
           </div>
           <div
             className={
-              toggleTabs === 3
+              toggleTabs === "music"
                 ? "tab__content tab__active-content tab__color3"
                 : "tab__content"
             }
@@ -46,45 +77,51 @@ export const Tab = () => {
         </div>
 
         <div className="tab__bloc-tabs">
-          <div
-            role="button"
-            tabIndex={0}
-            className={
-              toggleTabs === 1
-                ? "tab__tabs tab__active-tabs tab__color1"
-                : "tab__tabs"
-            }
-            onClick={() => toggleTab(1)}
-            onKeyPress={() => toggleTab(1)}
-          >
-            Films
-          </div>
-          <div
-            role="button"
-            tabIndex={0}
-            className={
-              toggleTabs === 2
-                ? "tab__tabs tab__active-tabs tab__color2"
-                : "tab__tabs"
-            }
-            onClick={() => toggleTab(2)}
-            onKeyPress={() => toggleTab(2)}
-          >
-            Livres
-          </div>
-          <div
-            role="button"
-            tabIndex={0}
-            className={
-              toggleTabs === 3
-                ? "tab__tabs tab__active-tabs tab__color3"
-                : "tab__tabs"
-            }
-            onClick={() => toggleTab(3)}
-            onKeyPress={() => toggleTab(3)}
-          >
-            Musiques
-          </div>
+          {isMediaSelected(mediasSelected, "movie") && (
+            <div
+              role="button"
+              tabIndex={0}
+              className={
+                toggleTabs === "movie"
+                  ? "tab__tabs tab__active-tabs tab__color1"
+                  : "tab__tabs"
+              }
+              onClick={() => toggleTab("movie")}
+              onKeyPress={() => toggleTab("movie")}
+            >
+              Films
+            </div>
+          )}
+          {isMediaSelected(mediasSelected, "book") && (
+            <div
+              role="button"
+              tabIndex={0}
+              className={
+                toggleTabs === "book"
+                  ? "tab__tabs tab__active-tabs tab__color2"
+                  : "tab__tabs"
+              }
+              onClick={() => toggleTab("book")}
+              onKeyPress={() => toggleTab("book")}
+            >
+              Livres
+            </div>
+          )}
+          {isMediaSelected(mediasSelected, "music") && (
+            <div
+              role="button"
+              tabIndex={0}
+              className={
+                toggleTabs === "music"
+                  ? "tab__tabs tab__active-tabs tab__color3"
+                  : "tab__tabs"
+              }
+              onClick={() => toggleTab("music")}
+              onKeyPress={() => toggleTab("music")}
+            >
+              Musiques
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,7 +1,10 @@
 import React from "react";
+import { useMediaSelectedContext } from "@context";
 import "./SearchInput.scss";
 
 export const SearchInput = ({ searchValue, handleSubmit, onChange }) => {
+  const { mediasSelected } = useMediaSelectedContext();
+
   return (
     <form className="search" onSubmit={(e) => handleSubmit(e)}>
       <input
@@ -12,7 +15,11 @@ export const SearchInput = ({ searchValue, handleSubmit, onChange }) => {
         value={searchValue}
         onChange={(e) => onChange(e.target.value)}
       />
-      <button type="submit" className="search__btn">
+      <button
+        type="submit"
+        className="search__btn"
+        disabled={!mediasSelected.length}
+      >
         GO!
       </button>
     </form>
