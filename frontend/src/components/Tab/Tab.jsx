@@ -1,13 +1,20 @@
-import React, { useState, useContext } from "react";
-import { BookCardList, MediaCardList } from "@components";
-import { MovieContext } from "../../context/MovieContext";
-import { BookContext } from "../../context/BookContext";
+import React, { useState } from "react";
+import { BookCardList, MovieCardList, MusicCardList } from "@components";
+import {
+  useMovieContext,
+  useMusicContext,
+  useBookContext,
+} from "../../context";
 import "./Tab.scss";
 
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
-  const { movies } = useContext(MovieContext);
-  const { books } = useContext(BookContext);
+
+  const { movies } = useMovieContext();
+  const { music } = useMusicContext();
+  const { books } = useBookContext();
+
+  // console.log(music);
 
   const toggleTab = (index) => {
     setToggleTabs(index);
@@ -24,7 +31,8 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MediaCardList mediaList={movies} />
+            {/* <MediaCardList mediaList={movies} /> */}
+            <MovieCardList mediaList={movies} />
           </div>
           <div
             className={
@@ -42,7 +50,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MediaCardList mediaList={movies} />
+            <MusicCardList mediaList={music} />
           </div>
         </div>
 
@@ -58,7 +66,7 @@ export const Tab = () => {
             onClick={() => toggleTab(1)}
             onKeyPress={() => toggleTab(1)}
           >
-            movie
+            Films
           </div>
           <div
             role="button"
@@ -71,7 +79,7 @@ export const Tab = () => {
             onClick={() => toggleTab(2)}
             onKeyPress={() => toggleTab(2)}
           >
-            book
+            Livres
           </div>
           <div
             role="button"
@@ -84,7 +92,7 @@ export const Tab = () => {
             onClick={() => toggleTab(3)}
             onKeyPress={() => toggleTab(3)}
           >
-            music
+            Musiques
           </div>
         </div>
       </div>

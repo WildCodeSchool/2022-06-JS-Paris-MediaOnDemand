@@ -1,0 +1,38 @@
+.mediaCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 95%;
+  height: 90%;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__info {
+    height: 10%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+  }
+
+  &__about {
+    height: 38%;
+    border: 1px solid white;
+    overflow: hidden;
+    overflow-y: scroll;
+    backdrop-filter: blur(2px);
+    line-height: 1.25;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+  }
+}

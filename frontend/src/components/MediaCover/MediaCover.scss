@@ -1,0 +1,12 @@
+.mediaCover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

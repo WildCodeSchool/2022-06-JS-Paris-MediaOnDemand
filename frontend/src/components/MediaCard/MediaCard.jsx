@@ -35,15 +35,13 @@ export const MediaCard = ({
         <PlusIcon width="32px" height="32px" />
       </div>
       <h3 className="mediaCard__title">{title}</h3>
-      {/* <Link to="/"> */}
       <Button
         buttonSize="small"
         buttonStyle="dark"
         onClick={() => handleClick()}
       >
-        infos
+        Infos
       </Button>
-      {/* </Link> */}
     </div>
   );
 };
