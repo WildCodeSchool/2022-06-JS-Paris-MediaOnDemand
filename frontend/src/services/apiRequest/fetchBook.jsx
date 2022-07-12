@@ -6,3 +6,8 @@ export const fetchBooks = (inputValue, setState) => {
   );
   setState(result);
 };
+
+export const fetchBookInfo = (id, setState) => {
+  const result = BOOKS.filter((book) => book.id === id);
+  setState(result[0]);
+};
