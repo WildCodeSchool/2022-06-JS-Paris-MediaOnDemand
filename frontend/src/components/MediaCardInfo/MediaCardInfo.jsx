@@ -22,13 +22,12 @@ export const MediaCardInfo = ({ media }) => {
     strDescriptionFR: albumDescriptionFR,
     strDescriptionEN: albumDescriptionEN,
     title: movieTitle,
-    strTitle: bookTitle,
-    description: bookDescription,
     overview: movieDescription,
+    bookTitle,
+    description: bookDescription,
     cover: bookImg,
   } = media;
 
-  // const urlMediaCover = mediaCat === "film" ? movieTrailer : albumImg;
   let urlMediaCover = "";
   if (mediaCat === "film") {
     urlMediaCover = movieTrailer;

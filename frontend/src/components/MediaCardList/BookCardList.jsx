@@ -18,7 +18,7 @@ export const BookCardList = ({ bookList }) => {
         bookList.map((book, index) => (
           <MediaCard
             key={book.id}
-            title={book.strTitle}
+            title={book.bookTitle}
             count={index + 1}
             total={bookList.length}
             image={book.cover}
