@@ -8,8 +8,6 @@ export const Tab = () => {
   const { movies } = useMovieContext();
   const { music } = useMusicContext();
 
-  // console.log(music);
-
   const toggleTab = (index) => {
     setToggleTabs(index);
   };

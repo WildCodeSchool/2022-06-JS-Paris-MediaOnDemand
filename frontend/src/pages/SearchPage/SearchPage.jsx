@@ -10,6 +10,7 @@ import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovies } from "@services/apiRequest/fetchMovie";
 import { fetchMusic } from "@services/apiRequest/fetchMusic";
+import { isMediaSelected } from "@tools/utils";
 import { useNavigate } from "react-router-dom";
 import { useMovieContext, useMusicContext } from "../../context";
 
@@ -186,9 +187,6 @@ export const SearchPage = () => {
     music: [],
     movie: [],
   });
-  const isMediaSelected = (mediaName) => {
-    return mediasSelected.includes(mediaName);
-  };
 
   const { setMovies } = useMovieContext();
   const { setMusic } = useMusicContext();
@@ -197,7 +195,7 @@ export const SearchPage = () => {
   const handleFetchMovie = () => {
     const option = searchInputValue ? "search" : "discover";
     const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
-    if (isMediaSelected("movie")) {
+    if (isMediaSelected(mediasSelected, "movie")) {
       fetchMovies(option, [searchQuery], setMovies);
     } else {
       setMovies([]);
@@ -205,7 +203,7 @@ export const SearchPage = () => {
   };
 
   const handleFetchMusic = () => {
-    if (isMediaSelected("music")) {
+    if (isMediaSelected(mediasSelected, "music")) {
       fetchMusic(searchInputValue, setMusic);
     } else {
       setMusic([]);
