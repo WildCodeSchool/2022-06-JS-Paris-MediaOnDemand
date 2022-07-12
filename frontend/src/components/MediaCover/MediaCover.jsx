@@ -7,7 +7,7 @@ export const MediaCover = ({ url, isMovie }) => {
 
   return (
     <div className="mediaCover">
-      {!isMovie && <img src={(url, isMovie)} alt="" />}
+      {!isMovie && <img src={url} alt="" />}
       {isMovie && (
         <ReactPlayer
           url={url}

@@ -17,7 +17,7 @@ export const MusicCardList = ({ mediaList }) => {
       {mediaList &&
         mediaList.map((music, index) => (
           <MediaCard
-            key={music.iAlbum}
+            key={music.idAlbum}
             title={music.strAlbum}
             count={index + 1}
             total={mediaList.length}

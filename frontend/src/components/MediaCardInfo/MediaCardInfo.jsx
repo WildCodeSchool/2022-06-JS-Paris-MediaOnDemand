@@ -23,12 +23,11 @@ export const MediaCardInfo = ({ media }) => {
     title: movieTitle,
     overview: movieDescription,
   } = media;
+
+  const urlMediaCover = mediaCat === "film" ? movieTrailer : albumImg;
   return (
     <div className="mediaCardInfo">
-      <MediaCover
-        url={albumImg || movieTrailer}
-        isMovie={mediaCat === "film"}
-      />
+      <MediaCover url={urlMediaCover} isMovie={mediaCat === "film"} />
       <div className="mediaCardInfo__logo">
         <button type="button" onClick={() => navigate(-1)}>
           <ArrowIcon />
@@ -36,9 +35,11 @@ export const MediaCardInfo = ({ media }) => {
         <PlusIcon />
         <img src={heartIcon} alt="favori" />
       </div>
-      <div className="mediaCardInfo__info">{albumTitle || movieTitle}</div>
+      <div className="mediaCardInfo__info">
+        <h2>{albumTitle || movieTitle}</h2>
+      </div>
       <div className="mediaCardInfo__about">
-        {albumDescriptionFR || albumDescriptionEN || movieDescription}
+        <p>{albumDescriptionFR || albumDescriptionEN || movieDescription}</p>
       </div>
     </div>
   );
