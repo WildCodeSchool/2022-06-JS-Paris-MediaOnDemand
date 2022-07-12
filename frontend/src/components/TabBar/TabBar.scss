@@ -16,3 +16,16 @@
     height: 50px;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    border: none;
+    border-right: 1px solid $main--medium;
+    width: 10%;
+    padding: 0.75rem;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+// desktop 1: 1440 x 900

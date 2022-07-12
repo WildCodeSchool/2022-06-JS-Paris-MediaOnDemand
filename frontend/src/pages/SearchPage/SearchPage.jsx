@@ -221,35 +221,37 @@ export const SearchPage = () => {
 
   return (
     <div className="search-page">
-      <div className="search-page__header">
-        <SearchInput
-          searchValue={searchInputValue}
-          onChange={setSearchInputValue}
-          handleSubmit={handleFetchMediaInput}
-        />
-        <SelectCheckBoxList setMediasSelected={setMediasSelected} />
-        <Button
-          buttonSize="medium"
-          buttonStyle="dark"
-          onClick={() => setIsCatOpen(!isCatOpen)}
-        >
-          Catégories
-        </Button>
-      </div>
-      {isCatOpen && (
-        <div className="search-page__select-list">
-          {mediaCatSearch.map(
-            (mediaCat) =>
-              mediasSelected.includes(mediaCat.mediaCatName) && (
-                <SelectCatList
-                  key={mediaCat.mediaName}
-                  mediaCat={mediaCat}
-                  setFiltersSelected={setFiltersSelected}
-                />
-              )
-          )}
+      <div className="search-page__section">
+        <div className="search-page__header">
+          <SearchInput
+            searchValue={searchInputValue}
+            onChange={setSearchInputValue}
+            handleSubmit={handleFetchMediaInput}
+          />
+          <SelectCheckBoxList setMediasSelected={setMediasSelected} />
+          <Button
+            buttonSize="medium"
+            buttonStyle="dark"
+            onClick={() => setIsCatOpen(!isCatOpen)}
+          >
+            Catégories
+          </Button>
         </div>
-      )}
+        {isCatOpen && (
+          <div className="search-page__select-list">
+            {mediaCatSearch.map(
+              (mediaCat) =>
+                mediasSelected.includes(mediaCat.mediaCatName) && (
+                  <SelectCatList
+                    key={mediaCat.mediaName}
+                    mediaCat={mediaCat}
+                    setFiltersSelected={setFiltersSelected}
+                  />
+                )
+            )}
+          </div>
+        )}
+      </div>
       <TabBar />
     </div>
   );
