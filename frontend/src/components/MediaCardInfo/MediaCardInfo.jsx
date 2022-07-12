@@ -27,16 +27,18 @@ export const MediaCardInfo = ({ media }) => {
   const urlMediaCover = mediaCat === "film" ? movieTrailer : albumImg;
   return (
     <div className="mediaCardInfo">
-      <MediaCover url={urlMediaCover} isMovie={mediaCat === "film"} />
-      <div className="mediaCardInfo__logo">
-        <button type="button" onClick={() => navigate(-1)}>
-          <ArrowIcon />
-        </button>
-        <PlusIcon />
-        <img src={heartIcon} alt="favori" />
-      </div>
-      <div className="mediaCardInfo__info">
-        <h2>{albumTitle || movieTitle}</h2>
+      <div className="mediaCardInfo__top">
+        <MediaCover url={urlMediaCover} isMovie={mediaCat === "film"} />
+        <div className="mediaCardInfo__logo">
+          <button type="button" onClick={() => navigate(-1)}>
+            <ArrowIcon />
+          </button>
+          <PlusIcon />
+          <img src={heartIcon} alt="favori" />
+        </div>
+        <div className="mediaCardInfo__info">
+          <h2>{albumTitle || movieTitle}</h2>
+        </div>
       </div>
       <div className="mediaCardInfo__about">
         <p>{albumDescriptionFR || albumDescriptionEN || movieDescription}</p>

@@ -7,3 +7,10 @@
   height: 100%;
   padding-top: 1.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .mediaInfoPage {
+    flex-direction: row-reverse;
+    padding-top: 0;
+  }
+}
