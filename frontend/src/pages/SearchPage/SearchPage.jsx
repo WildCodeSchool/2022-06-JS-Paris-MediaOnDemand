@@ -10,7 +10,7 @@ import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovies } from "@services/apiRequest/fetchMovie";
 import { fetchMusic } from "@services/apiRequest/fetchMusic";
-import { fetchBooks } from "@services/apiRequest/fetchBook";
+import { fetchBooks, fetchBooksSelect } from "@services/apiRequest/fetchBook";
 import { isMediaSelected } from "@tools/utils";
 import { useNavigate } from "react-router-dom";
 import {
@@ -26,7 +26,7 @@ const bookGenres = [
   { value: "action", text: "Action" },
   { value: "horror", text: "Horreur" },
   { value: "drama", text: "Drame" },
-  { value: "polar", text: "Polor" },
+  { value: "polar", text: "Polar" },
   { value: "thriller", text: "Thriller" },
   { value: "post-apocalyptic", text: "Post-Apocalyptique" },
   { value: "comedy", text: "Comedie" },
@@ -213,7 +213,7 @@ export const SearchPage = () => {
     }
   };
 
-  const handleFetchMovieSlect = () => {
+  const handleFetchMovieSelect = () => {
     const option = "discover";
     const searchQuery = filtersSelected.movie.reduce(
       (acc, select) => acc + select.value,
@@ -227,8 +227,23 @@ export const SearchPage = () => {
   };
 
   const handleFetchBook = () => {
-    if (isMediaSelected("book")) {
+    if (isMediaSelected(mediasSelected, "book")) {
       fetchBooks(searchInputValue, setBooks);
+    } else {
+      setBooks([]);
+    }
+  };
+
+  const handleFetchBookSelect = () => {
+    const authorSelect = filtersSelected.book.filter(
+      (select) => select.name === "author-select"
+    )[0]?.value;
+    const genreSelect = filtersSelected.book.filter(
+      (select) => select.name === "genre-select"
+    )[0]?.value;
+
+    if (isMediaSelected(mediasSelected, "book")) {
+      fetchBooksSelect(authorSelect, genreSelect, setBooks);
     } else {
       setBooks([]);
     }
@@ -252,7 +267,8 @@ export const SearchPage = () => {
 
   const handleFetchMediaSelect = (e) => {
     e.preventDefault();
-    handleFetchMovieSlect();
+    handleFetchMovieSelect();
+    handleFetchBookSelect();
     navigate("../display", { replace: true });
   };
 

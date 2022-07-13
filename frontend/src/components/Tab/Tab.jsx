@@ -22,7 +22,9 @@ export const Tab = () => {
 
   useEffect(() => {
     setToggleTabs(mediasSelected[0]);
-    return () => setToggleTabs("");
+    return () => {
+      setToggleTabs("");
+    };
   }, []);
 
   return (
