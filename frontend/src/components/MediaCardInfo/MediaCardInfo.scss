@@ -10,6 +10,13 @@
     border: none;
   }
 
+  &__top {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__logo {
     display: flex;
     justify-content: space-between;
@@ -17,16 +24,16 @@
   }
 
   &__info {
-    height: 10%;
     border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(2px);
+    padding: 0.5rem;
   }
 
   &__about {
-    height: 38%;
+    height: 40%;
     border: 1px solid white;
     overflow: hidden;
     overflow-y: scroll;
@@ -34,5 +41,28 @@
     line-height: 1.25;
     text-align: justify;
     padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mediaCardInfo {
+    flex-direction: row;
+    width: 90%;
+    padding: 0 2rem;
+
+    &__top {
+      height: 100%;
+      width: 60%;
+    }
+
+    &__info {
+      padding: 1rem;
+    }
+
+    &__about {
+      height: 100%;
+      width: 40%;
+      font-size: 1rem;
+    }
   }
 }

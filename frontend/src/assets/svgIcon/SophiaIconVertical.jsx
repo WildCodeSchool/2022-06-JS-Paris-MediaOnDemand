@@ -1,6 +1,6 @@
 import React from "react";
 
-function Icon(props) {
+export function SophiaIconVertical(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -48,5 +48,3 @@ function Icon(props) {
     </svg>
   );
 }
-
-export default Icon;

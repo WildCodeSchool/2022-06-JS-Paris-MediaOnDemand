@@ -8,4 +8,11 @@
 }
 
 @media (min-width: 768px) {
+  .display-container {
+    flex-direction: row-reverse;
+
+    & > div:last-child {
+      position: relative;
+    }
+  }
 }
