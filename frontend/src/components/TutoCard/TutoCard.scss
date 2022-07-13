@@ -10,35 +10,36 @@
   color: $main--medium;
   font-size: 21px;
   font-weight: bold;
-  padding: 4%;
-  width: 100px;
-  height: 100px;
+  padding: 2.2%;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
 }
 
 .tuto-card-1 {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .tuto-card-2 {
   margin-top: 30%;
-  margin-left: 19%;
+  margin-left: 18%;
 }
 
 .tuto-card-3 {
   margin-top: 45%;
-  margin-left: 3%;
+  margin-left: 8%;
 }
 
 @media screen and (min-width: 768px) {
   .tuto-card {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     font-size: 22px;
+    padding: 1%;
   }
 
   .tuto-card-1 {
-    margin: 7% 0 0 12%;
+    margin: 7% 0 0 15%;
   }
 
   .tuto-card-2 {
@@ -46,16 +47,16 @@
   }
 
   .tuto-card-3 {
-    margin: 10% 0 0 65%;
+    margin: 18% 0 0 62%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .tuto-card {
     font-size: 28px;
-    padding: 2%;
-    width: 130px;
-    height: 130px;
+    padding: 1%;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
   }
 
@@ -64,10 +65,32 @@
   }
 
   .tuto-card-2 {
-    margin: 8% 0 0 27%;
+    margin: 15% 0 0 27%;
   }
 
   .tuto-card-3 {
-    margin: 10% 0% 0% 70%;
+    margin: 12% 0% 0% 60%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .tuto-card {
+    font-size: 31px;
+    padding: 1.5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .tuto-card-1 {
+    margin: 10% 0 0 25%;
+  }
+
+  .tuto-card-2 {
+    margin: 15% 0 0 27%;
+  }
+
+  .tuto-card-3 {
+    margin: 10% 0% 0% 60%;
   }
 }
