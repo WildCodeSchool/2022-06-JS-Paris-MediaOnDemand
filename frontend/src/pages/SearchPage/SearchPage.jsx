@@ -10,11 +10,13 @@ import "./SearchPage.scss";
 import { v4 as uuidv4 } from "uuid";
 import { fetchMovies } from "@services/apiRequest/fetchMovie";
 import { fetchMusic } from "@services/apiRequest/fetchMusic";
+import { fetchBooks } from "@services/apiRequest/fetchBook";
 import { isMediaSelected } from "@tools/utils";
 import { useNavigate } from "react-router-dom";
 import {
   useMovieContext,
   useMusicContext,
+  useBookContext,
   useMediaSelectedContext,
 } from "@context";
 
@@ -192,6 +194,7 @@ export const SearchPage = () => {
     movie: [],
   });
 
+  const { setBooks } = useBookContext();
   const { setMovies } = useMovieContext();
   const { setMusic } = useMusicContext();
   const { mediasSelected, setMediasSelected } = useMediaSelectedContext();
@@ -207,6 +210,14 @@ export const SearchPage = () => {
     }
   };
 
+  const handleFetchBook = () => {
+    if (isMediaSelected("book")) {
+      fetchBooks(searchInputValue, setBooks);
+    } else {
+      setBooks([]);
+    }
+  };
+
   const handleFetchMusic = () => {
     if (isMediaSelected(mediasSelected, "music")) {
       fetchMusic(searchInputValue, setMusic);
@@ -218,6 +229,7 @@ export const SearchPage = () => {
   const handleFetchMediaInput = (e) => {
     e.preventDefault();
     handleFetchMovie();
+    handleFetchBook();
     handleFetchMusic();
     navigate("../display", { replace: true });
   };

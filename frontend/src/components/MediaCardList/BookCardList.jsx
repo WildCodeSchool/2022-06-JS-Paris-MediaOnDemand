@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./MediaCardList.scss";
 
-export const MovieCardList = ({ mediaList }) => {
+export const BookCardList = ({ bookList }) => {
   return (
     <Carousel
       showArrows
@@ -14,16 +14,16 @@ export const MovieCardList = ({ mediaList }) => {
       showThumbs={false}
       selectedItem={0}
     >
-      {mediaList &&
-        mediaList.map((movie, index) => (
+      {bookList &&
+        bookList.map((book, index) => (
           <MediaCard
-            key={movie.id}
-            title={movie.title}
+            key={book.id}
+            title={book.bookTitle}
             count={index + 1}
-            total={mediaList.length}
-            image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
-            mediaId={movie.id}
-            mediaCat="film"
+            total={bookList.length}
+            image={book.cover}
+            mediaId={book.id}
+            mediaCat="livre"
           />
         ))}
     </Carousel>

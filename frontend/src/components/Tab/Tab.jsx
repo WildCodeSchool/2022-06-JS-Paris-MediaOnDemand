@@ -1,37 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { MediaCardList, MovieCardList, MusicCardList } from "@components";
+import { BookCardList, MovieCardList, MusicCardList } from "@components";
 import {
   useMovieContext,
   useMusicContext,
+  useBookContext,
   useMediaSelectedContext,
 } from "@context";
 import { isMediaSelected } from "@tools/utils";
 import "./Tab.scss";
 
-// const TabMedia = ({ toggleTabs, setToggleTabs, mediaTitle, tabIdx }) => {
-//   const toggleTab = (index) => {
-//     setToggleTabs(index);
-//   };
-//   return (
-//     <div
-//       role="button"
-//       tabIndex={0}
-//       className={
-//         toggleTabs === { tabIdx }
-//           ? `tab__tabs tab__active-tabs tab__color${tabIdx}`
-//           : "tab__tabs"
-//       }
-//       onClick={() => toggleTab({ tabIdx })}
-//       onKeyPress={() => toggleTab({ tabIdx })}
-//     >
-//       <h3>{mediaTitle}</h3>
-//     </div>
-//   );
-// };
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState();
   const { movies } = useMovieContext();
   const { music } = useMusicContext();
+  const { books } = useBookContext();
   const { mediasSelected } = useMediaSelectedContext();
 
   const toggleTab = (index) => {
@@ -54,7 +36,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MediaCardList mediaList={movies} />
+            <MovieCardList mediaList={movies} />
           </div>
           <div
             className={
@@ -63,7 +45,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MovieCardList mediaList={movies} />
+            <BookCardList bookList={books} />
           </div>
           <div
             className={
@@ -89,7 +71,7 @@ export const Tab = () => {
               onClick={() => toggleTab("movie")}
               onKeyPress={() => toggleTab("movie")}
             >
-              Films
+              <h3>Films</h3>
             </div>
           )}
           {isMediaSelected(mediasSelected, "book") && (
@@ -104,7 +86,7 @@ export const Tab = () => {
               onClick={() => toggleTab("book")}
               onKeyPress={() => toggleTab("book")}
             >
-              Livres
+              <h3>Livres</h3>
             </div>
           )}
           {isMediaSelected(mediasSelected, "music") && (
@@ -119,7 +101,7 @@ export const Tab = () => {
               onClick={() => toggleTab("music")}
               onKeyPress={() => toggleTab("music")}
             >
-              Musiques
+              <h3>Musiques</h3>
             </div>
           )}
         </div>

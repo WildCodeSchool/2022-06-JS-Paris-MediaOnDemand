@@ -4,6 +4,7 @@ import "./MediaInfos.scss";
 import { useParams } from "react-router-dom";
 import { fetchMovieInfo } from "@services/apiRequest/fetchMovie";
 import { fetchMusicInfo } from "@services/apiRequest/fetchMusic";
+import { fetchBookInfo } from "@services/apiRequest/fetchBook";
 
 const MediaInfos = () => {
   const { mediaId, mediaCat } = useParams();
@@ -12,6 +13,7 @@ const MediaInfos = () => {
   useEffect(() => {
     if (mediaCat === "film") fetchMovieInfo(mediaId, setMediaInfo);
     if (mediaCat === "musique") fetchMusicInfo(mediaId, setMediaInfo);
+    if (mediaCat === "livre") fetchBookInfo(mediaId, setMediaInfo);
   }, []);
 
   return (

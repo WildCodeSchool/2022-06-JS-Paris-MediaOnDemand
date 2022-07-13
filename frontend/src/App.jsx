@@ -6,29 +6,37 @@ import { SearchPage } from "@pages/SearchPage/SearchPage";
 import Home from "@pages/Home/Home";
 import "./App.scss";
 import MediaInfos from "@pages/MediaInfos/MediaInfos";
-import { MovieContext, MusicContext, MediaSelectedContext } from "./context";
+import {
+  MovieContext,
+  MusicContext,
+  BookContext,
+  MediaSelectedContext,
+} from "./context";
 
 function App() {
   const [movies, setMovies] = useState([]);
   const [music, setMusic] = useState([]);
+  const [books, setBooks] = useState([]);
   const [mediasSelected, setMediasSelected] = useState([]);
   return (
     <MovieContext.Provider value={{ movies, setMovies }}>
       <MusicContext.Provider value={{ music, setMusic }}>
-        <MediaSelectedContext.Provider
-          value={{ mediasSelected, setMediasSelected }}
-        >
-          <Router>
-            <div className="theme--music App">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/display" element={<DisplayPage />} />
-                <Route path="/go-sophia" element={<SearchPage />} />
-                <Route path="/:mediaCat/:mediaId" element={<MediaInfos />} />
-              </Routes>
-            </div>
-          </Router>
-        </MediaSelectedContext.Provider>
+        <BookContext.Provider value={{ books, setBooks }}>
+          <MediaSelectedContext.Provider
+            value={{ mediasSelected, setMediasSelected }}
+          >
+            <Router>
+              <div className="theme--music App">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/display" element={<DisplayPage />} />
+                  <Route path="/go-sophia" element={<SearchPage />} />
+                  <Route path="/:mediaCat/:mediaId" element={<MediaInfos />} />
+                </Routes>
+              </div>
+            </Router>
+          </MediaSelectedContext.Provider>
+        </BookContext.Provider>
       </MusicContext.Provider>
     </MovieContext.Provider>
   );
