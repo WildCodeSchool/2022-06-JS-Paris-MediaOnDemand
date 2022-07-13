@@ -39,18 +39,6 @@ export const MediaCardInfo = ({ media }) => {
 
   return (
     <div className="mediaCardInfo">
-<<<<<<< HEAD
-      <MediaCover url={urlMediaCover} isMovie={mediaCat === "film"} />
-      <div className="mediaCardInfo__logo">
-        <button type="button" onClick={() => navigate(-1)}>
-          <ArrowIcon />
-        </button>
-        <PlusIcon />
-        <img src={heartIcon} alt="favori" />
-      </div>
-      <div className="mediaCardInfo__info">
-        <h2>{albumTitle || movieTitle || bookTitle}</h2>
-=======
       <div className="mediaCardInfo__top">
         <MediaCover url={urlMediaCover} isMovie={mediaCat === "film"} />
         <div className="mediaCardInfo__logo">
@@ -61,9 +49,8 @@ export const MediaCardInfo = ({ media }) => {
           <img src={heartIcon} alt="favori" />
         </div>
         <div className="mediaCardInfo__info">
-          <h2>{albumTitle || movieTitle}</h2>
+          <h2>{albumTitle || movieTitle || bookTitle}</h2>
         </div>
->>>>>>> develop
       </div>
       <div className="mediaCardInfo__about">
         <p>
