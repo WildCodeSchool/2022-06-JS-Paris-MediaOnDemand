@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { MediaCardList, MovieCardList, MusicCardList } from "@components";
-import { useMovieContext, useMusicContext } from "../../context";
+import { BookCardList, MovieCardList, MusicCardList } from "@components";
+import {
+  useMovieContext,
+  useMusicContext,
+  useBookContext,
+} from "../../context";
 import "./Tab.scss";
 
 export const Tab = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
+
   const { movies } = useMovieContext();
   const { music } = useMusicContext();
+  const { books } = useBookContext();
 
   // console.log(music);
 
@@ -25,7 +31,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MediaCardList mediaList={movies} />
+            <MovieCardList mediaList={movies} />
           </div>
           <div
             className={
@@ -34,7 +40,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MovieCardList mediaList={movies} />
+            <BookCardList bookList={books} />
           </div>
           <div
             className={

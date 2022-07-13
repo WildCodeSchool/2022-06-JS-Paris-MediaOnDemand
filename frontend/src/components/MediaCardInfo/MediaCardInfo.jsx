@@ -14,6 +14,7 @@ export const MediaCardInfo = ({ media }) => {
   useEffect(() => {
     if (mediaCat === "film") fetchMovieTrailer(media.id, setMovieTrailer);
   }, [mediaCat]);
+
   const navigate = useNavigate();
   const {
     strAlbum: albumTitle,
@@ -22,9 +23,20 @@ export const MediaCardInfo = ({ media }) => {
     strDescriptionEN: albumDescriptionEN,
     title: movieTitle,
     overview: movieDescription,
+    bookTitle,
+    description: bookDescription,
+    cover: bookImg,
   } = media;
 
-  const urlMediaCover = mediaCat === "film" ? movieTrailer : albumImg;
+  let urlMediaCover = "";
+  if (mediaCat === "film") {
+    urlMediaCover = movieTrailer;
+  } else if (mediaCat === "livre") {
+    urlMediaCover = bookImg;
+  } else {
+    urlMediaCover = albumImg;
+  }
+
   return (
     <div className="mediaCardInfo">
       <div className="mediaCardInfo__top">
@@ -37,11 +49,16 @@ export const MediaCardInfo = ({ media }) => {
           <img src={heartIcon} alt="favori" />
         </div>
         <div className="mediaCardInfo__info">
-          <h2>{albumTitle || movieTitle}</h2>
+          <h2>{albumTitle || movieTitle || bookTitle}</h2>
         </div>
       </div>
       <div className="mediaCardInfo__about">
-        <p>{albumDescriptionFR || albumDescriptionEN || movieDescription}</p>
+        <p>
+          {albumDescriptionFR ||
+            albumDescriptionEN ||
+            movieDescription ||
+            bookDescription}
+        </p>
       </div>
     </div>
   );

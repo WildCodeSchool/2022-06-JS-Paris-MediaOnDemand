@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Charlie et la Chocolaterie",
+    "bookTitle": "Charlie et la Chocolaterie",
     "author": "Roald Dahl",
     "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
     "genre": ["fantastic", "family"],
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "title": "Jurassic Park",
+    "bookTitle": "Jurassic Park",
     "author": "Michael Crichton",
     "cover": "https://www.babelio.com/couv/CVT_Jurassic-Park_5882.jpeg",
     "genre": ["fantastic", "action"],
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "title": "Hunger Games",
+    "bookTitle": "Hunger Games",
     "author": "Suzanne Collins",
     "cover": "https://www.babelio.com/couv/21033_1540830.jpeg",
     "genre": ["SF", "fantastic", "action"],
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "title": "Le Seigneur des Anneaux",
+    "bookTitle": "Le Seigneur des Anneaux",
     "author": "J.R.R. Tolkien",
     "cover": "https://www.babelio.com/couv/CVT_Le-Seigneur-des-Anneaux-Tome-1--La-Communaute-de-_7762.jpg",
     "genre": ["fantastic"],
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "title": "Harry Potter",
+    "bookTitle": "Harry Potter",
     "author": "J. K. Rowling",
     "cover": "https://www.babelio.com/couv/bm_9068_aj_m_5285.jpg",
     "genre": ["fantastic", "family"],
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "title": "Dracula",
+    "bookTitle": "Dracula",
     "author": "Bram Stoker",
     "cover": "https://www.babelio.com/couv/CVT_Dracula_1027.jpeg",
     "genre": ["fantastic", "horror"],
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "title": "Alice au pays des merveilles",
+    "bookTitle": "Alice au pays des merveilles",
     "author": "Lewis Carroll",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/5134PwKKI0L._SX210_.jpg",
     "genre": ["fantastic", "family"],
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "title": "Gatsby le magnifique",
+    "bookTitle": "Gatsby le magnifique",
     "author": "Francis Scott Fitzgerald",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41tdlvMG7GL._SX210_.jpg",
     "genre": ["drama"],
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "title": "Millénium",
+    "bookTitle": "Millénium",
     "author": "Stieg Larsson",
     "cover": "https://www.babelio.com/couv/bm_39602_1863657.jpg",
     "genre": ["polar", "thriller", "drama"],
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "title": "La Planète des singes",
+    "bookTitle": "La Planète des singes",
     "author": "Pierre Boulle",
     "cover": "https://www.babelio.com/couv/CVT_La-Planete-des-singes_3175.jpeg",
     "genre": ["fantastic", "SF"],
@@ -81,7 +81,7 @@
   },
   {
     "id": "11",
-    "title": "La route",
+    "bookTitle": "La route",
     "author": "Cormac McCarthy",
     "cover": "https://www.babelio.com/couv/CVT_La-route_4035.jpeg",
     "genre": ["post-apocalyptic", "drama"],
@@ -89,7 +89,7 @@
   },
   {
     "id": "12",
-    "title": "Le Silence des agneaux",
+    "bookTitle": "Le Silence des agneaux",
     "author": "Thomas Harris",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/418G94GFGML._SX210_.jpg",
     "genre": ["drama", "horror", "thriller"],
@@ -97,7 +97,7 @@
   },
   {
     "id": "13",
-    "title": "Shutter Island",
+    "bookTitle": "Shutter Island",
     "author": "Dennis Lehane",
     "cover": "https://www.babelio.com/couv/6217_397836.gif",
     "genre": ["polar", "drama", "thriller"],
@@ -105,7 +105,7 @@
   },
   {
     "id": "14",
-    "title": "World War Z",
+    "bookTitle": "World War Z",
     "author": "Max Brooks",
     "cover": "https://www.babelio.com/couv/bm_5953_1035294.jpg",
     "genre": ["fantastic", "horror", "SF", "thriller", "action", "drama"],
@@ -113,7 +113,7 @@
   },
   {
     "id": "15",
-    "title": "Le Monde de Narnia",
+    "bookTitle": "Le Monde de Narnia",
     "author": "C.S. Lewis",
     "cover": "https://www.babelio.com/couv/bm_5684_285671.jpg",
     "genre": ["fantastic", "family"],
@@ -121,7 +121,7 @@
   },
   {
     "id": "16",
-    "title": "Entretien avec un vampire",
+    "bookTitle": "Entretien avec un vampire",
     "author": "Anne Rice",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41B0KSYRBHL._SX210_.jpg",
     "genre": ["polar", "fantastic", "horror"],
@@ -129,7 +129,7 @@
   },
   {
     "id": "17",
-    "title": "L'Ecume des jours",
+    "bookTitle": "L'Ecume des jours",
     "author": "Boris Vian",
     "cover": "https://media.senscritique.com/media/000008969025/160/L_Ecume_des_jours.jpg",
     "genre": ["drama", "fantastic"],
@@ -137,7 +137,7 @@
   },
   {
     "id": "18",
-    "title": "Le Journal de Bridget Jones",
+    "bookTitle": "Le Journal de Bridget Jones",
     "author": "Helen Fielding",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/410qFRhwbFL._SX210_.jpg",
     "genre": ["comedy", "family"],
@@ -145,7 +145,7 @@
   },
   {
     "id": "19",
-    "title": "Da Vinci Code",
+    "bookTitle": "Da Vinci Code",
     "author": "Dan Brown",
     "cover": "https://www.babelio.com/couv/33921_1616188.jpeg",
     "genre": ["polar", "thriller"],
@@ -153,7 +153,7 @@
   },
   {
     "id": "20",
-    "title": "Je suis une légende",
+    "bookTitle": "Je suis une légende",
     "author": "Richard Matheson",
     "cover": "https://www.babelio.com/couv/CVT_Je-suis-une-legende_5125.jpeg",
     "genre": ["post-apocalyptic", "horror"],
@@ -161,7 +161,7 @@
   },
   {
     "id": "21",
-    "title": "Orange mécanique",
+    "bookTitle": "Orange mécanique",
     "author": "Anthony Burgess",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41eLggZSAEL._SX210_.jpg",
     "genre": ["polar", "drama", "SF"],
@@ -169,7 +169,7 @@
   },
   {
     "id": "22",
-    "title": "La Guerre des boutons",
+    "bookTitle": "La Guerre des boutons",
     "author": "Louis Pergaud",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51bIpqH9ncL._SX210_.jpg",
     "genre": ["comedy", "family"],
@@ -177,7 +177,7 @@
   },
   {
     "id": "23",
-    "title": "Shining",
+    "bookTitle": "Shining",
     "author": "Stephen King",
     "cover": "https://www.babelio.com/couv/CVT_Shining_3445.jpeg",
     "genre": ["fantastic", "thriller"],
@@ -185,7 +185,7 @@
   },
   {
     "id": "24",
-    "title": "La guerre des mondes",
+    "bookTitle": "La guerre des mondes",
     "author": "H.G. Wells",
     "cover": "https://www.babelio.com/couv/CVT_La-guerre-des-mondes_2361.jpeg",
     "genre": ["drama", "SF", "thriller"],
@@ -193,7 +193,7 @@
   },
   {
     "id": "25",
-    "title": "Psychose",
+    "bookTitle": "Psychose",
     "author": "Robert Bloch",
     "cover": "https://www.babelio.com/couv/CVT_Psychose_2626.jpg",
     "genre": ["thriller"],
@@ -201,7 +201,7 @@
   },
   {
     "id": "26",
-    "title": "Les trois mousquetaires",
+    "bookTitle": "Les trois mousquetaires",
     "author": "Alexandre Dumas",
     "cover": "https://www.babelio.com/couv/bm_CVT_Les-Trois-mousquetaires_2855.jpg",
     "genre": ["adventure", "drama"],
@@ -209,7 +209,7 @@
   },
   {
     "id": "27",
-    "title": "Les Rivières pourpres",
+    "bookTitle": "Les Rivières pourpres",
     "author": "Jean-Christophe Grangé",
     "cover": "https://www.babelio.com/couv/CVT_Les-Rivieres-pourpres_6488.jpeg",
     "genre": ["polar", "thriller"],
@@ -217,7 +217,7 @@
   },
   {
     "id": "28",
-    "title": "La Ligne Verte",
+    "bookTitle": "La Ligne Verte",
     "author": "Stephen King",
     "cover": "https://www.babelio.com/couv/5953_1812880.jpeg",
     "genre": ["drama", "thriller"],
@@ -225,7 +225,7 @@
   },
   {
     "id": "29",
-    "title": "Le Pianiste",
+    "bookTitle": "Le Pianiste",
     "author": "Wladyslaw Szpilman",
     "cover": "https://www.babelio.com/couv/bm_19078_1229079.jpg",
     "genre": ["historic", "drama"],
@@ -233,7 +233,7 @@
   },
   {
     "id": "30",
-    "title": "Coraline",
+    "bookTitle": "Coraline",
     "author": "Neil Gaiman",
     "cover": "https://www.babelio.com/couv/bm_CVT_Coraline_2836.jpg",
     "genre": ["fantastic", "family"],
@@ -241,7 +241,7 @@
   },
   {
     "id": "31",
-    "title": "Persepolis",
+    "bookTitle": "Persepolis",
     "author": "Marjane Satrapi",
     "cover": "https://www.babelio.com/couv/bm_CVT_Persepolis_3436.jpg",
     "genre": ["drama"],
@@ -249,7 +249,7 @@
   },
   {
     "id": "32",
-    "title": "James Bond",
+    "bookTitle": "James Bond",
     "author": "Ian Fleming",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41IQnZj8m5L._SX210_.jpg",
     "genre": ["polar", "action"],
@@ -257,7 +257,7 @@
   },
   {
     "id": "33",
-    "title": "La liste de Schindler",
+    "bookTitle": "La liste de Schindler",
     "author": "Thomas Keneally",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51KRH7ZTM1L._SX210_.jpg",
     "genre": ["drama", "historic"],
@@ -265,7 +265,7 @@
   },
   {
     "id": "34",
-    "title": "Le prestige",
+    "bookTitle": "Le prestige",
     "author": "Christopher Priest",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51aAQ7quq5L._SX210_.jpg",
     "genre": ["fantastic", "drama", "thriller"],
@@ -273,7 +273,7 @@
   },
   {
     "id": "35",
-    "title": "Le nom de la rose",
+    "bookTitle": "Le nom de la rose",
     "author": "Umberto Eco",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41mei%2BItZBL._SX210_.jpg",
     "genre": ["polar", "historic"],
@@ -281,7 +281,7 @@
   },
   {
     "id": "36",
-    "title": "Gone, Baby, Gone",
+    "bookTitle": "Gone, Baby, Gone",
     "author": "Dennis Lehane",
     "cover": "https://www.babelio.com/couv/CVT_Gone-Baby-Gone_3698.gif",
     "genre": ["drama", "polar"],
@@ -289,7 +289,7 @@
   },
   {
     "id": "37",
-    "title": "Frankenstein",
+    "bookTitle": "Frankenstein",
     "author": "Mary Shelley",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41jZBLyk0kL._SX195_.jpg",
     "genre": ["fantastic", "horror"],
@@ -297,7 +297,7 @@
   },
   {
     "id": "38",
-    "title": "Sherlock Holmes",
+    "bookTitle": "Sherlock Holmes",
     "author": "Sir Arthur Conan Doyle",
     "cover": "https://www.babelio.com/couv/cvt_Sherlock-Holmes_7902.jpeg",
     "genre": ["polar", "action", "adventure"],
@@ -305,7 +305,7 @@
   },
   {
     "id": "39",
-    "title": "Le Cercle des poètes disparus",
+    "bookTitle": "Le Cercle des poètes disparus",
     "author": "N. H. Kleinbaum",
     "cover": "https://www.babelio.com/couv/cvt_Le-Cercle-des-poetes-disparus_2612.jpeg",
     "genre": ["drama"],
@@ -313,7 +313,7 @@
   },
   {
     "id": "40",
-    "title": "Le livre de la jungle",
+    "bookTitle": "Le livre de la jungle",
     "author": "Rudyard Kipling",
     "cover": "https://www.babelio.com/couv/CVT_Le-livre-de-la-jungle_218.gif",
     "genre": ["family", "adventure"],
@@ -321,7 +321,7 @@
   },
   {
     "id": "41",
-    "title": "Forrest Gump",
+    "bookTitle": "Forrest Gump",
     "author": "Winston Groom",
     "cover": "https://m.media-amazon.com/images/I/51yYPkpiBHL._SX195_.jpg",
     "genre": ["drama"],
@@ -329,7 +329,7 @@
   },
   {
     "id": "42",
-    "title": "Dune",
+    "bookTitle": "Dune",
     "author": "Frank Herbert",
     "cover": "https://m.media-amazon.com/images/I/416aswdXWWL._SX195_.jpg",
     "genre": ["fantastic", "SF", "adventure"],
@@ -337,7 +337,7 @@
   },
   {
     "id": "43",
-    "title": "Le parfum",
+    "bookTitle": "Le parfum",
     "author": "Patrick Süskind",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/517SbYIQvbL._SX210_.jpg",
     "genre": ["thriller", "drama", "fantastic"],
@@ -345,7 +345,7 @@
   },
   {
     "id": "44",
-    "title": "Orgueil et préjugés",
+    "bookTitle": "Orgueil et préjugés",
     "author": "Jane Austen",
     "cover": "https://www.babelio.com/couv/CVT_Orgueil-et-prejuges_2475.jpeg",
     "genre": ["drama"],
@@ -353,7 +353,7 @@
   },
   {
     "id": "45",
-    "title": "La Guerre du feu",
+    "bookTitle": "La Guerre du feu",
     "author": "J.-H. Rosny aîné",
     "cover": "https://www.babelio.com/couv/bm_11518_668060.jpg",
     "genre": ["historic", "adventure"],
@@ -361,7 +361,7 @@
   },
   {
     "id": "46",
-    "title": "Voyage au centre de la Terre",
+    "bookTitle": "Voyage au centre de la Terre",
     "author": "Jules Verne",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51KhSeOgW6L._SX210_.jpg",
     "genre": ["adventure", "fantastic"],
@@ -369,7 +369,7 @@
   },
   {
     "id": "47",
-    "title": "Le Procès",
+    "bookTitle": "Le Procès",
     "author": "Franz Kafka",
     "cover": "https://www.babelio.com/couv/CVT_Le-Proces_1932.gif",
     "genre": ["drama"],
@@ -377,7 +377,7 @@
   },
   {
     "id": "48",
-    "title": "La Machine à explorer le temps",
+    "bookTitle": "La Machine à explorer le temps",
     "author": "H.G. Wells",
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51RB3TZ2NTL._SX210_.jpg",
     "genre": ["fantastic", "SF", "family"],
@@ -385,7 +385,7 @@
   },
   {
     "id": "49",
-    "title": "2001 : L'Odyssée de l'espace",
+    "bookTitle": "2001 : L'Odyssée de l'espace",
     "author": "Arthur C. Clarke",
     "cover": "https://www.babelio.com/couv/bm_17888_892936.jpg",
     "genre": ["SF", "drama"],
@@ -393,10 +393,122 @@
   },
   {
     "id": "50",
-    "title": "Starship Troopers",
+    "bookTitle": "Starship Troopers",
     "author": "Robert A. Heinlein",
     "cover": "https://m.media-amazon.com/images/I/51pFBjDMVJL._SX195_.jpg",
     "genre": ["SF", "horror", "action", "comedy"],
     "description": "Pour impressionner une fille et contrarier son père, le jeune Juan Rico s’engage dans l’Infanterie mobile, le corps d’armée réputé le plus dangereux. Après tout, il n’en a que pour deux ans, et la guerre est loin, aux confins de la galaxie. Mais tandis qu’il effectue ses classes et découvre la discipline sévère d’un bataillon d’élite, le conflit prend une nouvelle dimension, et le voilà embarqué dans une série de batailles mortelles qui le transformeront à jamais. "
+  },
+  {
+    "id": "51",
+    "bookTitle": "Le Seigneur des Anneaux, Le Retour du Roi",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://livre.fnac.com/a1458827/David-Brawn-Le-Seigneur-des-Anneaux-Le-Retour-du-Roi",
+    "genre": ["fantastic"],
+    "description": "Tandis que le continent se couvre de ténèbres, annonçant pour tous l'aube d'une nouvelle ère, Frodo poursuit son entreprise : il lui faut à tout prix atteindre la Montagne du Feu. Mais le Seigneur Sombre mobilise ses troupes. L'ennemi est partout et Frodo doit s'engager dans un dangereux périple à travers le Pays Noir... Les derniers combats de la Guerre de l'Anneau s'achèvent dans un fracas d'apocalypse..."
+  },
+  {
+    "id": "52",
+    "bookTitle": "Le Seigneur des Anneaux 2, Les deux tours",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic"],
+    "description": "Dispersée dans les terres de l'Ouest, la Communauté de l'Anneau affronte les périls de la guerre, tandis que Frodo, accompagné du fidèle Sam, poursuit une quête presque désespérée : détruire l'Anneau Unique en le jetant dans les crevasses de l'Orodruin, le Mont Destin. Mais aux frontières du Pays de Mordor, une mystérieuse créature les épie... pour les perdre ou pour les sauver ?"
+  },
+  {
+    "id": "53",
+    "bookTitle": "Harry Potter et le prisonnier d'Azkaban",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Sirius Black, le dangereux criminel qui s'est échappé de la forteresse d'Azkaban, recherche Harry Potter. C'est donc sous bonne garde que l'apprenti sorcier fait sa troisième rentrée. Au programme : des cours de divination, la fabrication d'une potion de Ratatinage, le dressage des hippogriffes... Mais Harry est-il vraiment à l'abri du danger qui le menace ?"
+  },
+  {
+    "id": "54",
+    "bookTitle": "Harry Potter et la Chambre des Secrets",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Harry Potter fait une deuxième rentrée fracassante en voiture volante à l'école des sorciers. Cette deuxième année ne s'annonce pas de tout repos... surtout depuis qu'une étrange malédiction s'est abattue sur les élèves. Entre les cours de potion magique, les matchs de Quidditch et les combats de mauvais sorts, Harry trouvera-t-il le temps de percer le mystère de la Chambre des Secrets ?Un livre magique pour sorciers et sorcières confirmés !"
+  },
+  {
+    "id": "55",
+    "bookTitle": "Harry Potter et la Coupe de Feu",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Après un horrible été chez les Dursley, Harry Potter entre en quatrième année au collège de Poudlard. À quatorze ans, il voudrait simplement être un jeune sorcier comme les autres, retrouver ses amis Ron et Hermione, assister avec eux à la Coupe du Monde de quidditch, apprendre de nouveaux sortilèges et essayer des potions inconnues. Une grande nouvelle l'attend à son arrivée : la tenue à Poudlard d'un tournoi de magie entre les plus célèbres écoles de sorcellerie. Déjà les spectaculaires délégations étrangères font leur entrée… Harry se réjouit. Trop vite. Il va se trouver plongé au cœur des événements les plus dramatiques qu'il ait jamais eu à affronter."
+  },
+  {
+    "id": "56",
+    "bookTitle": "Harry Potter et l'Ordre du Phénix",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "À quinze ans, Harry s'apprête à entrer en cinquième année à Poudlard. Et s'il est heureux de retrouver le monde des sorciers, il n'a jamais été aussi anxieux. L'adolescence, la perspective des examens importants en fin d'année et ces étranges cauchemars... Car Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom est de retour et, plus que jamais, Harry sent peser sur lui une terrible menace. Une menace que le ministère de la Magie ne semble pas prendre au sérieux, contrairement à Dumbledore. Poudlard devient alors le terrain d'une véritable lutte de pouvoir. La résistance s'organise autour de Harry qui va devoir compter sur le courage et la fidélité de ses amis de toujours..."
+  },
+  {
+    "id": "57",
+    "bookTitle": "Harry Potter et les Reliques de la Mort",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Cet été-là, Harry atteint ses dix-sept ans, l'âge de la majorité pour un sorcier, et s'apprête à faire face à son destin. Soutenu par Ron et Hermione, Harry se consacre pleinement à la mission confiée par Dumbledore avant de mourir, la chasse aux Horcruxes. Mais le Seigneur des Ténèbres règne désormais en maître absolu. Traqués, en exil, les trois fidèles amis vont connaître une solitude sans précédent, où leur courage, leurs choix et leurs sacrifices seront déterminants dans la lutte contre les forces du mal. Leur quête croisera celle des Reliques de la Mort, et fera surgir du passé des révélations capitales et parfois douloureuses. Ces épreuves conduiront Harry, sans détour, vers sa destinée, l'affrontement final avec Lord Voldemort..."
+  },
+  {
+    "id": "58",
+    "bookTitle": "Harry Potter et le Prince de Sang-Mêlé",
+    "author": "J.K. Rowling",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["fantastic", "family"],
+    "description": "Dans un monde de plus en plus inquiétant, Harry se prépare à retrouver Ron et Hermione. Bientôt, ce sera la rentrée à Poudlard, avec les autres étudiants de sixième année. Mais pourquoi le professeur Dumbledore vient-il en personne chercher Harry chez les Dursley ?Harry, Ron et Hermione entrent en sixième année à Poudlard où ils vont vivre leur dernière année avant la majorité qui est fixée, chez les sorciers, à l'âge de dix-sept ans. Des événements particulièrement marquants vont contribuer à faire passer Harry du statut d'adolescent à celui d'homme. Ce tome, sur fond de guerre contre un Voldemort plus puissant que jamais, se révèle plus sombre que les précédents..."
+  },
+  {
+    "id": "59",
+    "bookTitle": "Hunger Games, L'embrasement",
+    "author": "Suzanne Collins",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Après le succès des derniers Hunger Games, le peuple de Panem est impatient de retrouver Katniss et Peeta pour la Tournée de la victoire. Mais pour Katniss, il s'agit surtout d'une tournée de la dernière chance. Celle qui a osé défier le Capitole est devenue le symbole d'une rébellion qui pourrait bien embraser Panem. Si elle échoue à ramener le calme dans les districts, le président Snow n'hésitera pas à noyer dans le sang le feu de la révolte. À l'aube des Jeux de l'Expiation, le piège du Capitole se referme sur Katniss..."
+  },
+  {
+    "id": "60",
+    "bookTitle": "Hunger Games, La révolte",
+    "author": "Suzanne Collins",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Contre toute attente, Katniss a survécu une seconde fois aux Hunger Games. Mais le Capitole crie vengeance. Katniss doit payer les humiliations qu'elle lui a fait subir. Et le président Snow a été très clair : Katniss n'est pas la seule à risquer sa vie. Sa famille, ses amis et tous les anciens habitants du district Douze sont visés par la colère sanglante du pouvoir. Pour sauver les siens, Katniss doit redevenir le geai moqueur, le symbole de la rébellion. Quel que soit le prix à payer..."
+  },
+  {
+    "id": "61",
+    "bookTitle": "Le labyrinthe, La Terre brûlée",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Dans ce second volet du cycle littéraire L'épreuve nous découvrons ce monde brûlé qui existe au-delà du labyrinthe : la Terre ravagée par des éruptions solaires, parcourues par des hordes de gens infectés devenus fous. Thomas et les autres survivants du Bloc vont devoir affronter cet environnement hostile pour espérer trouver refuge et surtout trouver un remède conte la Braise. Une impitoyable course contre la montre se met en place. James Dashner a créé un univers unique, un classique de la littérature pour ados..."
+  },
+  {
+    "id": "62",
+    "bookTitle": "Le Labyrinthe, L'épreuve",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Enfermés tels des rats de laboratoire dans un labyrinthe peuplé de monstres, des adolescents doivent en trouver l'issue. Un récit à suspense aussi effrayant en roman qu'au cinéma ! Des adolescents se réveillent un jour dans un labyrinthe peuplé de monstres. Ils n'ont qu'un objectif : retrouver la liberté. Un roman haletant qui revisite le mythe antique du labyrinthe..."
+  },
+  {
+    "id": "63",
+    "bookTitle": "Le labyrinthe, Le Remède mortel",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Voici le temps de l'ultime épreuve pour Thomas. Même si le Wicked semble lui avoir tout pris, il lui reste des lambeaux de souvenirs, lui permettant de faire face aux mensonges. Il va désormais tout faire pour sauver ses amis et faire éclater la vérité. Avec « Le remède mortel », James Dashner conclue de main de maître sa trilogie « L'épreuve ». L'auteur y confirme son talent de conteur, servi par un style efficace et addictif. Ces nombreux lecteurs seront littéralement happés par une intrigue aussi riche que surprenante..."
+  },
+  {
+    "id": "64",
+    "bookTitle": "Le Labyrinthe, Avant le Labyrinthe (prequel)",
+    "author": "James Dashner",
+    "cover": "https://www.babelio.com/couv/CVT_Charlie-et-la-Chocolaterie_7023.jpeg",
+    "genre": ["SF", "fantastic", "action"],
+    "description": "Ce préquel au cycle littéraire L'épreuve nous propulse sur Terre, treize ans avant le début des évènements du « Labyrinthe ». Le monde entier a été ravagé par les éruptions solaires et une épidémie se répand : elle rend les gens fous. Mark et Trina qui ont survécu à l'Apocalypse vont devoir affronter la plus grande des menaces : leurs congénères. Mené à un rythme haletant et regorgeant de scènes d'actions trépidantes, ce volet nous comble de visons cauchemardesques et de scènes inoubliables..."
   }
 ]

@@ -10,6 +10,7 @@ export { SelectCat } from "./SelectCat/SelectCat";
 export { SelectCatList } from "./SelectCatList/SelectCatList";
 export { MediaCard } from "./MediaCard/MediaCard";
 export { MediaCardList } from "./MediaCardList/MediaCardList";
+export { BookCardList } from "./MediaCardList/BookCardList";
 export { MovieCardList } from "./MediaCardList/MovieCardList";
 export { MusicCardList } from "./MediaCardList/MusicCardList";
 export { MediaCardInfo } from "./MediaCardInfo/MediaCardInfo";
