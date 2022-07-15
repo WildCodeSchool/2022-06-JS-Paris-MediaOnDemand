@@ -5,9 +5,11 @@ import "./MediaCardInfo.scss";
 import { ArrowIcon, PlusIcon } from "@assets/iconsCard";
 import heartIcon from "@assets/heartIcon.svg";
 import { fetchMovieTrailer } from "@services/apiRequest/fetchMovie";
+import { useCartContext } from "../../context";
 
 export const MediaCardInfo = ({ media }) => {
   const { mediaCat } = useParams();
+  const { cart, setCart } = useCartContext();
 
   const [movieTrailer, setMovieTrailer] = useState("");
 
@@ -37,6 +39,11 @@ export const MediaCardInfo = ({ media }) => {
     urlMediaCover = albumImg;
   }
 
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    setCart([...cart, albumTitle || movieTitle || bookTitle]);
+  };
+
   return (
     <div className="mediaCardInfo">
       <div className="mediaCardInfo__top">
@@ -45,7 +52,9 @@ export const MediaCardInfo = ({ media }) => {
           <button type="button" onClick={() => navigate(-1)}>
             <ArrowIcon />
           </button>
-          <PlusIcon />
+          <button type="button" onClick={(e) => handleAddToCart(e)}>
+            <PlusIcon width="32px" height="32px" />
+          </button>
           <img src={heartIcon} alt="favori" />
         </div>
         <div className="mediaCardInfo__info">

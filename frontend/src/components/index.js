@@ -15,3 +15,4 @@ export { MovieCardList } from "./MediaCardList/MovieCardList";
 export { MusicCardList } from "./MediaCardList/MusicCardList";
 export { MediaCardInfo } from "./MediaCardInfo/MediaCardInfo";
 export { MediaCover } from "./MediaCover/MediaCover";
+export { UserCart } from "./UserCart/UserCart";

@@ -5,6 +5,7 @@ import "@components/Button/Button.scss";
 import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { useNavigate } from "react-router-dom";
+import { useCartContext } from "../../context";
 
 export const MediaCard = ({
   count,
@@ -15,9 +16,15 @@ export const MediaCard = ({
   mediaId,
 }) => {
   const navigate = useNavigate();
+  const { cart, setCart } = useCartContext();
 
   const handleClick = () => {
     navigate(`../${mediaCat}/${mediaId}`);
+  };
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    setCart([...cart, title]);
   };
 
   return (
@@ -32,7 +39,9 @@ export const MediaCard = ({
           </div>
           <HeartIcon width="32px" height="32px" />
         </div>
-        <PlusIcon width="32px" height="32px" />
+        <button type="button" onClick={(e) => handleAddToCart(e)}>
+          <PlusIcon width="32px" height="32px" />
+        </button>
       </div>
       <h3 className="mediaCard__title">{title}</h3>
       <Button
