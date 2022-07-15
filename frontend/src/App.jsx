@@ -10,6 +10,7 @@ import {
   MovieContext,
   MusicContext,
   BookContext,
+  ThemeContext,
   MediaSelectedContext,
 } from "./context";
 
@@ -17,25 +18,31 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [music, setMusic] = useState([]);
   const [books, setBooks] = useState([]);
+  const [theme, setTheme] = useState("");
   const [mediasSelected, setMediasSelected] = useState([]);
   return (
     <MovieContext.Provider value={{ movies, setMovies }}>
       <MusicContext.Provider value={{ music, setMusic }}>
         <BookContext.Provider value={{ books, setBooks }}>
-          <MediaSelectedContext.Provider
-            value={{ mediasSelected, setMediasSelected }}
-          >
-            <Router>
-              <div className="theme--music App">
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/display" element={<DisplayPage />} />
-                  <Route path="/go-sophia" element={<SearchPage />} />
-                  <Route path="/:mediaCat/:mediaId" element={<MediaInfos />} />
-                </Routes>
-              </div>
-            </Router>
-          </MediaSelectedContext.Provider>
+          <ThemeContext.Provider value={{ theme, setTheme }}>
+            <MediaSelectedContext.Provider
+              value={{ mediasSelected, setMediasSelected }}
+            >
+              <Router>
+                <div className={`App ${theme}`}>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/display" element={<DisplayPage />} />
+                    <Route path="/go-sophia" element={<SearchPage />} />
+                    <Route
+                      path="/:mediaCat/:mediaId"
+                      element={<MediaInfos />}
+                    />
+                  </Routes>
+                </div>
+              </Router>
+            </MediaSelectedContext.Provider>
+          </ThemeContext.Provider>
         </BookContext.Provider>
       </MusicContext.Provider>
     </MovieContext.Provider>

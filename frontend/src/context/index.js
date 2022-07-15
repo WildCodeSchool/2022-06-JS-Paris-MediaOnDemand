@@ -5,3 +5,4 @@ export {
   MediaSelectedContext,
   useMediaSelectedContext,
 } from "./MediaSelectedContext";
+export { ThemeContext, useThemeContext } from "./ThemeContext";
