@@ -4,8 +4,8 @@ export const CornucopiaIcon2 = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="901.333"
-      height="785.333"
+      width="100"
+      height="100"
       version="1.1"
       viewBox="0 0 901.333 785.333"
       {...props}
