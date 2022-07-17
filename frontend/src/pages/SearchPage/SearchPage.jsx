@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SearchInput,
   TabBar,
@@ -16,6 +16,7 @@ import {
   useMovieContext,
   useMusicContext,
   useBookContext,
+  useThemeContext,
   useMediaSelectedContext,
 } from "@context";
 import { mediaCatSearch } from "@data/mediaSelect";
@@ -33,8 +34,13 @@ export const SearchPage = () => {
   const { setBooks } = useBookContext();
   const { setMovies } = useMovieContext();
   const { setMusic } = useMusicContext();
+  const { setTheme } = useThemeContext();
   const { mediasSelected, setMediasSelected } = useMediaSelectedContext();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   const handleFetchMovie = () => {
     const option = searchInputValue ? "search" : "discover";
