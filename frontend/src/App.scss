@@ -164,3 +164,9 @@ code {
     background-position: calc(50% + 1.5rem) 65%;
   }
 }
+
+@media (min-width: 1900px) {
+  .App {
+    padding: 0 10%;
+  }
+}
