@@ -24,7 +24,10 @@ export const MediaCard = ({
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    setCart([...cart, title]);
+    setCart([
+      ...cart,
+      { articleTitle: title, articleId: mediaId, path: mediaCat },
+    ]);
   };
 
   return (

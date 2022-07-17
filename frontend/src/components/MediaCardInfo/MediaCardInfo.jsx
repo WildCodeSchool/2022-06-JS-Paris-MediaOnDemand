@@ -41,7 +41,14 @@ export const MediaCardInfo = ({ media }) => {
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    setCart([...cart, albumTitle || movieTitle || bookTitle]);
+    setCart([
+      ...cart,
+      {
+        articleTitle: albumTitle || movieTitle || bookTitle,
+        articleId: media.id,
+        path: mediaCat,
+      },
+    ]);
   };
 
   return (

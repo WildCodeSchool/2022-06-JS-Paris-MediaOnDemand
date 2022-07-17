@@ -7,12 +7,20 @@ export const UserCart = () => {
   const { cart } = useCartContext();
   const navigate = useNavigate();
 
+  const handleClick = (article) => {
+    navigate(`../${article.path}/${article.articleId}`);
+  };
+
   return (
     <div>
       {cart.map((article) => (
         <li>
-          <button type="button" onClick={() => navigate()}>
-            {article}
+          <button
+            key={article.articleId}
+            type="button"
+            onClick={() => handleClick(article)}
+          >
+            {article.articleTitle}
           </button>
         </li>
       ))}
