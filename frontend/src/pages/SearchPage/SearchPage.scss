@@ -70,3 +70,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .search-page {
+    flex-direction: column-reverse;
+
+    &__section {
+      padding-top: 3rem;
+    }
+  }
+}

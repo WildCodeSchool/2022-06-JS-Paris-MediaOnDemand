@@ -156,16 +156,29 @@
 
 @media screen and (min-width: 1440px) {
   // tabs on top;
+  .tab__globalComponent {
+    height: 85%;
+    padding-bottom: 3rem;
+  }
+
   .tab__container {
     flex-direction: column-reverse;
   }
 
+  .tab__content-tabs {
+    width: 95%;
+    margin-top: -23px;
+  }
+
   .tab__bloc-tabs {
     flex-direction: initial;
+    padding-left: 2rem;
+    width: 35rem;
+    height: 5rem;
   }
 
   .tab__tabs {
-    width: 29.94%;
+    width: 60%;
   }
 
   .tab__active-tabs::before {
@@ -196,5 +209,11 @@
     flex-wrap: wrap;
     overflow-y: auto;
     min-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .tab__bloc-tabs {
+    padding-left: 2.75rem;
   }
 }

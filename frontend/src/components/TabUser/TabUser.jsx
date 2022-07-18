@@ -1,7 +1,7 @@
 import { HeartIcon } from "@assets/iconsCard";
 import { CartIcon, DownloadIcon } from "@assets/svgIcon";
 import React, { useState } from "react";
-import { Favorite } from "@components/";
+import { Favorite, UserCart } from "@components/";
 import "./TabUser.scss";
 
 export const TabUser = () => {
@@ -31,7 +31,7 @@ export const TabUser = () => {
                 : "tab__content"
             }
           >
-            {/* <BookCardList bookList={books} /> */}
+            <UserCart />
           </div>
           <div
             className={

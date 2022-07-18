@@ -22,7 +22,11 @@ export const TabBar = () => {
       <Link to="/go-sophia">
         <HomeIcon colorIcon={colorIcon} />
       </Link>
-      {windowWidth < 768 ? <SophiaIcon /> : <SophiaIconVertical />}
+      {windowWidth < 768 || windowWidth > 1439 ? (
+        <SophiaIcon />
+      ) : (
+        <SophiaIconVertical />
+      )}
       <Link to="/profile">
         <UserIcon colorIcon={colorIcon} />
       </Link>
