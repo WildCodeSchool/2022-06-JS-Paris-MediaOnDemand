@@ -1,7 +1,7 @@
 import { HeartIcon } from "@assets/iconsCard";
 import { CartIcon, DownloadIcon } from "@assets/svgIcon";
 import React, { useState } from "react";
-import { Favorite, UserCart } from "@components/";
+import { Favorite, UserCart, UserPurchaseList } from "@components/";
 import "./TabUser.scss";
 
 export const TabUser = () => {
@@ -40,7 +40,7 @@ export const TabUser = () => {
                 : "tab__content"
             }
           >
-            {/* <MusicCardList mediaList={music} /> */}
+            <UserPurchaseList />
           </div>
         </div>
 

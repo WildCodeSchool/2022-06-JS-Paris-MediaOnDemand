@@ -30,6 +30,7 @@ export const Favorite = () => {
           articleTitle: movie.favTitle,
           articleId: movie.favId,
           path: movie.mediaCat,
+          articleImage: movie.favImage,
         },
       ]);
     }
@@ -41,9 +42,9 @@ export const Favorite = () => {
   };
 
   return (
-    <div>
+    <div className="favorite">
       {favorites.map((movie) => (
-        <div className="item">
+        <div key={movie.favId} className="item">
           <li
             key={movie.favId}
             onClick={() => handleClick(movie)}
@@ -52,12 +53,12 @@ export const Favorite = () => {
             {movie.favTitle}
           </li>
           <div className="icons">
+            <PlusIcon onClick={() => handleAddToCart(movie)} />
             <BrokenHeartIcon
               onClick={() => {
                 deleteStorage(movie.favId);
               }}
             />
-            <PlusIcon onClick={() => handleAddToCart(movie)} />
           </div>
         </div>
       ))}

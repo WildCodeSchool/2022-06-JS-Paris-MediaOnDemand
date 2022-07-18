@@ -18,3 +18,5 @@ export { Favorite } from "./Favorite/Favorite";
 export { MediaCover } from "./MediaCover/MediaCover";
 export { UserCart } from "./UserCart/UserCart";
 export { TabUser } from "./TabUser/TabUser";
+export { UserPurchase } from "./UserPurchase/UserPurchase";
+export { UserPurchaseList } from "./UserPurchaseList/UserPurchaseList";

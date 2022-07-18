@@ -35,7 +35,12 @@ export const MediaCard = ({
     if (!isArticle) {
       setCart([
         ...cart,
-        { articleTitle: title, articleId: mediaId, path: mediaCat },
+        {
+          articleTitle: title,
+          articleId: mediaId,
+          path: mediaCat,
+          articleImage: image,
+        },
       ]);
     }
   };
@@ -51,7 +56,7 @@ export const MediaCard = ({
     if (!isFavorite) {
       setFavorites([
         ...favorites,
-        { favId: mediaId, favTitle: title, path: mediaCat },
+        { favId: mediaId, favTitle: title, path: mediaCat, favImage: image },
       ]);
     }
   };
