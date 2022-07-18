@@ -41,9 +41,9 @@ export const Favorite = () => {
   };
 
   return (
-    <div>
+    <div className="favorite">
       {favorites.map((movie) => (
-        <div className="item">
+        <div key={movie.favId} className="item">
           <li
             key={movie.favId}
             onClick={() => handleClick(movie)}
