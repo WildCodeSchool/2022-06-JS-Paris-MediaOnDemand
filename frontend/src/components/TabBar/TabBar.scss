@@ -16,6 +16,7 @@
     height: 50px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .nav-bar {
     flex-direction: column;
@@ -28,4 +29,19 @@
   }
 }
 
-// desktop 1: 1440 x 900
+@media screen and (min-width: 1440px) {
+  .nav-bar {
+    flex-direction: row;
+    border-bottom: 1px solid $main--medium;
+    width: 100%;
+    justify-content: flex-end;
+    height: 10%;
+    position: sticky;
+  }
+  .nav-bar > svg {
+    order: -1;
+    justify-self: flex-start;
+  }
+}
+
+// desktop 2: 1900 x 1080
