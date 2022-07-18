@@ -16,8 +16,5 @@ export { MusicCardList } from "./MediaCardList/MusicCardList";
 export { MediaCardInfo } from "./MediaCardInfo/MediaCardInfo";
 export { Favorite } from "./Favorite/Favorite";
 export { MediaCover } from "./MediaCover/MediaCover";
-<<<<<<< HEAD
 export { UserCart } from "./UserCart/UserCart";
-=======
 export { TabUser } from "./TabUser/TabUser";
->>>>>>> develop

@@ -5,8 +5,7 @@ import "@components/Button/Button.scss";
 import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { useNavigate } from "react-router-dom";
-import { useFavoriteContext } from "@context/";
-import { useCartContext } from "../../context";
+import { useFavoriteContext, useCartContext } from "@context/";
 
 export const MediaCard = ({
   count,
