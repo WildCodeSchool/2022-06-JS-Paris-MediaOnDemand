@@ -56,7 +56,7 @@ export const MediaCard = ({
     if (!isFavorite) {
       setFavorites([
         ...favorites,
-        { favId: mediaId, favTitle: title, path: mediaCat },
+        { favId: mediaId, favTitle: title, path: mediaCat, favImage: image },
       ]);
     }
   };

@@ -40,7 +40,7 @@ export const UserCart = () => {
   };
 
   return (
-    <div>
+    <div className="cart">
       {cart.map((article) => (
         <div key={article.articleId} className="item">
           <li
