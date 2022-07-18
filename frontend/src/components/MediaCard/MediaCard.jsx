@@ -17,6 +17,7 @@ export const MediaCard = ({
 }) => {
   const navigate = useNavigate();
   const { cart, setCart } = useCartContext();
+  const { favorites, setFavorites } = useFavoriteContext();
 
   const handleClick = () => {
     navigate(`../${mediaCat}/${mediaId}`);
@@ -24,12 +25,20 @@ export const MediaCard = ({
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    setCart([
-      ...cart,
-      { articleTitle: title, articleId: mediaId, path: mediaCat },
-    ]);
+    let isArticle = false;
+    cart.map((item) => {
+      if (item.articleId === mediaId) {
+        isArticle = true;
+      }
+      return isArticle;
+    });
+    if (!isArticle) {
+      setCart([
+        ...cart,
+        { articleTitle: title, articleId: mediaId, path: mediaCat },
+      ]);
+    }
   };
-  const { favorites, setFavorites } = useFavoriteContext();
 
   const addStorage = () => {
     let isFavorite = false;
@@ -40,7 +49,10 @@ export const MediaCard = ({
       return isFavorite;
     });
     if (!isFavorite) {
-      setFavorites([...favorites, { favId: mediaId, favTitle: title }]);
+      setFavorites([
+        ...favorites,
+        { favId: mediaId, favTitle: title, path: mediaCat },
+      ]);
     }
   };
 
@@ -56,9 +68,11 @@ export const MediaCard = ({
           </div>
           <HeartIcon width="32px" height="32px" onClick={() => addStorage()} />
         </div>
-        <button type="button" onClick={(e) => handleAddToCart(e)}>
-          <PlusIcon width="32px" height="32px" />
-        </button>
+        <PlusIcon
+          width="32px"
+          height="32px"
+          onClick={(e) => handleAddToCart(e)}
+        />
       </div>
       <h3 className="mediaCard__title">{title}</h3>
       <Button

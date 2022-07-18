@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { MediaCover } from "@components";
 import "./MediaCardInfo.scss";
-import { ArrowIcon, PlusIcon } from "@assets/iconsCard";
-import heartIcon from "@assets/heartIcon.svg";
+import { ArrowIcon, HeartIcon, PlusIcon } from "@assets/iconsCard";
 import { fetchMovieTrailer } from "@services/apiRequest/fetchMovie";
-import { useCartContext } from "../../context";
+import { useCartContext, useFavoriteContext } from "../../context";
 
 export const MediaCardInfo = ({ media }) => {
   const { mediaCat } = useParams();
   const { cart, setCart } = useCartContext();
+  const { favorites, setFavorites } = useFavoriteContext();
 
   const [movieTrailer, setMovieTrailer] = useState("");
 
@@ -41,14 +41,43 @@ export const MediaCardInfo = ({ media }) => {
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    setCart([
-      ...cart,
-      {
-        articleTitle: albumTitle || movieTitle || bookTitle,
-        articleId: media.id,
-        path: mediaCat,
-      },
-    ]);
+    let isArticle = false;
+    cart.map((item) => {
+      if (item.articleId === media.id) {
+        isArticle = true;
+      }
+      return isArticle;
+    });
+    if (!isArticle) {
+      setCart([
+        ...cart,
+        {
+          articleTitle: albumTitle || movieTitle || bookTitle,
+          articleId: media.id,
+          path: mediaCat,
+        },
+      ]);
+    }
+  };
+
+  const addStorage = () => {
+    let isFavorite = false;
+    favorites.map((item) => {
+      if (item.favId === media.id) {
+        isFavorite = true;
+      }
+      return isFavorite;
+    });
+    if (!isFavorite) {
+      setFavorites([
+        ...favorites,
+        {
+          favId: media.id,
+          favTitle: albumTitle || movieTitle || bookTitle,
+          path: mediaCat,
+        },
+      ]);
+    }
   };
 
   return (
@@ -59,10 +88,12 @@ export const MediaCardInfo = ({ media }) => {
           <button type="button" onClick={() => navigate(-1)}>
             <ArrowIcon />
           </button>
-          <button type="button" onClick={(e) => handleAddToCart(e)}>
-            <PlusIcon width="32px" height="32px" />
-          </button>
-          <img src={heartIcon} alt="favori" />
+          <PlusIcon
+            width="48px"
+            height="48px"
+            onClick={(e) => handleAddToCart(e)}
+          />
+          <HeartIcon onClick={() => addStorage()} />
         </div>
         <div className="mediaCardInfo__info">
           <h2>{albumTitle || movieTitle || bookTitle}</h2>
