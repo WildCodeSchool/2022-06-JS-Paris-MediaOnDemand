@@ -52,12 +52,12 @@ export const Favorite = () => {
             {movie.favTitle}
           </li>
           <div className="icons">
+            <PlusIcon onClick={() => handleAddToCart(movie)} />
             <BrokenHeartIcon
               onClick={() => {
                 deleteStorage(movie.favId);
               }}
             />
-            <PlusIcon onClick={() => handleAddToCart(movie)} />
           </div>
         </div>
       ))}

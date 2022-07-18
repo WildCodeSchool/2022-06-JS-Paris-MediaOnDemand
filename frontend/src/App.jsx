@@ -15,6 +15,7 @@ import {
   CartContext,
   ThemeContext,
   MediaSelectedContext,
+  PurchaseContext,
 } from "./context";
 
 function App() {
@@ -25,37 +26,40 @@ function App() {
   const [theme, setTheme] = useState("");
   const [cart, setCart] = useState([]);
   const [mediasSelected, setMediasSelected] = useState([]);
+  const [purchase, setPurchase] = useState([]);
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
-      <FavoriteContext.Provider value={{ favorites, setFavorites }}>
-        <MovieContext.Provider value={{ movies, setMovies }}>
-          <MusicContext.Provider value={{ music, setMusic }}>
-            <BookContext.Provider value={{ books, setBooks }}>
-              <ThemeContext.Provider value={{ theme, setTheme }}>
-                <MediaSelectedContext.Provider
-                  value={{ mediasSelected, setMediasSelected }}
-                >
-                  <Router>
-                    <div className={`App ${theme}`}>
-                      <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/display" element={<DisplayPage />} />
-                        <Route path="/go-sophia" element={<SearchPage />} />
-                        <Route
-                          path="/:mediaCat/:mediaId"
-                          element={<MediaInfos />}
-                        />
-                        <Route path="/profile" element={<UserPage />} />
-                      </Routes>
-                    </div>
-                  </Router>
-                </MediaSelectedContext.Provider>
-              </ThemeContext.Provider>
-            </BookContext.Provider>
-          </MusicContext.Provider>
-        </MovieContext.Provider>
-      </FavoriteContext.Provider>
-    </CartContext.Provider>
+    <PurchaseContext.Provider value={{ purchase, setPurchase }}>
+      <CartContext.Provider value={{ cart, setCart }}>
+        <FavoriteContext.Provider value={{ favorites, setFavorites }}>
+          <MovieContext.Provider value={{ movies, setMovies }}>
+            <MusicContext.Provider value={{ music, setMusic }}>
+              <BookContext.Provider value={{ books, setBooks }}>
+                <ThemeContext.Provider value={{ theme, setTheme }}>
+                  <MediaSelectedContext.Provider
+                    value={{ mediasSelected, setMediasSelected }}
+                  >
+                    <Router>
+                      <div className={`App ${theme}`}>
+                        <Routes>
+                          <Route path="/" element={<Home />} />
+                          <Route path="/display" element={<DisplayPage />} />
+                          <Route path="/go-sophia" element={<SearchPage />} />
+                          <Route
+                            path="/:mediaCat/:mediaId"
+                            element={<MediaInfos />}
+                          />
+                          <Route path="/profile" element={<UserPage />} />
+                        </Routes>
+                      </div>
+                    </Router>
+                  </MediaSelectedContext.Provider>
+                </ThemeContext.Provider>
+              </BookContext.Provider>
+            </MusicContext.Provider>
+          </MovieContext.Provider>
+        </FavoriteContext.Provider>
+      </CartContext.Provider>
+    </PurchaseContext.Provider>
   );
 }
 

@@ -35,7 +35,12 @@ export const MediaCard = ({
     if (!isArticle) {
       setCart([
         ...cart,
-        { articleTitle: title, articleId: mediaId, path: mediaCat },
+        {
+          articleTitle: title,
+          articleId: mediaId,
+          path: mediaCat,
+          articleImage: image,
+        },
       ]);
     }
   };

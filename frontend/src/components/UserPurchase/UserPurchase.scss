@@ -31,19 +31,6 @@
     padding: 0.5rem;
   }
 
-  &__counter {
-    border: solid 0.1rem;
-    border-radius: 50%;
-    background-color: black;
-    box-shadow: 0 0 10px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    font-size: 0.75rem;
-  }
-
   &__title {
     font-size: 1.5rem;
     font-weight: bold;
