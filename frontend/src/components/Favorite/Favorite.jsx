@@ -30,6 +30,7 @@ export const Favorite = () => {
           articleTitle: movie.favTitle,
           articleId: movie.favId,
           path: movie.mediaCat,
+          articleImage: movie.favImage,
         },
       ]);
     }
