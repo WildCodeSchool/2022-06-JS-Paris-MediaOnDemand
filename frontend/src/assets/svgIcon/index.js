@@ -6,3 +6,6 @@ export { SophiaIconVertical } from "./SophiaIconVertical";
 export { CheckBoxIcon2 } from "./CheckBoxIcon2";
 export { CornucopiaIcon2 } from "./CornucopiaIcon2";
 export { CartIcon } from "./CartIcon";
+export { DownloadIcon } from "./DownloadIcon";
+export { DeleteIcon } from "./DeleteIcon";
+export { BrokenHeartIcon } from "./BrokenHeartIcon";
