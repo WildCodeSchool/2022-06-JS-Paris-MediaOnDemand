@@ -16,7 +16,9 @@ export const TabBar = () => {
         <HomeIcon />
       </Link>
       {windowWidth < 768 ? <SophiaIcon /> : <SophiaIconVertical />}
-      <UserIcon />
+      <Link to="/user">
+        <UserIcon />
+      </Link>
     </div>
   );
 };

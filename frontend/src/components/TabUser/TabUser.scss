@@ -1,0 +1,200 @@
+@import "../../theme.scss";
+
+.tab__globalComponent {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.tab__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.tab__content-tabs {
+  height: 100%;
+  width: 90%;
+}
+
+// bloc onglets
+.tab__bloc-tabs {
+  display: flex;
+  background-color: transparent;
+  align-self: flex-start;
+  padding: 0 5%;
+}
+
+// tous onglets
+.tab__tabs {
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  color: $support--medium;
+  padding: 0.5rem 1rem;
+}
+
+// onglet actif
+.tab__active-tabs {
+  border-bottom: 1px solid transparent;
+  max-height: 70%;
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px whitesmoke;
+}
+
+.tab__active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  background: $main--strong;
+}
+
+// tous contenus
+.tab__content {
+  padding: 1.25rem;
+  height: 100%;
+  display: none;
+}
+
+// contenu actif
+.tab__active-content {
+  display: block;
+  justify-content: center;
+}
+
+.tab__color1 {
+  border-top: 3px solid $movie--strong;
+  border-left: 3px solid $movie--strong;
+  border-right: 3px solid $movie--strong;
+  background-color: transparent;
+  color: $movie--soft;
+}
+
+.tab__color2 {
+  border-top: 3px solid $book--strong;
+  border-left: 3px solid $book--strong;
+  border-right: 3px solid $book--strong;
+  background-color: transparent;
+  color: $book--soft;
+}
+
+.tab__color3 {
+  border-top: 3px solid $music--strong;
+  border-left: 3px solid $music--strong;
+  border-right: 3px solid $music--strong;
+  background-color: transparent;
+  color: $music--soft;
+}
+
+.tab__itemCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 380px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  // tabs on right side
+  .tab__globalComponent {
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .tab__container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .tab__tabs {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .tab__bloc-tabs {
+    padding: 0;
+  }
+
+  .tab__content-tabs {
+    width: 80%;
+  }
+
+  .tab__color1 {
+    border-right: none;
+    border-bottom: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-right: none;
+    border-bottom: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-right: none;
+    border-bottom: 3px solid $music--strong;
+  }
+
+  .tab__itemCard {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  // tabs on top;
+  .tab__container {
+    flex-direction: column-reverse;
+  }
+
+  .tab__bloc-tabs {
+    flex-direction: initial;
+  }
+
+  .tab__tabs {
+    width: 29.94%;
+  }
+
+  .tab__active-tabs::before {
+    top: -5px;
+  }
+
+  .tab__color1 {
+    border-top: none;
+    border-right: 3px solid $movie--strong;
+  }
+
+  .tab__color2 {
+    border-top: none;
+    border-right: 3px solid $book--strong;
+  }
+
+  .tab__color3 {
+    border-top: none;
+    border-right: 3px solid $music--strong;
+  }
+
+  .tab__active-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab__itemCard {
+    flex-wrap: wrap;
+    overflow-y: auto;
+    min-width: 1200px;
+  }
+}
