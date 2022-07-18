@@ -22,7 +22,6 @@ export const MediaCard = ({
   };
 
   const { favorites, setFavorites } = useFavoriteContext();
-  // console.log(fav);
 
   const addStorage = () => {
     let isFavorite = false;
