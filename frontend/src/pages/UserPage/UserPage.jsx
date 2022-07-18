@@ -9,9 +9,11 @@ const UserPage = () => {
     setTheme("");
   }, []);
   return (
-    <div className="user-container">
-      <h1>Bienvenue Rico</h1>
-      <TabUser />
+    <div className="user-page">
+      <div className="user-page__content">
+        <h1>Bienvenue Rico</h1>
+        <TabUser />
+      </div>
       <TabBar />
     </div>
   );

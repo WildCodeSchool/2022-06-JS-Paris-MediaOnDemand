@@ -180,23 +180,16 @@
     width: 60%;
   }
 
-  .tab__active-tabs::before {
-    top: -5px;
-  }
+  .tab__active-tabs {
+    border-radius: 15px 15px 0 0;
 
-  .tab__color1 {
-    border-top: none;
-    border-right: 3px solid $movie--strong;
-  }
-
-  .tab__color2 {
-    border-top: none;
-    border-right: 3px solid $book--strong;
-  }
-
-  .tab__color3 {
-    border-top: none;
-    border-right: 3px solid $music--strong;
+    &::before {
+      height: calc(100% + 1.5px);
+      top: -2px;
+      left: -0.25px;
+      border-left: none;
+      border-bottom: 6px solid black;
+    }
   }
 
   .tab__active-content {

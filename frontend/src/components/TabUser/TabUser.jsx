@@ -12,14 +12,14 @@ export const TabUser = () => {
   };
 
   return (
-    <div className="tab__globalComponent">
-      <div className="tab__container">
-        <div className="tab__content-tabs">
+    <div className="tab_user__globalComponent">
+      <div className="tab_user__container">
+        <div className="tab_user__content-tabs">
           <div
             className={
               toggleTabs === 1
-                ? "tab__content tab__active-content tab__color"
-                : "tab__content"
+                ? "tab_user__content tab_user__active-content tab_user__content--color"
+                : "tab_user__content"
             }
           >
             <Favorite />
@@ -27,8 +27,8 @@ export const TabUser = () => {
           <div
             className={
               toggleTabs === 2
-                ? "tab__content tab__active-content tab__color"
-                : "tab__content"
+                ? "tab_user__content tab_user__active-content tab_user__content--color"
+                : "tab_user__content"
             }
           >
             <UserCart />
@@ -36,22 +36,22 @@ export const TabUser = () => {
           <div
             className={
               toggleTabs === 3
-                ? "tab__content tab__active-content tab__color"
-                : "tab__content"
+                ? "tab_user__content tab_user__active-content tab_user__content--color"
+                : "tab_user__content"
             }
           >
             {/* <MusicCardList mediaList={music} /> */}
           </div>
         </div>
 
-        <div className="tab__bloc-tabs">
+        <div className="tab_user__bloc-tabs">
           <div
             role="button"
             tabIndex={0}
             className={
               toggleTabs === 1
-                ? "tab__tabs tab__active-tabs tab__color"
-                : "tab__tabs"
+                ? "tab_user__tabs tab_user__active-tabs tab_user__color"
+                : "tab_user__tabs"
             }
             onClick={() => toggleTab(1)}
             onKeyPress={() => toggleTab(1)}
@@ -63,8 +63,8 @@ export const TabUser = () => {
             tabIndex={0}
             className={
               toggleTabs === 2
-                ? "tab__tabs tab__active-tabs tab__color"
-                : "tab__tabs"
+                ? "tab_user__tabs tab_user__active-tabs tab_user__color"
+                : "tab_user__tabs"
             }
             onClick={() => toggleTab(2)}
             onKeyPress={() => toggleTab(2)}
@@ -76,8 +76,8 @@ export const TabUser = () => {
             tabIndex={0}
             className={
               toggleTabs === 3
-                ? "tab__tabs tab__active-tabs tab__color"
-                : "tab__tabs"
+                ? "tab_user__tabs tab_user__active-tabs tab_user__color"
+                : "tab_user__tabs"
             }
             onClick={() => toggleTab(3)}
             onKeyPress={() => toggleTab(3)}

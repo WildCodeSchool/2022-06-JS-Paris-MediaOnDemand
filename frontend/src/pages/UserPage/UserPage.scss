@@ -1,18 +1,45 @@
-.user-container {
+.user-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  gap: 0rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 0rem;
+    width: 100%;
+    height: 90%;
+  }
 }
 
 @media (min-width: 768px) {
-  .user-container {
+  .user-page {
     flex-direction: row-reverse;
+
+    &__content {
+      height: 100%;
+      justify-content: flex-start;
+
+      & > h1 {
+        margin-bottom: 1rem;
+      }
+    }
 
     & > div:last-child {
       position: relative;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .user-page {
+    flex-direction: column-reverse;
   }
 }
