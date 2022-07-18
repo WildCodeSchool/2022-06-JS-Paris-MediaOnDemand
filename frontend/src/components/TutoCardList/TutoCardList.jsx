@@ -1,5 +1,5 @@
 import React from "react";
-import { BasketIcon, CheckBoxIcon, CornucopiaIcon } from "../../assets/svgIcon";
+import { CartIcon, CheckBoxIcon2, CornucopiaIcon2 } from "../../assets/svgIcon";
 import { TutoCard } from "../TutoCard/TutoCard";
 import "./TutoCardList.scss";
 
@@ -8,19 +8,19 @@ const tutoItems = [
     id: 1,
     tutoName: "LOOK FOR CAT",
     className: "tuto-card-1",
-    tutoImg: <CheckBoxIcon />,
+    tutoImg: <CheckBoxIcon2 />,
   },
   {
     id: 2,
     tutoName: "FIND ARTICLES",
     className: "tuto-card-2",
-    tutoImg: <CornucopiaIcon />,
+    tutoImg: <CornucopiaIcon2 />,
   },
   {
     id: 3,
     tutoName: "PICK ARTICLES",
     className: "tuto-card-3",
-    tutoImg: <BasketIcon />,
+    tutoImg: <CartIcon />,
   },
 ];
 
