@@ -1,21 +1,3 @@
-$themes: (
-  "movie": (
-    soft: #a2b8ff,
-    medium: #80a0ff,
-    strong: #666fff,
-  ),
-  "book": (
-    soft: #e0d7aa,
-    medium: #ddcf7f,
-    strong: #ddd444,
-  ),
-  "music": (
-    soft: #b88b7e,
-    medium: #b5715b,
-    strong: #c33c33,
-  ),
-);
-
 // Movie Color
 $movie--soft: #a2b8ff;
 $movie--medium: #80a0ff;
@@ -47,6 +29,24 @@ $main--strong: #686443;
 $main--medium: #9d9877;
 $main--soft: #cdc692;
 $main--ligth_soft: #ebe8d0;
+
+$themes: (
+  "movie": (
+    soft: $movie--soft,
+    medium: $movie--medium,
+    strong: $movie--strong,
+  ),
+  "book": (
+    soft: $book--soft,
+    medium: $book--medium,
+    strong: $book--strong,
+  ),
+  "music": (
+    soft: $music--soft,
+    medium: $music--medium,
+    strong: $music--strong,
+  ),
+);
 
 @mixin themed() {
   @each $theme, $map in $themes {

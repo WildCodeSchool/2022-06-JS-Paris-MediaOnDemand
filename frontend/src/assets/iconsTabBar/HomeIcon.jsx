@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HomeIcon = ({ colorIcon = "#ccc591" }) => {
+export const HomeIcon = ({ colorIcon }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

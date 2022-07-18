@@ -1,5 +1,6 @@
 import React from "react";
 import { SelectCheckBox } from "@components";
+import { useMediaSelectedContext } from "@context";
 import "./SelectCheckBoxList.scss";
 
 export const SelectCheckBoxList = ({ setMediasSelected }) => {
@@ -8,13 +9,18 @@ export const SelectCheckBoxList = ({ setMediasSelected }) => {
     { label: "Musique", value: "music" },
     { label: "Livre", value: "book" },
   ];
+  const { mediasSelected } = useMediaSelectedContext();
 
   const handleSelect = (checkEvent) => {
     const { name, checked } = checkEvent.target;
     setMediasSelected((prevState) => {
-      if (checked) {
+      if (checked && !prevState.includes(name)) {
         return [...prevState, name];
       }
+      if (checked) {
+        return [...prevState];
+      }
+
       return prevState.filter((media) => media !== name);
     });
   };
@@ -26,6 +32,7 @@ export const SelectCheckBoxList = ({ setMediasSelected }) => {
           value={select.value}
           label={select.label}
           handleSelect={handleSelect}
+          isChecked={mediasSelected.includes(select.value)}
         />
       ))}
     </div>

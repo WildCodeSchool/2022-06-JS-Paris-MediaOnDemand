@@ -1,0 +1,13 @@
+[
+  { "value": "fantastic", "text": "Fantastic" },
+  { "value": "family", "text": "Famille" },
+  { "value": "action", "text": "Action" },
+  { "value": "horror", "text": "Horreur" },
+  { "value": "drama", "text": "Drame" },
+  { "value": "polar", "text": "Polar" },
+  { "value": "thriller", "text": "Thriller" },
+  { "value": "post-apocalyptic", "text": "Post-Apocalyptique" },
+  { "value": "comedy", "text": "Comedie" },
+  { "value": "adventure", "text": "Aventure" },
+  { "value": "historic", "text": "Historique" }
+]

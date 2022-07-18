@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SearchInput,
   TabBar,
@@ -7,203 +7,58 @@ import {
   Button,
 } from "@components";
 import "./SearchPage.scss";
-import { v4 as uuidv4 } from "uuid";
 import { fetchMovies } from "@services/apiRequest/fetchMovie";
-import { fetchBooks } from "@services/apiRequest/fetchBook";
-import { useNavigate } from "react-router-dom";
 import { fetchMusic } from "@services/apiRequest/fetchMusic";
+import { fetchBooks, fetchBooksSelect } from "@services/apiRequest/fetchBook";
+import { isMediaSelected } from "@tools/utils";
+import { useNavigate } from "react-router-dom";
 import {
   useMovieContext,
   useMusicContext,
   useBookContext,
-} from "../../context";
-
-const mediaCatSearch = [
-  {
-    mediaName: "Film",
-    mediaCatName: "movie",
-    mediaSelectList: [
-      {
-        uuidSelect: uuidv4(),
-        selectId: "annee-select",
-        selectLabel: "Année",
-        defaultOption: "Choisis une Année",
-        selectOptions: [
-          { value: 1990, text: "1990" },
-          { value: 2000, text: "2000" },
-          { value: 2010, text: "2010" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "genre-select",
-        selectLabel: "Genre",
-        defaultOption: "Choisis un Genre",
-        selectOptions: [
-          { value: "fiction", text: "Fiction" },
-          { value: "action", text: "Action" },
-          { value: "romance", text: "Romance" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "pay-select",
-        selectLabel: "Pays",
-        defaultOption: "Choisis un Pays",
-        selectOptions: [
-          { value: "france", text: "France" },
-          { value: "espagne", text: "Espagne" },
-          { value: "japon", text: "Japon" },
-        ],
-      },
-    ],
-  },
-  {
-    mediaName: "Musique",
-    mediaCatName: "music",
-    mediaSelectList: [
-      {
-        uuidSelect: uuidv4(),
-        selectId: "annee-select",
-        selectLabel: "Année",
-        defaultOption: "Choisis une Année",
-        selectOptions: [
-          { value: 1990, text: "1990" },
-          { value: 2000, text: "2000" },
-          { value: 2010, text: "2010" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "genre-select",
-        selectLabel: "Genre",
-        defaultOption: "Choisis un Genre",
-        selectOptions: [
-          { value: "fiction", text: "Fiction" },
-          { value: "action", text: "Action" },
-          { value: "romance", text: "Romance" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "pay-select",
-        selectLabel: "Pays",
-        defaultOption: "Choisis un Pays",
-        selectOptions: [
-          { value: "france", text: "France" },
-          { value: "espagne", text: "Espagne" },
-          { value: "japon", text: "Japon" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "genre-select",
-        selectLabel: "Genre",
-        defaultOption: "Choisis un Genre",
-        selectOptions: [
-          { value: "fiction", text: "Fiction" },
-          { value: "action", text: "Action" },
-          { value: "romance", text: "Romance" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "pay-select",
-        selectLabel: "Pays",
-        defaultOption: "Choisis un Pays",
-        selectOptions: [
-          { value: "france", text: "France" },
-          { value: "espagne", text: "Espagne" },
-          { value: "japon", text: "Japon" },
-        ],
-      },
-    ],
-  },
-  {
-    mediaName: "Livre",
-    mediaCatName: "book",
-    mediaSelectList: [
-      {
-        uuidSelect: uuidv4(),
-        selectId: "annee-select",
-        selectLabel: "Année",
-        defaultOption: "Choisis une Année",
-        selectOptions: [
-          { value: 1990, text: "1990" },
-          { value: 2000, text: "2000" },
-          { value: 2010, text: "2010" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "genre-select",
-        selectLabel: "Genre",
-        defaultOption: "Choisis un Genre",
-        selectOptions: [
-          { value: "fiction", text: "Fiction" },
-          { value: "action", text: "Action" },
-          { value: "romance", text: "Romance" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "pay-select",
-        selectLabel: "Pays",
-        defaultOption: "Choisis un Pays",
-        selectOptions: [
-          { value: "france", text: "France" },
-          { value: "espagne", text: "Espagne" },
-          { value: "japon", text: "Japon" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "genre-select",
-        selectLabel: "Genre",
-        defaultOption: "Choisis un Genre",
-        selectOptions: [
-          { value: "fiction", text: "Fiction" },
-          { value: "action", text: "Action" },
-          { value: "romance", text: "Romance" },
-        ],
-      },
-      {
-        uuidSelect: uuidv4(),
-        selectId: "pay-select",
-        selectLabel: "Pays",
-        defaultOption: "Choisis un Pays",
-        selectOptions: [
-          { value: "france", text: "France" },
-          { value: "espagne", text: "Espagne" },
-          { value: "japon", text: "Japon" },
-        ],
-      },
-    ],
-  },
-];
+  useThemeContext,
+  useMediaSelectedContext,
+} from "@context";
+import { mediaCatSearch } from "@data/mediaSelect";
 
 export const SearchPage = () => {
   const [searchInputValue, setSearchInputValue] = useState("");
   const [isCatOpen, setIsCatOpen] = useState(false);
-  const [mediasSelected, setMediasSelected] = useState([]);
-  const [setFiltersSelected] = useState({
+
+  const [filtersSelected, setFiltersSelected] = useState({
     book: [],
     music: [],
     movie: [],
   });
-  const isMediaSelected = (mediaName) => {
-    return mediasSelected.includes(mediaName);
-  };
 
   const { setBooks } = useBookContext();
   const { setMovies } = useMovieContext();
   const { setMusic } = useMusicContext();
+  const { setTheme } = useThemeContext();
+  const { mediasSelected, setMediasSelected } = useMediaSelectedContext();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   const handleFetchMovie = () => {
     const option = searchInputValue ? "search" : "discover";
     const searchQuery = searchInputValue ? `&query=${searchInputValue}` : null;
-    if (isMediaSelected("movie")) {
+    if (isMediaSelected(mediasSelected, "movie")) {
+      fetchMovies(option, [searchQuery], setMovies);
+    } else {
+      setMovies([]);
+    }
+  };
+
+  const handleFetchMovieSelect = () => {
+    const option = "discover";
+    const searchQuery = filtersSelected.movie.reduce(
+      (acc, select) => acc + select.value,
+      ""
+    );
+    if (isMediaSelected(mediasSelected, "movie")) {
       fetchMovies(option, [searchQuery], setMovies);
     } else {
       setMovies([]);
@@ -211,15 +66,30 @@ export const SearchPage = () => {
   };
 
   const handleFetchBook = () => {
-    if (isMediaSelected("book")) {
+    if (isMediaSelected(mediasSelected, "book")) {
       fetchBooks(searchInputValue, setBooks);
     } else {
       setBooks([]);
     }
   };
 
+  const handleFetchBookSelect = () => {
+    const authorSelect = filtersSelected.book.filter(
+      (select) => select.name === "author-select"
+    )[0]?.value;
+    const genreSelect = filtersSelected.book.filter(
+      (select) => select.name === "genre-select"
+    )[0]?.value;
+
+    if (isMediaSelected(mediasSelected, "book")) {
+      fetchBooksSelect(authorSelect, genreSelect, setBooks);
+    } else {
+      setBooks([]);
+    }
+  };
+
   const handleFetchMusic = () => {
-    if (isMediaSelected("music")) {
+    if (isMediaSelected(mediasSelected, "music")) {
       fetchMusic(searchInputValue, setMusic);
     } else {
       setMusic([]);
@@ -231,6 +101,13 @@ export const SearchPage = () => {
     handleFetchMovie();
     handleFetchBook();
     handleFetchMusic();
+    navigate("../display", { replace: true });
+  };
+
+  const handleFetchMediaSelect = (e) => {
+    e.preventDefault();
+    handleFetchMovieSelect();
+    handleFetchBookSelect();
     navigate("../display", { replace: true });
   };
 
@@ -252,20 +129,30 @@ export const SearchPage = () => {
             Catégories
           </Button>
         </div>
-        {isCatOpen && (
-          <div className="search-page__select-list">
-            {mediaCatSearch.map(
-              (mediaCat) =>
-                mediasSelected.includes(mediaCat.mediaCatName) && (
-                  <SelectCatList
-                    key={mediaCat.mediaName}
-                    mediaCat={mediaCat}
-                    setFiltersSelected={setFiltersSelected}
-                  />
-                )
-            )}
-          </div>
-        )}
+        {isCatOpen &&
+          (isMediaSelected(mediasSelected, "movie") ||
+            isMediaSelected(mediasSelected, "book")) && (
+            <div className="search-page__select-list">
+              {mediaCatSearch.map(
+                (mediaCat) =>
+                  mediasSelected.includes(mediaCat.mediaCatName) && (
+                    <SelectCatList
+                      key={mediaCat.mediaName}
+                      mediaCat={mediaCat}
+                      setFiltersSelected={setFiltersSelected}
+                    />
+                  )
+              )}
+
+              <Button
+                buttonSize="large"
+                buttonStyle="dark"
+                onClick={(e) => handleFetchMediaSelect(e)}
+              >
+                Go !
+              </Button>
+            </div>
+          )}
       </div>
       <TabBar />
     </div>
