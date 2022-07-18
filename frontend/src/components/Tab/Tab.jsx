@@ -4,6 +4,7 @@ import {
   useMovieContext,
   useMusicContext,
   useBookContext,
+  useThemeContext,
   useMediaSelectedContext,
 } from "@context";
 import { isMediaSelected } from "@tools/utils";
@@ -14,14 +15,17 @@ export const Tab = () => {
   const { movies } = useMovieContext();
   const { music } = useMusicContext();
   const { books } = useBookContext();
+  const { setTheme } = useThemeContext();
   const { mediasSelected } = useMediaSelectedContext();
 
   const toggleTab = (index) => {
     setToggleTabs(index);
+    setTheme(`theme--${index}`);
   };
 
   useEffect(() => {
     setToggleTabs(mediasSelected[0]);
+    setTheme(`theme--${mediasSelected[0]}`);
     return () => {
       setToggleTabs("");
     };

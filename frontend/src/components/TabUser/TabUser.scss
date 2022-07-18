@@ -64,6 +64,7 @@
   padding: 1.25rem;
   height: 100%;
   display: none;
+  backdrop-filter: blur(2px);
 }
 
 // contenu actif
@@ -72,28 +73,12 @@
   justify-content: center;
 }
 
-.tab__color1 {
-  border-top: 3px solid $movie--strong;
-  border-left: 3px solid $movie--strong;
-  border-right: 3px solid $movie--strong;
+.tab__color {
+  border-top: 3px solid $main--strong;
+  border-left: 3px solid $main--strong;
+  border-right: 3px solid $main--strong;
   background-color: transparent;
-  color: $movie--soft;
-}
-
-.tab__color2 {
-  border-top: 3px solid $book--strong;
-  border-left: 3px solid $book--strong;
-  border-right: 3px solid $book--strong;
-  background-color: transparent;
-  color: $book--soft;
-}
-
-.tab__color3 {
-  border-top: 3px solid $music--strong;
-  border-left: 3px solid $music--strong;
-  border-right: 3px solid $music--strong;
-  background-color: transparent;
-  color: $music--soft;
+  color: $main--soft;
 }
 
 .tab__itemCard {
@@ -108,7 +93,7 @@
   // tabs on right side
   .tab__globalComponent {
     margin-top: 0;
-    width: 85%;
+    width: 90%;
   }
 
   .tab__container {
@@ -156,29 +141,16 @@
 
 @media screen and (min-width: 1440px) {
   // tabs on top;
-  .tab__globalComponent {
-    height: 85%;
-    padding-bottom: 3rem;
-  }
-
   .tab__container {
     flex-direction: column-reverse;
   }
 
-  .tab__content-tabs {
-    width: 95%;
-    margin-top: -23px;
-  }
-
   .tab__bloc-tabs {
     flex-direction: initial;
-    padding-left: 2rem;
-    width: 35rem;
-    height: 5rem;
   }
 
   .tab__tabs {
-    width: 60%;
+    width: 29.94%;
   }
 
   .tab__active-tabs::before {
@@ -209,11 +181,5 @@
     flex-wrap: wrap;
     overflow-y: auto;
     min-width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .tab__bloc-tabs {
-    padding-left: 2.75rem;
   }
 }

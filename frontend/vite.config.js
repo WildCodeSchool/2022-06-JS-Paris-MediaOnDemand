@@ -13,6 +13,7 @@ export default defineConfig({
       "@services": path.resolve(__dirname, "src/services"),
       "@tools": path.resolve(__dirname, "src/tools"),
       "@context": path.resolve(__dirname, "src/context"),
+      "@data": path.resolve(__dirname, "src/data"),
     },
   },
 });
