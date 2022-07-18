@@ -1,8 +1,10 @@
+import { HeartIcon } from "@assets/iconsCard";
+import { CartIcon, DownloadIcon } from "@assets/svgIcon";
 import React, { useState } from "react";
-import Favorite from "../Favorite/Favorite";
+import { Favorite } from "@components/";
 import "./TabUser.scss";
 
-const TabUser = () => {
+export const TabUser = () => {
   const [toggleTabs, setToggleTabs] = useState(1);
 
   const toggleTab = (index) => {
@@ -16,7 +18,7 @@ const TabUser = () => {
           <div
             className={
               toggleTabs === 1
-                ? "tab__content tab__active-content tab__color1"
+                ? "tab__content tab__active-content tab__color"
                 : "tab__content"
             }
           >
@@ -25,7 +27,7 @@ const TabUser = () => {
           <div
             className={
               toggleTabs === 2
-                ? "tab__content tab__active-content tab__color2"
+                ? "tab__content tab__active-content tab__color"
                 : "tab__content"
             }
           >
@@ -34,7 +36,7 @@ const TabUser = () => {
           <div
             className={
               toggleTabs === 3
-                ? "tab__content tab__active-content tab__color3"
+                ? "tab__content tab__active-content tab__color"
                 : "tab__content"
             }
           >
@@ -48,44 +50,42 @@ const TabUser = () => {
             tabIndex={0}
             className={
               toggleTabs === 1
-                ? "tab__tabs tab__active-tabs tab__color1"
+                ? "tab__tabs tab__active-tabs tab__color"
                 : "tab__tabs"
             }
             onClick={() => toggleTab(1)}
             onKeyPress={() => toggleTab(1)}
           >
-            Favoris
+            <HeartIcon width="48px" height="48px" />
           </div>
           <div
             role="button"
             tabIndex={0}
             className={
               toggleTabs === 2
-                ? "tab__tabs tab__active-tabs tab__color2"
+                ? "tab__tabs tab__active-tabs tab__color"
                 : "tab__tabs"
             }
             onClick={() => toggleTab(2)}
             onKeyPress={() => toggleTab(2)}
           >
-            Panier
+            <CartIcon width="48px" height="48px" />
           </div>
           <div
             role="button"
             tabIndex={0}
             className={
               toggleTabs === 3
-                ? "tab__tabs tab__active-tabs tab__color3"
+                ? "tab__tabs tab__active-tabs tab__color"
                 : "tab__tabs"
             }
             onClick={() => toggleTab(3)}
             onKeyPress={() => toggleTab(3)}
           >
-            Achat
+            <DownloadIcon width="48px" height="48px" />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default TabUser;

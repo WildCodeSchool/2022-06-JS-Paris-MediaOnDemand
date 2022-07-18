@@ -1,6 +1,6 @@
 export { MovieContext, useMovieContext } from "./MovieContext";
 export { MusicContext, useMusicContext } from "./MusicContext";
-export { FavContext, useFavContext } from "./FavContext";
+export { FavoriteContext, useFavoriteContext } from "./FavoriteContext";
 export { BookContext, useBookContext } from "./BookContext";
 export {
   MediaSelectedContext,

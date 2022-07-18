@@ -8,7 +8,7 @@ import "./App.scss";
 import MediaInfos from "@pages/MediaInfos/MediaInfos";
 import UserPage from "@pages/UserPage/UserPage";
 import {
-  FavContext,
+  FavoriteContext,
   MovieContext,
   MusicContext,
   BookContext,
@@ -17,14 +17,14 @@ import {
 } from "./context";
 
 function App() {
-  const [fav, setFav] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [movies, setMovies] = useState([]);
   const [music, setMusic] = useState([]);
   const [books, setBooks] = useState([]);
   const [theme, setTheme] = useState("");
   const [mediasSelected, setMediasSelected] = useState([]);
   return (
-    <FavContext.Provider value={{ fav, setFav }}>
+    <FavoriteContext.Provider value={{ favorites, setFavorites }}>
       <MovieContext.Provider value={{ movies, setMovies }}>
         <MusicContext.Provider value={{ music, setMusic }}>
           <BookContext.Provider value={{ books, setBooks }}>
@@ -42,7 +42,7 @@ function App() {
                         path="/:mediaCat/:mediaId"
                         element={<MediaInfos />}
                       />
-                      <Route path="/user" element={<UserPage />} />
+                      <Route path="/profile" element={<UserPage />} />
                     </Routes>
                   </div>
                 </Router>
@@ -51,7 +51,7 @@ function App() {
           </BookContext.Provider>
         </MusicContext.Provider>
       </MovieContext.Provider>
-    </FavContext.Provider>
+    </FavoriteContext.Provider>
   );
 }
 

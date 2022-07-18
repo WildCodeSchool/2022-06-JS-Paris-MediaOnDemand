@@ -5,7 +5,7 @@ import "@components/Button/Button.scss";
 import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { useNavigate } from "react-router-dom";
-import { useFavContext } from "../../context";
+import { useFavoriteContext } from "@context/";
 
 export const MediaCard = ({
   count,
@@ -21,23 +21,21 @@ export const MediaCard = ({
     navigate(`../${mediaCat}/${mediaId}`);
   };
 
-  const { fav, setFav } = useFavContext();
+  const { favorites, setFavorites } = useFavoriteContext();
   // console.log(fav);
 
   const addStorage = () => {
-    setFav([...fav, { favId: mediaId.toString(), favTitle: title }]);
+    let isFavorite = false;
+    favorites.map((item) => {
+      if (item.favId === mediaId) {
+        isFavorite = true;
+      }
+      return isFavorite;
+    });
+    if (!isFavorite) {
+      setFavorites([...favorites, { favId: mediaId, favTitle: title }]);
+    }
   };
-
-  // const addStorage = () => {
-  //   const storedData = window.localStorage.movies
-  //     ? window.localStorage.movies.split(",")
-  //     : [];
-  //   if (!storedData.includes(mediaId.toString())) {
-  //     storedData.push(mediaId);
-  //     window.localStorage.movies = storedData;
-  //   }
-  //   setFav(storedData);
-  // };
 
   return (
     <div className="mediaCard">

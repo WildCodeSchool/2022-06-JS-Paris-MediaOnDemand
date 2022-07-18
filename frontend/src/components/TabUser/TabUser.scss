@@ -64,6 +64,7 @@
   padding: 1.25rem;
   height: 100%;
   display: none;
+  backdrop-filter: blur(2px);
 }
 
 // contenu actif
@@ -72,28 +73,12 @@
   justify-content: center;
 }
 
-.tab__color1 {
-  border-top: 3px solid $movie--strong;
-  border-left: 3px solid $movie--strong;
-  border-right: 3px solid $movie--strong;
+.tab__color {
+  border-top: 3px solid $main--strong;
+  border-left: 3px solid $main--strong;
+  border-right: 3px solid $main--strong;
   background-color: transparent;
-  color: $movie--soft;
-}
-
-.tab__color2 {
-  border-top: 3px solid $book--strong;
-  border-left: 3px solid $book--strong;
-  border-right: 3px solid $book--strong;
-  background-color: transparent;
-  color: $book--soft;
-}
-
-.tab__color3 {
-  border-top: 3px solid $music--strong;
-  border-left: 3px solid $music--strong;
-  border-right: 3px solid $music--strong;
-  background-color: transparent;
-  color: $music--soft;
+  color: $main--soft;
 }
 
 .tab__itemCard {
