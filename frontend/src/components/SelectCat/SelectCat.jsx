@@ -15,7 +15,10 @@ export const SelectCat = ({
       if (value) {
         return {
           ...prevState,
-          [mediaCatName]: [...prevState[mediaCatName], { name, value }],
+          [mediaCatName]: [
+            ...prevState[mediaCatName].filter((media) => media.name !== name),
+            { name, value },
+          ],
         };
       }
       return {
@@ -32,19 +35,29 @@ export const SelectCat = ({
       <label className="select-cat__label" htmlFor={selectId}>
         {selectLabel}
       </label>
-      <select
-        className="select-cat__select"
-        name={selectId}
-        id={selectId}
-        onChange={(e) => handleSelectChange(e)}
-      >
-        <option value="">{defaultOption}</option>
-        {selectOptions?.map((selectOption) => (
-          <option key={selectOption.text} value={selectOption.value}>
-            {selectOption.text}
-          </option>
-        ))}
-      </select>
+      {selectOptions && (
+        <select
+          className="select-cat__select"
+          name={selectId}
+          id={selectId}
+          onChange={(e) => handleSelectChange(e)}
+        >
+          <option value="">{defaultOption}</option>
+          {selectOptions?.map((selectOption) => (
+            <option key={selectOption.text} value={selectOption.value}>
+              {selectOption.text}
+            </option>
+          ))}
+        </select>
+      )}
+      {!selectOptions && (
+        <input
+          type="text"
+          name={selectId}
+          placeholder={defaultOption}
+          onChange={(e) => handleSelectChange(e)}
+        />
+      )}
     </div>
   );
 };
