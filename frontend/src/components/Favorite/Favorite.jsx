@@ -9,7 +9,6 @@ const Favorite = () => {
   // const [listData, setListData] = useState([]);
 
   const { fav, setFav } = useFavContext();
-  console.log(fav);
 
   // useEffect(() => {
   //   for (let i = 0; i < fav.length; i += 1) {
