@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  border-bottom: solid 2px;
+  padding: 2px 0;
+  backdrop-filter: blur(5px);
+}
+
+li {
+  width: 65%;
+}
+
+.icons {
+  display: flex;
+  gap: 10%;
+}

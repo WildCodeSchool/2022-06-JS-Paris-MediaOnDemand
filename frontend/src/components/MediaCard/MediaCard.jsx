@@ -5,6 +5,7 @@ import "@components/Button/Button.scss";
 import { PlusIcon, HeartIcon } from "@assets/iconsCard";
 import { Button } from "@components";
 import { useNavigate } from "react-router-dom";
+import { useFavoriteContext, useCartContext } from "@context/";
 
 export const MediaCard = ({
   count,
@@ -15,9 +16,44 @@ export const MediaCard = ({
   mediaId,
 }) => {
   const navigate = useNavigate();
+  const { cart, setCart } = useCartContext();
+  const { favorites, setFavorites } = useFavoriteContext();
 
   const handleClick = () => {
     navigate(`../${mediaCat}/${mediaId}`);
+  };
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    let isArticle = false;
+    cart.map((item) => {
+      if (item.articleId === mediaId) {
+        isArticle = true;
+      }
+      return isArticle;
+    });
+    if (!isArticle) {
+      setCart([
+        ...cart,
+        { articleTitle: title, articleId: mediaId, path: mediaCat },
+      ]);
+    }
+  };
+
+  const addStorage = () => {
+    let isFavorite = false;
+    favorites.map((item) => {
+      if (item.favId === mediaId) {
+        isFavorite = true;
+      }
+      return isFavorite;
+    });
+    if (!isFavorite) {
+      setFavorites([
+        ...favorites,
+        { favId: mediaId, favTitle: title, path: mediaCat },
+      ]);
+    }
   };
 
   return (
@@ -30,9 +66,13 @@ export const MediaCard = ({
           <div className="mediaCard__counter">
             <span>{`${count}/${total}`}</span>
           </div>
-          <HeartIcon width="32px" height="32px" />
+          <HeartIcon width="32px" height="32px" onClick={() => addStorage()} />
         </div>
-        <PlusIcon width="32px" height="32px" />
+        <PlusIcon
+          width="32px"
+          height="32px"
+          onClick={(e) => handleAddToCart(e)}
+        />
       </div>
       <h3 className="mediaCard__title">{title}</h3>
       <Button
