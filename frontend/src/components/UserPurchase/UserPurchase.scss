@@ -9,26 +9,13 @@
   background-color: rgba(255, 255, 255, 0.11);
   padding: 1rem;
   border: solid 0.5rem;
-  @include themed {
-    border-image: linear-gradient(
-      to bottom right,
-      black 10%,
-      t("strong") 40%,
-      black
-    );
-    border-image-slice: 1;
-  }
+  border-image: linear-gradient(to bottom right, black 10%, #ebe8d0 40%, black);
+  border-image-slice: 1;
 
   backdrop-filter: blur(2px);
 
   &__image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color: black;
-    height: 60%;
-    width: 100%;
-    padding: 0.5rem;
+    height: 65%;
   }
 
   &__title {

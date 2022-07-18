@@ -12,9 +12,9 @@ export const TabUser = () => {
   };
 
   return (
-    <div className="tab__globalComponent">
-      <div className="tab__container">
-        <div className="tab__content-tabs">
+    <div className="tab__globalComponent1">
+      <div className="tab__container1">
+        <div className="tab__content-tabs1">
           <div
             className={
               toggleTabs === 1
