@@ -19,7 +19,7 @@ export const MovieCardList = ({ movieList }) => {
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 768, min: 0 },
+      breakpoint: { max: 767, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
