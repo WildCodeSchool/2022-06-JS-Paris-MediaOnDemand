@@ -1,4 +1,14 @@
-.user-page {
+@import "../../theme.scss";
+
+.userPage__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.user-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,23 +16,36 @@
   padding-top: 1.5rem;
   height: 100%;
   width: 100%;
-  gap: 0rem;
+  padding-top: 2rem;
+}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-    gap: 0rem;
-    width: 100%;
-    height: 90%;
-  }
+.userPage__userId {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  background: linear-gradient(to right, $support--medium, $body--strong);
+}
+
+img {
+  height: 3rem;
+  width: auto;
+}
+
+h1 {
+  padding-left: 2rem;
 }
 
 @media (min-width: 768px) {
-  .user-page {
+  .userPage__container {
     flex-direction: row-reverse;
+  }
+
+  .user-container {
+    flex-direction: column;
+    width: 95%;
+    padding-top: 1rem;
+    justify-content: space-around;
 
     &__content {
       height: 100%;
@@ -37,6 +60,24 @@
     & > div:last-child {
       position: relative;
     }
+  }
+
+  .userPage__userId {
+    width: 50%;
+    align-self: flex-start;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .userPage__container {
+    flex-direction: column-reverse;
+  }
+
+  .userPage__userId {
+    align-self: center;
+    position: absolute;
+    top: 1rem;
   }
 }
 
