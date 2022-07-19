@@ -37,6 +37,7 @@
     justify-content: flex-end;
     height: 10%;
     position: sticky;
+    backdrop-filter: none;
   }
   .nav-bar > svg {
     order: -1;

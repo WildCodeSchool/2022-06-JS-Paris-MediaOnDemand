@@ -14,20 +14,20 @@ export const MovieCardList = ({ movieList }) => {
       slidesToSlide: 3,
     },
     tablet: {
-      breakpoint: { max: 1439, min: 464 },
+      breakpoint: { max: 1439, min: 768 },
       items: 2,
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1,
+      slidesToSlide: 1,
     },
   };
   return (
     <Carousel
       responsive={responsive}
       infinite
-      keyBoardControl
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass="carousel-item"
