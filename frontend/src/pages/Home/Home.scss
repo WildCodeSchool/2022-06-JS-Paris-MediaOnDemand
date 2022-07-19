@@ -21,12 +21,21 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  a {
+    margin: 0% 0% 0% 0%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .home-container {
     a {
       margin: 0% 45% 10% 0%;
+    }
+  }
+
+  .home-container__legal {
+    a {
+      margin: 0% 0% 0% 0%;
     }
   }
 }
@@ -37,12 +46,24 @@
       margin: 0% 40% 10% 0%;
     }
   }
+
+  .home-container__legal {
+    a {
+      margin: 0% 0% 0% 0%;
+    }
+  }
 }
 
 @media screen and (min-width: 1900px) {
   .home-container {
     a {
       margin: 0 50% 10% 0;
+    }
+  }
+
+  .home-container__legal {
+    a {
+      margin: 0% 0% 0% 0%;
     }
   }
 }
