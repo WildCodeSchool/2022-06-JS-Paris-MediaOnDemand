@@ -6,7 +6,6 @@ import { DownloadIcon } from "@assets/svgIcon";
 
 export const UserPurchase = ({ title, image }) => {
   const [download, setDownload] = useState(false);
-  // let width = 0;
   const [barWidth, setBarWidth] = useState(0);
   const [message, setMessage] = useState("");
 
@@ -18,17 +17,16 @@ export const UserPurchase = ({ title, image }) => {
     let width = 0;
     if (download) {
       setInterval(() => {
-        width += 5;
-        setBarWidth(width);
-      }, 100);
+        if (width === 100) {
+          clearInterval(setInterval);
+          setMessage(`${title} téléchargé`);
+        } else {
+          width += 1;
+          setBarWidth(width);
+        }
+      }, 50);
     }
-    return () => {};
   }, [download]);
-
-  if (barWidth === 100) {
-    clearInterval(setInterval);
-    setMessage("téléchargement terminé!");
-  }
 
   return !download ? (
     <div className="purchaseCard">
@@ -40,10 +38,10 @@ export const UserPurchase = ({ title, image }) => {
     <div className="downloadCard">
       <div className="downloadBar">
         <div className="downloadProgress" style={{ width: `${barWidth}%` }}>
-          {`${barWidth}%`}
+          <div>{`${barWidth}%`}</div>
         </div>
       </div>
-      <div>{message}</div>
+      <div className="message">{message}</div>
     </div>
   );
 };
