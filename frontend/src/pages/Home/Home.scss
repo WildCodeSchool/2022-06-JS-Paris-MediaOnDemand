@@ -17,6 +17,12 @@
   }
 }
 
+.home-container__legal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media screen and (min-width: 768px) {
   .home-container {
     a {

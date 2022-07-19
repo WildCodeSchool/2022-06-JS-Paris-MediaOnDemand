@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowIcon } from "@assets/iconsCard";
 import "./LegalPage.scss";
 
 const LegalPage = () => {
@@ -165,6 +167,11 @@ const LegalPage = () => {
             dans l’économie numérique
           </li>
         </ol>
+      </div>
+      <div>
+        <Link to="/">
+          <ArrowIcon />
+        </Link>
       </div>
     </div>
   );

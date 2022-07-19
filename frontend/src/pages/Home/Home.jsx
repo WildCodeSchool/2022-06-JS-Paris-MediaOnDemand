@@ -12,6 +12,11 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="home-container__legal">
+        <Link to="legal">
+          <button type="button">Légal</button>
+        </Link>
+      </div>
       <TutoCardList />
       <Link to="/go-sophia">
         <Button
