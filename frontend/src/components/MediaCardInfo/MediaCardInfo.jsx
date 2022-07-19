@@ -76,6 +76,7 @@ export const MediaCardInfo = ({ media }) => {
           favId: media.id,
           favTitle: albumTitle || movieTitle || bookTitle,
           path: mediaCat,
+          articleImage: urlMediaCover,
         },
       ]);
     }
