@@ -20,7 +20,7 @@ const Home = () => {
       <TutoCardList />
       <Link to="/go-sophia">
         <Button
-          buttonSize={windowWidth < 768 ? "large" : "small"}
+          buttonSize={windowWidth < 768 ? "small" : "large"}
           buttonStyle="dark"
         >
           Go SOPHIA !
