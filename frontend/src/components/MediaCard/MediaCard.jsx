@@ -62,26 +62,36 @@ export const MediaCard = ({
         style={{ backgroundImage: `url(${image})` }}
         className="mediaCard__image"
       >
-        <div className="mediaCard__iconUp">
-          <div className="mediaCard__counter">
-            <span>{`${count}/${total}`}</span>
-          </div>
-          <HeartIcon width="32px" height="32px" onClick={() => addStorage()} />
-        </div>
-        <PlusIcon
-          width="32px"
-          height="32px"
-          onClick={(e) => handleAddToCart(e)}
-        />
+        {mediaId && (
+          <>
+            <div className="mediaCard__iconUp">
+              <div className="mediaCard__counter">
+                <span>{`${count}/${total}`}</span>
+              </div>
+              <HeartIcon
+                width="32px"
+                height="32px"
+                onClick={() => addStorage()}
+              />
+            </div>
+            <PlusIcon
+              width="32px"
+              height="32px"
+              onClick={(e) => handleAddToCart(e)}
+            />
+          </>
+        )}
       </div>
       <h3 className="mediaCard__title">{title}</h3>
-      <Button
-        buttonSize="small"
-        buttonStyle="dark"
-        onClick={() => handleClick()}
-      >
-        Infos
-      </Button>
+      {mediaId && (
+        <Button
+          buttonSize="small"
+          buttonStyle="dark"
+          onClick={() => handleClick()}
+        >
+          Infos
+        </Button>
+      )}
     </div>
   );
 };
