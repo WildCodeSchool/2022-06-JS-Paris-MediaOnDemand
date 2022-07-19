@@ -24,3 +24,26 @@
     text-shadow: 0 0 10px black;
   }
 }
+
+.downloadCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.downloadBar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  border: solid 0.2rem;
+  background-color: black;
+}
+
+.downloadProgress {
+  height: 100%;
+  background-color: green;
+}
