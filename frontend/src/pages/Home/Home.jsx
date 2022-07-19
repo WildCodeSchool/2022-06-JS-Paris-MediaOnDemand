@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home-container">
       <div className="home-container__legal">
         <Link to="legal">
-          <button type="button">Légal</button>
+          <div className="legal">?</div>
         </Link>
       </div>
       <TutoCardList />
