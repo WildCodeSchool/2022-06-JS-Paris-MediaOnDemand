@@ -41,7 +41,7 @@ export const UserPurchase = ({ title, image }) => {
           <div>{`${barWidth}%`}</div>
         </div>
       </div>
-      <div className="message">{message}</div>
+      <p className="message">{message}</p>
     </div>
   );
 };
