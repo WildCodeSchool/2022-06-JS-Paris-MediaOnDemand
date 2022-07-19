@@ -6,8 +6,8 @@ import "./SelectCheckBoxList.scss";
 export const SelectCheckBoxList = ({ setMediasSelected }) => {
   const selectList = [
     { label: "Film", value: "movie" },
-    { label: "Musique", value: "music" },
     { label: "Livre", value: "book" },
+    { label: "Musique", value: "music" },
   ];
   const { mediasSelected } = useMediaSelectedContext();
 
