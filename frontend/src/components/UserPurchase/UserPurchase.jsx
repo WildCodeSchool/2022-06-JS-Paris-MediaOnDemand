@@ -14,14 +14,14 @@ export const UserPurchase = ({ title, image }) => {
   };
 
   useEffect(() => {
-    let width = 0;
+    let width = 100;
     if (download) {
       setInterval(() => {
-        if (width === 100) {
+        if (width === 0) {
           clearInterval(setInterval);
           setMessage(`${title} téléchargé`);
         } else {
-          width += 1;
+          width -= 1;
           setBarWidth(width);
         }
       }, 50);
@@ -37,9 +37,8 @@ export const UserPurchase = ({ title, image }) => {
   ) : (
     <div className="downloadCard">
       <div className="downloadBar">
-        <div className="downloadProgress" style={{ width: `${barWidth}%` }}>
-          <div>{`${barWidth}%`}</div>
-        </div>
+        <div>{`${barWidth}%`}</div>
+        <div className="downloadProgress" style={{ width: `${barWidth}%` }} />
       </div>
       <p className="message">{message}</p>
     </div>

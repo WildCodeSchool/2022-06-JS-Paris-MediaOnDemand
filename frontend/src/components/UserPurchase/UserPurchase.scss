@@ -36,17 +36,18 @@
 
 .downloadBar {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 10%;
   border: solid 0.2rem;
   border-radius: 1rem;
+  background-image: linear-gradient(to right, black, green);
 }
 
 .downloadProgress {
   height: 100%;
-  background-color: green;
+  background-color: black;
   display: flex;
   justify-content: start;
   align-items: center;
