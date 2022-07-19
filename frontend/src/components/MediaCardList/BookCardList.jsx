@@ -14,7 +14,7 @@ export const BookCardList = ({ bookList }) => {
       showThumbs={false}
       selectedItem={0}
     >
-      {bookList &&
+      {bookList ? (
         bookList.map((book, index) => (
           <MediaCard
             key={book.id}
@@ -25,7 +25,16 @@ export const BookCardList = ({ bookList }) => {
             mediaId={book.id}
             mediaCat="livre"
           />
-        ))}
+        ))
+      ) : (
+        <MediaCard
+          title="Not Found"
+          count={1}
+          total={1}
+          // image="./assets/media_non_trouve.svg"
+          mediaCat="livre"
+        />
+      )}
     </Carousel>
   );
 };

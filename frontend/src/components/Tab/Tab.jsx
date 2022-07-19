@@ -38,7 +38,7 @@ export const Tab = () => {
           <div
             className={
               toggleTabs === "movie"
-                ? "tab__content tab__active-content tab__color1"
+                ? "tab__content tab__active-content tab__content--color"
                 : "tab__content"
             }
           >
@@ -47,7 +47,7 @@ export const Tab = () => {
           <div
             className={
               toggleTabs === "book"
-                ? "tab__content tab__active-content tab__color2"
+                ? "tab__content tab__active-content tab__content--color"
                 : "tab__content"
             }
           >
@@ -56,7 +56,7 @@ export const Tab = () => {
           <div
             className={
               toggleTabs === "music"
-                ? "tab__content tab__active-content tab__color3"
+                ? "tab__content tab__active-content tab__content--color"
                 : "tab__content"
             }
           >
@@ -71,7 +71,7 @@ export const Tab = () => {
               tabIndex={0}
               className={
                 toggleTabs === "movie"
-                  ? "tab__tabs tab__active-tabs tab__color1"
+                  ? "tab__tabs tab__active-tabs tab__color"
                   : "tab__tabs"
               }
               onClick={() => toggleTab("movie")}
@@ -86,7 +86,7 @@ export const Tab = () => {
               tabIndex={0}
               className={
                 toggleTabs === "book"
-                  ? "tab__tabs tab__active-tabs tab__color2"
+                  ? "tab__tabs tab__active-tabs tab__color"
                   : "tab__tabs"
               }
               onClick={() => toggleTab("book")}
@@ -101,7 +101,7 @@ export const Tab = () => {
               tabIndex={0}
               className={
                 toggleTabs === "music"
-                  ? "tab__tabs tab__active-tabs tab__color3"
+                  ? "tab__tabs tab__active-tabs tab__color"
                   : "tab__tabs"
               }
               onClick={() => toggleTab("music")}

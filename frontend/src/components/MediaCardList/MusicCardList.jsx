@@ -1,6 +1,7 @@
 import React from "react";
 import { MediaCard } from "@components";
 import { Carousel } from "react-responsive-carousel";
+import notFoundImg from "@assets/media_non_trouve.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./MediaCardList.scss";
 
@@ -14,7 +15,7 @@ export const MusicCardList = ({ mediaList }) => {
       showThumbs={false}
       selectedItem={0}
     >
-      {mediaList &&
+      {mediaList ? (
         mediaList.map((music, index) => (
           <MediaCard
             key={music.idAlbum}
@@ -25,7 +26,16 @@ export const MusicCardList = ({ mediaList }) => {
             mediaId={music.idAlbum}
             mediaCat="musique"
           />
-        ))}
+        ))
+      ) : (
+        <MediaCard
+          title="Not Found"
+          count={1}
+          total={1}
+          image={notFoundImg}
+          mediaCat="musique"
+        />
+      )}
     </Carousel>
   );
 };

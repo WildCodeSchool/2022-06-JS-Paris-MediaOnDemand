@@ -34,7 +34,7 @@ const UserPage = () => {
   return (
     <div className="userPage__container">
       <div className="user-container">
-        <div className="UserPage__userId">
+        <div className="userPage__userId">
           {user.picture.thumbnail && user.name.first && (
             <>
               <img src={user.picture.thumbnail} alt={user.name.first} />

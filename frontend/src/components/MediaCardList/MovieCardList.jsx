@@ -14,7 +14,7 @@ export const MovieCardList = ({ mediaList }) => {
       showThumbs={false}
       selectedItem={0}
     >
-      {mediaList &&
+      {mediaList ? (
         mediaList.map((movie, index) => (
           <MediaCard
             key={movie.id}
@@ -25,7 +25,16 @@ export const MovieCardList = ({ mediaList }) => {
             mediaId={movie.id}
             mediaCat="film"
           />
-        ))}
+        ))
+      ) : (
+        <MediaCard
+          title="Not Found"
+          count={1}
+          total={1}
+          // image="./assets/media_non_trouve.svg"
+          mediaCat="film"
+        />
+      )}
     </Carousel>
   );
 };

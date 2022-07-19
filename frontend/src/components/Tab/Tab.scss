@@ -49,14 +49,18 @@
   max-height: 70%;
   font-weight: bolder;
   text-shadow: 1px 1px 20px whitesmoke;
-}
+  border-top: 6px solid black;
+  border-radius: 0 0 15px 15px;
 
-.tab__active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -5px;
-  background: $main--strong;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 1.5px);
+    top: -6px;
+    left: -1px;
+    border-top: 6px solid black;
+  }
 }
 
 // tous contenus
@@ -64,36 +68,34 @@
   padding: 1.25rem;
   height: 100%;
   display: none;
+
+  &--color {
+    border: 3px solid;
+    @include themed {
+      border-image: linear-gradient(
+        to bottom right,
+        black 10%,
+        t("strong") 60%,
+        black
+      );
+      border-image-slice: 1;
+      color: t("soft");
+    }
+  }
 }
 
 // contenu actif
 .tab__active-content {
   display: block;
   justify-content: center;
+  background-color: transparent;
 }
 
-.tab__color1 {
-  border-top: 3px solid $movie--strong;
-  border-left: 3px solid $movie--strong;
-  border-right: 3px solid $movie--strong;
-  background-color: transparent;
-  color: $movie--soft;
-}
-
-.tab__color2 {
-  border-top: 3px solid $book--strong;
-  border-left: 3px solid $book--strong;
-  border-right: 3px solid $book--strong;
-  background-color: transparent;
-  color: $book--soft;
-}
-
-.tab__color3 {
-  border-top: 3px solid $music--strong;
-  border-left: 3px solid $music--strong;
-  border-right: 3px solid $music--strong;
-  background-color: transparent;
-  color: $music--soft;
+.tab__color {
+  @include themed {
+    border: 3px solid t("strong");
+    color: t("soft");
+  }
 }
 
 .tab__itemCard {
@@ -134,19 +136,16 @@
     width: 80%;
   }
 
-  .tab__color1 {
-    border-right: none;
-    border-bottom: 3px solid $movie--strong;
-  }
+  .tab__active-tabs {
+    border-radius: 0 0px 15px 0;
 
-  .tab__color2 {
-    border-right: none;
-    border-bottom: 3px solid $book--strong;
-  }
-
-  .tab__color3 {
-    border-right: none;
-    border-bottom: 3px solid $music--strong;
+    &::before {
+      height: calc(100% + 1.5px);
+      top: 0;
+      left: -6px;
+      border-top: none;
+      border-left: 6px solid black;
+    }
   }
 
   .tab__itemCard {
@@ -181,23 +180,16 @@
     width: 60%;
   }
 
-  .tab__active-tabs::before {
-    top: -5px;
-  }
+  .tab__active-tabs {
+    border-radius: 15px 15px 0 0;
 
-  .tab__color1 {
-    border-top: none;
-    border-right: 3px solid $movie--strong;
-  }
-
-  .tab__color2 {
-    border-top: none;
-    border-right: 3px solid $book--strong;
-  }
-
-  .tab__color3 {
-    border-top: none;
-    border-right: 3px solid $music--strong;
+    &::before {
+      height: calc(100% + 1.5px);
+      top: -2px;
+      left: -0.25px;
+      border-left: none;
+      border-bottom: 6px solid black;
+    }
   }
 
   .tab__active-content {

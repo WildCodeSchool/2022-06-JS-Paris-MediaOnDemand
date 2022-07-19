@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .user-container {
@@ -13,12 +13,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1.5rem;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   padding-top: 2rem;
 }
 
-.UserPage__userId {
+.userPage__userId {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,12 +47,21 @@ h1 {
     padding-top: 1rem;
     justify-content: space-around;
 
+    &__content {
+      height: 100%;
+      justify-content: flex-start;
+
+      & > h1 {
+        margin-bottom: 1rem;
+      }
+    }
+
     & > div:last-child {
       position: relative;
     }
   }
 
-  .UserPage__userId {
+  .userPage__userId {
     width: 50%;
     align-self: flex-start;
     margin-left: 6rem;
@@ -63,9 +73,15 @@ h1 {
     flex-direction: column-reverse;
   }
 
-  .UserPage__userId {
+  .userPage__userId {
     align-self: center;
     position: absolute;
     top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .user-page {
+    flex-direction: column-reverse;
   }
 }
