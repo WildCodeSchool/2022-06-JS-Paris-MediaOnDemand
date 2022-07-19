@@ -19,15 +19,15 @@ export const TabBar = () => {
   });
   return (
     <div className="nav-bar">
-      <Link to="/go-sophia">
+      <Link to="/go-sophia" className="tabBarIcon">
         <HomeIcon colorIcon={colorIcon} />
       </Link>
       {windowWidth < 768 || windowWidth > 1439 ? (
-        <SophiaIcon />
+        <SophiaIcon className="logoIcon" />
       ) : (
         <SophiaIconVertical />
       )}
-      <Link to="/profile">
+      <Link to="/profile" className="tabBarIcon">
         <UserIcon colorIcon={colorIcon} />
       </Link>
     </div>

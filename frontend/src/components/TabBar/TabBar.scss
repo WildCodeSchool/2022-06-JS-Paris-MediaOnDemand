@@ -42,6 +42,15 @@
     order: -1;
     justify-self: flex-start;
   }
+
+  .tabBarIcon {
+    margin: 0 1rem;
+  }
+
+  .logoIcon {
+    position: absolute;
+    left: 2rem;
+  }
 }
 
 // desktop 2: 1900 x 1080
