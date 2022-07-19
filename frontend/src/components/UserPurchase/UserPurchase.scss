@@ -1,0 +1,26 @@
+@import "../../theme.scss";
+
+.purchaseCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.11);
+  padding: 1rem;
+  border: solid 0.5rem;
+  border-image: linear-gradient(to bottom right, black 10%, #ebe8d0 40%, black);
+  border-image-slice: 1;
+
+  backdrop-filter: blur(2px);
+
+  &__image {
+    height: 65%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+  }
+}

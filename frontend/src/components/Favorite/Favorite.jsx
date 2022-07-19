@@ -11,14 +11,14 @@ export const Favorite = () => {
 
   const navigate = useNavigate();
 
-  const handleClick = (movie) => {
-    navigate(`../${movie.path}/${movie.favId}`);
+  const handleClick = (article) => {
+    navigate(`../${article.path}/${article.favId}`);
   };
 
-  const handleAddToCart = (movie) => {
+  const handleAddToCart = (article) => {
     let isArticle = false;
     cart.map((item) => {
-      if (item.articleId === movie.favId) {
+      if (item.articleId === article.favId) {
         isArticle = true;
       }
       return isArticle;
@@ -27,9 +27,10 @@ export const Favorite = () => {
       setCart([
         ...cart,
         {
-          articleTitle: movie.favTitle,
-          articleId: movie.favId,
-          path: movie.mediaCat,
+          articleTitle: article.favTitle,
+          articleId: article.favId,
+          path: article.path,
+          articleImage: article.favImage,
         },
       ]);
     }
@@ -41,23 +42,23 @@ export const Favorite = () => {
   };
 
   return (
-    <div>
-      {favorites.map((movie) => (
-        <div className="item">
+    <div className="favorite">
+      {favorites.map((article) => (
+        <div key={article.favId} className="item">
           <li
-            key={movie.favId}
-            onClick={() => handleClick(movie)}
+            key={article.favId}
+            onClick={() => handleClick(article)}
             aria-hidden="true"
           >
-            {movie.favTitle}
+            {article.favTitle}
           </li>
           <div className="icons">
+            <PlusIcon onClick={() => handleAddToCart(article)} />
             <BrokenHeartIcon
               onClick={() => {
-                deleteStorage(movie.favId);
+                deleteStorage(article.favId);
               }}
             />
-            <PlusIcon onClick={() => handleAddToCart(movie)} />
           </div>
         </div>
       ))}

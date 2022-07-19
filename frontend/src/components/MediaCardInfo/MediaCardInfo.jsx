@@ -55,6 +55,7 @@ export const MediaCardInfo = ({ media }) => {
           articleTitle: albumTitle || movieTitle || bookTitle,
           articleId: media.id,
           path: mediaCat,
+          articleImage: urlMediaCover,
         },
       ]);
     }
