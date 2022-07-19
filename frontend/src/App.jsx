@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import A SUPPRIMER DANS LA VERSION FINALE
 import DisplayPage from "@pages/DisplayPage/DisplayPage";
-import { SearchPage } from "@pages/SearchPage/SearchPage";
+import SearchPage from "@pages/SearchPage/SearchPage";
 import Home from "@pages/Home/Home";
 import "./App.scss";
 import MediaInfos from "@pages/MediaInfos/MediaInfos";

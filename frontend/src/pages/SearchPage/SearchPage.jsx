@@ -21,7 +21,7 @@ import {
 } from "@context";
 import { mediaCatSearch } from "@data/mediaSelect";
 
-export const SearchPage = () => {
+const SearchPage = () => {
   const [searchInputValue, setSearchInputValue] = useState("");
   const [isCatOpen, setIsCatOpen] = useState(false);
 
@@ -158,3 +158,5 @@ export const SearchPage = () => {
     </div>
   );
 };
+
+export default SearchPage;
