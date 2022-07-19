@@ -141,8 +141,10 @@
   .tab_user__globalComponent {
     width: 85%;
     align-self: center;
+    height: 85%;
     .tab_user__container {
       flex-direction: column-reverse;
+      height: 90%;
     }
   }
 

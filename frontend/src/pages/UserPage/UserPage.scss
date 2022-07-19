@@ -26,6 +26,7 @@
 
     &__content {
       height: 100%;
+      width: 90%;
       justify-content: flex-start;
 
       & > h1 {
@@ -42,5 +43,10 @@
 @media screen and (min-width: 1440px) {
   .user-page {
     flex-direction: column-reverse;
+    padding-top: 0;
+
+    &__content {
+      height: 90%;
+    }
   }
 }

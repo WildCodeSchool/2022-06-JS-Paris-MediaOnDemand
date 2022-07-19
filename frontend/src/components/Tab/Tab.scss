@@ -46,7 +46,7 @@
 // onglet actif
 .tab__active-tabs {
   border-bottom: 1px solid transparent;
-  max-height: 70%;
+  max-height: 76%;
   font-weight: bolder;
   text-shadow: 1px 1px 20px whitesmoke;
   border-top: 6px solid black;
@@ -169,11 +169,27 @@
     margin-top: -23px;
   }
 
+  .tab__content {
+    &--color {
+      border: 3px solid;
+      @include themed {
+        border-image: linear-gradient(
+          to top right,
+          black 10%,
+          t("strong") 60%,
+          black
+        );
+        border-image-slice: 1;
+        color: t("soft");
+      }
+    }
+  }
+
   .tab__bloc-tabs {
     flex-direction: initial;
-    padding-left: 2rem;
-    width: 35rem;
-    height: 5rem;
+    width: 95%;
+    height: 6rem;
+    align-self: center;
   }
 
   .tab__tabs {
@@ -188,7 +204,7 @@
       top: -2px;
       left: -0.25px;
       border-left: none;
-      border-bottom: 6px solid black;
+      border-bottom: 10px solid black;
     }
   }
 

@@ -42,7 +42,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MovieCardList mediaList={movies} />
+            <MovieCardList movieList={movies} />
           </div>
           <div
             className={

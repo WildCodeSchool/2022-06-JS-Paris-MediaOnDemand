@@ -1,15 +1,12 @@
-// Carousel
-.carousel-root {
+.carousel-container {
   height: 100%;
+  width: 100%;
 }
-.carousel-slider {
+
+.react-multi-carousel-track {
   height: 100%;
 }
 
-.slider-wrapper {
-  height: 100%;
-}
-
-.slider {
-  height: 100%;
+.carousel-item {
+  padding: 10px;
 }
