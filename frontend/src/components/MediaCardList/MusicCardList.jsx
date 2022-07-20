@@ -4,42 +4,51 @@ import AliceCarousel from "react-alice-carousel";
 import notFoundImg from "@assets/media_non_trouve.svg";
 import "./MediaCardList.scss";
 
-export const MusicCardList = ({ mediaList }) => {
+export const MusicCardList = ({ musicList }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => {
     setWindowWidth(window.innerWidth);
   });
 
-  // eslint-disable-next-line no-param-reassign
-  if (mediaList === null) mediaList = [];
-
   if (windowWidth >= 1440) {
-    if (mediaList.length === 0) {
-      mediaList.push(
-        { strAlbumThumb: notFoundImg, id: "null1" },
-        { strAlbumThumb: notFoundImg, id: "null2" },
-        { strAlbumThumb: notFoundImg, id: "null3" }
+    if (musicList?.length === 0) {
+      musicList.push(
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null1" },
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null2" },
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null3" }
       );
-    } else if (mediaList.length === 1) {
-      mediaList.push(
-        { strAlbumThumb: notFoundImg, id: "null1" },
-        { strAlbumThumb: notFoundImg, id: "null2" }
+    } else if (musicList?.length === 1) {
+      musicList.push(
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null1" },
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null2" }
       );
-    } else if (mediaList.length === 2) {
-      mediaList.push({ strAlbumThumb: notFoundImg, id: "null1" });
+    } else if (musicList?.length === 2) {
+      musicList.push({
+        strAlbumThumb: notFoundImg,
+        notFound: true,
+        idAlbum: "null1",
+      });
     }
   } else if (windowWidth >= 768) {
-    if (mediaList.length === 0) {
-      mediaList.push(
-        { strAlbumThumb: notFoundImg, id: "null1" },
-        { strAlbumThumb: notFoundImg, id: "null2" }
+    if (musicList?.length === 0) {
+      musicList.push(
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null1" },
+        { strAlbumThumb: notFoundImg, notFound: true, idAlbum: "null2" }
       );
-    } else if (mediaList.length === 1) {
-      mediaList.push({ strAlbumThumb: notFoundImg, id: "null1" });
+    } else if (musicList?.length === 1) {
+      musicList.push({
+        strAlbumThumb: notFoundImg,
+        notFound: true,
+        idAlbum: "null1",
+      });
     }
   } else if (windowWidth < 768) {
-    if (mediaList.length === 0) {
-      mediaList.push({ strAlbumThumb: notFoundImg, id: "null1" });
+    if (musicList?.length === 0) {
+      musicList.push({
+        strAlbumThumb: notFoundImg,
+        notFound: true,
+        idAlbum: "null1",
+      });
     }
   }
 
@@ -64,15 +73,16 @@ export const MusicCardList = ({ mediaList }) => {
       disableDotsControls
       infinite
     >
-      {mediaList.map((music, index) => (
+      {musicList.map((music, index) => (
         <MediaCard
           key={music.idAlbum}
           title={music.strAlbum}
           count={index + 1}
-          total={mediaList.length}
+          total={musicList.length}
           image={music.strAlbumThumb}
           mediaId={music.idAlbum}
           mediaCat="musique"
+          isNotFound={music.notFound}
         />
       ))}
     </AliceCarousel>

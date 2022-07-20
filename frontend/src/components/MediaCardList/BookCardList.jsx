@@ -13,30 +13,30 @@ export const BookCardList = ({ bookList }) => {
   if (windowWidth >= 1440) {
     if (bookList.length === 0) {
       bookList.push(
-        { cover: notFoundImg, id: "null1" },
-        { cover: notFoundImg, id: "null2" },
-        { cover: notFoundImg, id: "null3" }
+        { cover: notFoundImg, notFound: true, id: "null1" },
+        { cover: notFoundImg, notFound: true, id: "null2" },
+        { cover: notFoundImg, notFound: true, id: "null3" }
       );
     } else if (bookList.length === 1) {
       bookList.push(
-        { cover: notFoundImg, id: "null1" },
-        { cover: notFoundImg, id: "null2" }
+        { cover: notFoundImg, notFound: true, id: "null1" },
+        { cover: notFoundImg, notFound: true, id: "null2" }
       );
     } else if (bookList.length === 2) {
-      bookList.push({ cover: notFoundImg, id: "null1" });
+      bookList.push({ cover: notFoundImg, notFound: true, id: "null1" });
     }
   } else if (windowWidth >= 768) {
     if (bookList.length === 0) {
       bookList.push(
-        { cover: notFoundImg, id: "null1" },
-        { cover: notFoundImg, id: "null2" }
+        { cover: notFoundImg, notFound: true, id: "null1" },
+        { cover: notFoundImg, notFound: true, id: "null2" }
       );
     } else if (bookList.length === 1) {
-      bookList.push({ cover: notFoundImg, id: "null1" });
+      bookList.push({ cover: notFoundImg, notFound: true, id: "null1" });
     }
   } else if (windowWidth < 768) {
     if (bookList.length === 0) {
-      bookList.push({ cover: notFoundImg, id: "null1" });
+      bookList.push({ cover: notFoundImg, notFound: true, id: "null1" });
     }
   }
 
@@ -70,6 +70,7 @@ export const BookCardList = ({ bookList }) => {
           image={book.cover}
           mediaId={book.id}
           mediaCat="livre"
+          isNotFound={book.notFound}
         />
       ))}
     </AliceCarousel>

@@ -17,7 +17,6 @@ export const Tab = () => {
   const { books } = useBookContext();
   const { setTheme } = useThemeContext();
   const { mediasSelected } = useMediaSelectedContext();
-
   const toggleTab = (index) => {
     setToggleTabs(index);
     setTheme(`theme--${index}`);
@@ -60,7 +59,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MusicCardList mediaList={music} />
+            <MusicCardList musicList={music} />
           </div>
         </div>
 
