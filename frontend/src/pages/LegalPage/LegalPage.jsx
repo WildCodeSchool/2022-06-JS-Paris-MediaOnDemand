@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowIcon } from "@assets/iconsCard";
 import "./LegalPage.scss";
 
 const LegalPage = () => {
@@ -175,9 +174,7 @@ const LegalPage = () => {
               </li>
             </ol>
           </div>
-          <div>
-            <ArrowIcon />
-          </div>
+          <div className="stop" />
         </div>
       </Link>
     </div>
