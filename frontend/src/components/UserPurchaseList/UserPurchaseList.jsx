@@ -3,10 +3,8 @@ import React from "react";
 import { UserPurchase } from "@components/";
 import AliceCarousel from "react-alice-carousel";
 import "./UserPurchaseList.scss";
-import { usePurchaseContext } from "@context/PurchaseContext";
 
-export const UserPurchaseList = () => {
-  const { purchase } = usePurchaseContext();
+export const UserPurchaseList = ({ purchase }) => {
   const responsive = {
     0: {
       items: 1,
@@ -28,11 +26,12 @@ export const UserPurchaseList = () => {
       disableDotsControls
       infinite
     >
-      {purchase.map((item) => (
+      {purchase?.map((item) => (
         <UserPurchase
           key={item.purchaseId}
           title={item.purchaseTitle}
           image={item.purchaseImage}
+          isNotFound={item.notFound}
         />
       ))}
     </AliceCarousel>
