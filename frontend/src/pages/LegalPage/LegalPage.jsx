@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactAudioPlayer from "react-audio-player";
+import song from "@assets/dallas.ogg";
 import "./LegalPage.scss";
 
 const LegalPage = () => {
   return (
     <div className="legal-container">
       <Link to="/">
+        <ReactAudioPlayer src={song} autoPlay /* controls */ />
         <div className="page-container">
           <div className="identite-container">
             <h2>IDENTITÉ</h2>

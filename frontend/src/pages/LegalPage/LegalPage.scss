@@ -27,7 +27,7 @@ a {
 
 @keyframes marquee {
   0% {
-    top: 100%;
+    top: 130%;
   }
   100% {
     top: -510%;
@@ -125,7 +125,7 @@ ol {
 @media screen and (min-width: 768px) {
   @keyframes marquee {
     0% {
-      top: 100%;
+      top: 130%;
     }
     100% {
       top: -560%;
@@ -141,7 +141,7 @@ ol {
 @media screen and (min-width: 1440px) {
   @keyframes marquee {
     0% {
-      top: 100%;
+      top: 125%;
     }
     100% {
       top: -344%;
@@ -157,7 +157,7 @@ ol {
 @media screen and (min-width: 1900px) {
   @keyframes marquee {
     0% {
-      top: 100%;
+      top: 125%;
     }
     100% {
       top: -333%;
