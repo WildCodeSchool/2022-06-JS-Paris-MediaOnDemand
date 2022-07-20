@@ -42,7 +42,7 @@ export const Tab = () => {
                 : "tab__content"
             }
           >
-            <MovieCardList mediaList={movies} />
+            <MovieCardList movieList={movies} />
           </div>
           <div
             className={
@@ -77,7 +77,7 @@ export const Tab = () => {
               onClick={() => toggleTab("movie")}
               onKeyPress={() => toggleTab("movie")}
             >
-              <h3>Films</h3>
+              <h3 className="animations">Films</h3>
             </div>
           )}
           {isMediaSelected(mediasSelected, "book") && (
@@ -92,7 +92,7 @@ export const Tab = () => {
               onClick={() => toggleTab("book")}
               onKeyPress={() => toggleTab("book")}
             >
-              <h3>Livres</h3>
+              <h3 className="animations">Livres</h3>
             </div>
           )}
           {isMediaSelected(mediasSelected, "music") && (
@@ -107,7 +107,7 @@ export const Tab = () => {
               onClick={() => toggleTab("music")}
               onKeyPress={() => toggleTab("music")}
             >
-              <h3>Musiques</h3>
+              <h3 className="animations">Musiques</h3>
             </div>
           )}
         </div>

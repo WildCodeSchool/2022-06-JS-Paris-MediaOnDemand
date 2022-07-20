@@ -1,15 +1,27 @@
-// Carousel
-.carousel-root {
-  height: 100%;
-}
-.carousel-slider {
-  height: 100%;
-}
+@import "react-alice-carousel/lib/alice-carousel.css";
 
-.slider-wrapper {
+.alice-carousel {
   height: 100%;
-}
+  width: 100%;
 
-.slider {
-  height: 100%;
+  & > :first-child {
+    height: 90%;
+    width: 100%;
+  }
+
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__stage {
+    display: block;
+  }
+
+  &__stage-item {
+    padding: 0 10px;
+  }
+
+  &__prev-btn {
+    text-align: center;
+  }
 }

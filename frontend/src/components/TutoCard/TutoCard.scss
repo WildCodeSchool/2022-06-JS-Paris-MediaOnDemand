@@ -12,6 +12,7 @@
   color: $main--medium;
   font-size: 21px;
   font-weight: bold;
+  gap: 0.5rem;
 }
 
 .span-animate {
@@ -27,6 +28,7 @@
 
 .tuto-card-1 {
   top: 5%;
+  left: 5%;
   span:nth-child(1) {
     @extend .span-animate;
     animation: animate 22s linear infinite;
@@ -43,7 +45,7 @@
 
 .tuto-card-2 {
   top: 20%;
-  right: 9%;
+  left: 51%;
   span:nth-child(1) {
     @extend .span-animate;
     animation: animate 15s linear infinite;
@@ -75,21 +77,6 @@
   }
 }
 
-// .tuto-card__content span:nth-child(1) {
-//   @extend .span-animate;
-//   animation: animate 10s linear infinite;
-// }
-
-// .tuto-card__content span:nth-child(2) {
-//   @extend .span-animate;
-//   animation: animate 15s linear infinite;
-// }
-
-// .tuto-card__content span:nth-child(3) {
-//   @extend .span-animate;
-//   animation: animate 25s linear infinite;
-// }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -114,7 +101,7 @@
 
   .tuto-card-2 {
     top: 10%;
-    right: 25%;
+    left: 60%;
   }
 
   .tuto-card-3 {
@@ -130,15 +117,9 @@
     height: 200px;
     padding: 2rem;
   }
-}
 
-@media screen and (min-width: 1900px) {
   .tuto-card-1 {
-  }
-
-  .tuto-card-2 {
-  }
-
-  .tuto-card-3 {
+    top: 15%;
+    left: 20%;
   }
 }

@@ -1,19 +1,30 @@
 import React from "react";
 import { MediaCard } from "@components";
-import { Carousel } from "react-responsive-carousel";
+import AliceCarousel from "react-alice-carousel";
 import notFoundImg from "@assets/media_non_trouve.svg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./MediaCardList.scss";
 
 export const MusicCardList = ({ mediaList }) => {
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    767: {
+      items: 2,
+    },
+    1439: {
+      items: 3,
+    },
+  };
+
   return (
-    <Carousel
-      showArrows
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      showThumbs={false}
-      selectedItem={0}
+    <AliceCarousel
+      responsive={responsive}
+      controlsStrategy="alternate"
+      mouseTracking
+      touchTracking
+      disableDotsControls
+      infinite
     >
       {mediaList ? (
         mediaList.map((music, index) => (
@@ -36,6 +47,6 @@ export const MusicCardList = ({ mediaList }) => {
           mediaCat="musique"
         />
       )}
-    </Carousel>
+    </AliceCarousel>
   );
 };

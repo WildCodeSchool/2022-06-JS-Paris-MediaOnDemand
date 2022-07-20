@@ -1,18 +1,30 @@
 import React from "react";
 import { MediaCard } from "@components";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import AliceCarousel from "react-alice-carousel";
+import notFoundImg from "@assets/media_non_trouve.svg";
 import "./MediaCardList.scss";
 
 export const BookCardList = ({ bookList }) => {
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    767: {
+      items: 2,
+    },
+    1439: {
+      items: 3,
+    },
+  };
+
   return (
-    <Carousel
-      showArrows
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      showThumbs={false}
-      selectedItem={0}
+    <AliceCarousel
+      responsive={responsive}
+      controlsStrategy="alternate"
+      mouseTracking
+      touchTracking
+      disableDotsControls
+      infinite
     >
       {bookList ? (
         bookList.map((book, index) => (
@@ -31,10 +43,10 @@ export const BookCardList = ({ bookList }) => {
           title="Not Found"
           count={1}
           total={1}
-          // image="./assets/media_non_trouve.svg"
-          mediaCat="livre"
+          image={notFoundImg}
+          mediaCat="musique"
         />
       )}
-    </Carousel>
+    </AliceCarousel>
   );
 };

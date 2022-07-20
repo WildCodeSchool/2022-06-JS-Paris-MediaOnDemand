@@ -6,7 +6,7 @@
   border-top: 1px solid $main--medium;
   width: 100%;
   height: auto;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   left: 0;
   backdrop-filter: blur(5px);
@@ -14,6 +14,16 @@
   img {
     align-self: center;
     height: 50px;
+  }
+
+  a {
+    transition: transform 0.1s;
+  }
+
+  a:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
   }
 }
 
@@ -32,11 +42,13 @@
 @media screen and (min-width: 1440px) {
   .nav-bar {
     flex-direction: row;
+    border-right: none;
     border-bottom: 1px solid $main--medium;
     width: 100%;
     justify-content: flex-end;
     height: 10%;
     position: sticky;
+    backdrop-filter: none;
   }
   .nav-bar > svg {
     order: -1;

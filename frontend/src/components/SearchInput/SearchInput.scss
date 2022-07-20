@@ -7,23 +7,32 @@
   width: 70%;
 
   &__input {
-    background-color: transparent;
+    background-color: rgb(64, 63, 63);
+    border-radius: 15px;
     border: none;
-    border-bottom: 2px solid $main--medium;
+    // border-bottom: 2px solid $main--medium;
     height: 2rem;
     width: 100%;
     text-align: center;
     outline: none;
-    color: $main--medium;
+    color: $main--soft;
     font-size: 1.25rem;
   }
 
   &__btn {
     background-color: transparent;
-    color: $main--medium;
+    transition: transform 0.1s;
+    font-size: 1.25rem;
+    color: $main--soft;
     height: 2rem;
     border: none;
-    border-bottom: 2px solid $main--medium;
+    // border-bottom: 2px solid $main--medium;
     cursor: pointer;
+  }
+
+  &__btn:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
   }
 }

@@ -14,29 +14,21 @@ export const UserCart = () => {
     navigate(`../${article.path}/${article.articleId}`);
   };
 
-  const handlePurchase = (article) => {
-    let isArticle = false;
-    purchase.map((item) => {
-      if (item.purchaseId === article.articleId) {
-        isArticle = true;
-      }
-      return isArticle;
-    });
-    if (!isArticle) {
-      setPurchase([
-        ...purchase,
-        {
-          purchaseTitle: article.articleTitle,
-          purchaseImage: article.articleImage,
-          purchaseId: article.articleId,
-        },
-      ]);
-    }
-  };
-
   const deleteStorage = (articleId) => {
     const newData = cart.filter((id) => id.articleId !== articleId);
     setCart([...newData]);
+  };
+
+  const handlePurchase = (article) => {
+    setPurchase([
+      ...purchase,
+      {
+        purchaseTitle: article.articleTitle,
+        purchaseImage: article.articleImage,
+        purchaseId: article.articleId,
+      },
+    ]);
+    deleteStorage(article.articleId);
   };
 
   return (

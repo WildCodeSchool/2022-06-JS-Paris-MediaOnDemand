@@ -1,6 +1,6 @@
 import React from "react";
+import { SelectCat } from "@components";
 import "./SelectCatList.scss";
-import { SelectCat } from "..";
 
 export const SelectCatList = ({ mediaCat, setFiltersSelected }) => {
   const { mediaName, mediaCatName, mediaSelectList } = mediaCat;

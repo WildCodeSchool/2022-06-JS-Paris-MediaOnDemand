@@ -1,8 +1,10 @@
 import React from "react";
+import "../AnimatedIcon.scss";
 
 export const DownloadIcon = (props) => {
   return (
     <svg
+      className="animatedIcon"
       xmlns="http://www.w3.org/2000/svg"
       width="64"
       height="62.667"

@@ -32,17 +32,16 @@
 
   &--small {
     @extend .btn_size;
-    width: 30vw;
   }
 
   &--medium {
     @extend .btn_size;
-    width: 50vw;
+    width: 50%;
   }
 
   &--large {
     @extend .btn_size;
-    width: 70vw;
-    padding: 8px 20px;
+    font-size: 2rem;
+    padding: 8px 40px;
   }
 }

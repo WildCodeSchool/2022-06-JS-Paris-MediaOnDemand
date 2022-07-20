@@ -1,21 +1,32 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { UserPurchase } from "@components/";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import AliceCarousel from "react-alice-carousel";
 import "./UserPurchaseList.scss";
 import { usePurchaseContext } from "@context/PurchaseContext";
 
 export const UserPurchaseList = () => {
   const { purchase } = usePurchaseContext();
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    767: {
+      items: 2,
+    },
+    1439: {
+      items: 3,
+    },
+  };
 
   return (
-    <Carousel
-      showArrows
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      showThumbs={false}
-      selectedItem={0}
+    <AliceCarousel
+      responsive={responsive}
+      controlsStrategy="alternate"
+      mouseTracking
+      touchTracking
+      disableDotsControls
+      infinite
     >
       {purchase.map((item) => (
         <UserPurchase
@@ -24,6 +35,6 @@ export const UserPurchaseList = () => {
           image={item.purchaseImage}
         />
       ))}
-    </Carousel>
+    </AliceCarousel>
   );
 };

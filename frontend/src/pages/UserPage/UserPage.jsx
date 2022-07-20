@@ -5,16 +5,7 @@ import { useThemeContext } from "@context/ThemeContext";
 import axios from "axios";
 
 const UserPage = () => {
-  const test = {
-    name: {
-      first: "Emily",
-    },
-    picture: {
-      thumbnail: "https://randomuser.me/api/portraits/thumb/women/82.jpg",
-    },
-  };
-
-  const [user, setUser] = useState(test);
+  const [user, setUser] = useState();
   const getUser = () => {
     axios
       .get(`https://randomuser.me/api/?inc=name,picture`)
@@ -32,10 +23,10 @@ const UserPage = () => {
   }, []);
 
   return (
-    <div className="userPage__container">
-      <div className="user-container">
+    <div className="userPage">
+      <div className="userPage__container">
         <div className="userPage__userId">
-          {user.picture.thumbnail && user.name.first && (
+          {user && user.name.first && (
             <>
               <img src={user.picture.thumbnail} alt={user.name.first} />
               <h1>Bienvenue {user.name.first}</h1>

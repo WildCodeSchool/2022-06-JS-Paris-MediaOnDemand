@@ -1,6 +1,13 @@
 .legal-container {
   height: 100%;
   overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: #ebe8d0;
+}
+.page-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,6 +15,7 @@
   backdrop-filter: blur(5px);
   padding-top: 5%;
   padding-bottom: 10%;
+  text-decoration: none;
 }
 
 .identite-container {

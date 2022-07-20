@@ -1,22 +1,22 @@
 @import "../../theme.scss";
 
-.userPage__container {
+.userPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
   height: 100%;
   width: 100%;
-}
 
-.user-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 1.5rem;
-  height: 100%;
-  width: 100%;
-  padding-top: 2rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    height: 85%;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
 }
 
 .userPage__userId {
@@ -37,7 +37,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .userPage__container {
+  .userPage {
     flex-direction: row-reverse;
   }
 
@@ -49,6 +49,7 @@ h1 {
 
     &__content {
       height: 100%;
+      width: 90%;
       justify-content: flex-start;
 
       & > h1 {
@@ -69,8 +70,12 @@ h1 {
 }
 
 @media (min-width: 1440px) {
-  .userPage__container {
+  .userPage {
     flex-direction: column-reverse;
+  }
+
+  .userPage__container {
+    height: 90%;
   }
 
   .userPage__userId {
@@ -83,5 +88,10 @@ h1 {
 @media screen and (min-width: 1440px) {
   .user-page {
     flex-direction: column-reverse;
+    padding-top: 0;
+
+    &__content {
+      height: 90%;
+    }
   }
 }

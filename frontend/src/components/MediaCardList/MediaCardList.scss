@@ -1,5 +1,6 @@
-// Carousel
-.carousel-root {
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.alice-carousel {
   height: 100%;
   width: 100%;
 
@@ -14,17 +15,13 @@
 
   &__stage {
     display: block;
-
-    &-item {
-      width: 33%;
-    }
   }
 
-  .slider-wrapper {
-    height: 100%;
+  &__stage-item {
+    padding: 0 10px;
   }
 
-  .slider {
-    height: 100%;
+  &__prev-btn {
+    text-align: center;
   }
 }

@@ -15,7 +15,17 @@
   backdrop-filter: blur(2px);
 
   &__image {
-    height: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem;
   }
 
   &__title {
@@ -42,6 +52,7 @@
   height: 10%;
   border: solid 0.2rem;
   border-radius: 1rem;
+  padding: 0 0 0 10px;
   background-image: linear-gradient(to right, black, green);
 }
 
@@ -51,8 +62,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  border-radius: 0.8rem;
-  padding-left: 10px;
+  border-radius: 0 0.8rem 0.8rem 0;
 }
 
 .message {
