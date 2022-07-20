@@ -5,6 +5,18 @@ import notFoundImg from "@assets/media_non_trouve.svg";
 import "./MediaCardList.scss";
 
 export const BookCardList = ({ bookList }) => {
+  if (bookList.length === 0) {
+    bookList.push(
+      { cover: notFoundImg },
+      { cover: notFoundImg },
+      { cover: notFoundImg }
+    );
+  } else if (bookList.length === 1) {
+    bookList.push({ cover: notFoundImg }, { cover: notFoundImg });
+  } else if (bookList.length === 2) {
+    bookList.push({ cover: notFoundImg });
+  }
+
   const responsive = {
     0: {
       items: 1,
