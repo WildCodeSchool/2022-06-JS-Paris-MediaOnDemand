@@ -39,3 +39,27 @@
     border-radius: 5px;
   }
 }
+
+@media (min-width: 768px) {
+  .select-cat {
+    &__select {
+      width: 70%;
+    }
+
+    .select-input {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .select-cat {
+    &__select {
+      width: 50%;
+    }
+
+    .select-input {
+      width: 50%;
+    }
+  }
+}
