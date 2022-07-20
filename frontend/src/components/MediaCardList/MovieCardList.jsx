@@ -13,30 +13,30 @@ export const MovieCardList = ({ movieList }) => {
   if (windowWidth >= 1440) {
     if (movieList.length === 0) {
       movieList.push(
-        { poster_path: notFoundImg, id: "null1" },
-        { poster_path: notFoundImg, id: "null2" },
-        { poster_path: notFoundImg, id: "null3" }
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" },
+        { poster_path: notFoundImg, notFound: true, id: "null3" }
       );
     } else if (movieList.length === 1) {
       movieList.push(
-        { poster_path: notFoundImg, id: "null1" },
-        { poster_path: notFoundImg, id: "null2" }
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" }
       );
     } else if (movieList.length === 2) {
-      movieList.push({ poster_path: notFoundImg, id: "null1" });
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
     }
   } else if (windowWidth >= 768) {
     if (movieList.length === 0) {
       movieList.push(
-        { poster_path: notFoundImg, id: "null1" },
-        { poster_path: notFoundImg, id: "null2" }
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" }
       );
     } else if (movieList.length === 1) {
-      movieList.push({ poster_path: notFoundImg, id: "null1" });
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
     }
   } else if (windowWidth < 768) {
     if (movieList.length === 0) {
-      movieList.push({ poster_path: notFoundImg, id: "null1" });
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
     }
   }
 
@@ -68,12 +68,13 @@ export const MovieCardList = ({ movieList }) => {
           count={index + 1}
           total={movieList.length}
           image={
-            movie.id.includes("null")
+            movie.poster_path === notFoundImg
               ? movie.poster_path
               : `https://image.tmdb.org/t/p/original${movie.poster_path}`
           }
           mediaId={movie.id}
           mediaCat="film"
+          isNotFound={movie.notFound}
         />
       ))}
     </AliceCarousel>
