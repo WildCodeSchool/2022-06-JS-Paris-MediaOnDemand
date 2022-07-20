@@ -39,6 +39,15 @@ export const MediaCardInfo = ({ media }) => {
     urlMediaCover = albumImg;
   }
 
+  let mediaCover = "";
+  if (mediaCat === "film") {
+    mediaCover = `https://image.tmdb.org/t/p/original${media.poster_path}`;
+  } else if (mediaCat === "livre") {
+    mediaCover = bookImg;
+  } else {
+    mediaCover = albumImg;
+  }
+
   const handleAddToCart = (e) => {
     e.preventDefault();
     let isArticle = false;
@@ -55,7 +64,7 @@ export const MediaCardInfo = ({ media }) => {
           articleTitle: albumTitle || movieTitle || bookTitle,
           articleId: media.id,
           path: mediaCat,
-          articleImage: urlMediaCover,
+          articleImage: mediaCover,
         },
       ]);
     }
@@ -76,7 +85,7 @@ export const MediaCardInfo = ({ media }) => {
           favId: media.id,
           favTitle: albumTitle || movieTitle || bookTitle,
           path: mediaCat,
-          favImage: urlMediaCover,
+          favImage: mediaCover,
         },
       ]);
     }
