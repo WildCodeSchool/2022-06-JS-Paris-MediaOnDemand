@@ -1,36 +1,30 @@
 import React from "react";
 import { MediaCard } from "@components";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import notFoundImg from "@assets/media_non_trouve.svg";
-
+import AliceCarousel from "react-alice-carousel";
 import "./MediaCardList.scss";
+import notFoundImg from "@assets/media_non_trouve.svg";
 
 export const MovieCardList = ({ movieList }) => {
   const responsive = {
-    desktop: {
-      breakpoint: { max: 4000, min: 1440 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1439, min: 768 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 767, min: 0 },
+    0: {
       items: 1,
-      slidesToSlide: 1,
+    },
+    767: {
+      items: 2,
+    },
+    1439: {
+      items: 3,
     },
   };
+
   return (
-    <Carousel
+    <AliceCarousel
       responsive={responsive}
+      controlsStrategy="alternate"
+      mouseTracking
+      touchTracking
+      disableDotsControls
       infinite
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass="carousel-item"
     >
       {movieList ? (
         movieList.map((movie, index) => (
@@ -53,6 +47,6 @@ export const MovieCardList = ({ movieList }) => {
           mediaCat="film"
         />
       )}
-    </Carousel>
+    </AliceCarousel>
   );
 };
