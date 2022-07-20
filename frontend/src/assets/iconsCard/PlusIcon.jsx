@@ -1,8 +1,10 @@
 import React from "react";
+import "../AnimatedIcon.scss";
 
 export const PlusIcon = (props, { colorIcon = "#ccc591" }) => {
   return (
     <svg
+      className="animatedIcon"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"

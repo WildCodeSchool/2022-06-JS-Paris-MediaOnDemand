@@ -10,6 +10,18 @@
     text-shadow: 0 0 10px black;
   }
 
+  .select-input {
+    margin-top: 5px;
+    height: 1.7rem;
+    width: 8.5rem;
+    border-radius: 6px;
+    background-color: $main--ligth_soft;
+  }
+
+  .select-input::placeholder {
+    color: gray;
+  }
+
   &__select {
     height: auto;
     border: 0;

@@ -1,8 +1,10 @@
 import React from "react";
+import "../AnimatedIcon.scss";
 
 export const BrokenHeartIcon = (props) => {
   return (
     <svg
+      className="animatedIcon"
       xmlns="http://www.w3.org/2000/svg"
       width="45.333"
       height="42.667"

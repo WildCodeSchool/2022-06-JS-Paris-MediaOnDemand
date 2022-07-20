@@ -8,6 +8,7 @@ import "./App.scss";
 import MediaInfos from "@pages/MediaInfos/MediaInfos";
 import UserPage from "@pages/UserPage/UserPage";
 import LegalPage from "@pages/LegalPage/LegalPage";
+import { PageNul } from "./pages/PageNul/PageNul";
 import {
   FavoriteContext,
   MovieContext,
@@ -51,6 +52,7 @@ function App() {
                           />
                           <Route path="/profile" element={<UserPage />} />
                           <Route path="/legal" element={<LegalPage />} />
+                          <Route path="*" element={<PageNul />} />
                         </Routes>
                       </div>
                     </Router>

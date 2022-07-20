@@ -52,6 +52,7 @@ export const SelectCat = ({
       )}
       {!selectOptions && (
         <input
+          className="select-input"
           type="text"
           name={selectId}
           placeholder={defaultOption}
