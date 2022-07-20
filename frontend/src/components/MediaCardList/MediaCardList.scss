@@ -1,15 +1,30 @@
 // Carousel
 .carousel-root {
   height: 100%;
-}
-.carousel-slider {
-  height: 100%;
-}
+  width: 100%;
 
-.slider-wrapper {
-  height: 100%;
-}
+  & > :first-child {
+    height: 90%;
+    width: 100%;
+  }
 
-.slider {
-  height: 100%;
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__stage {
+    display: block;
+
+    &-item {
+      width: 33%;
+    }
+  }
+
+  .slider-wrapper {
+    height: 100%;
+  }
+
+  .slider {
+    height: 100%;
+  }
 }
