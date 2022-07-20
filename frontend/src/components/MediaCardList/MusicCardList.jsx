@@ -1,7 +1,7 @@
 import React from "react";
 import { MediaCard } from "@components";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 import notFoundImg from "@assets/media_non_trouve.svg";
 import "./MediaCardList.scss";
 
@@ -24,36 +24,43 @@ export const MusicCardList = ({ mediaList }) => {
     },
   };
   return (
-    <Carousel
-      responsive={responsive}
-      ssr
-      infinite
-      keyBoardControl
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass="carousel-item"
-    >
-      {mediaList ? (
-        mediaList.map((music, index) => (
-          <MediaCard
-            key={music.idAlbum}
-            title={music.strAlbum}
-            count={index + 1}
-            total={mediaList.length}
-            image={music.strAlbumThumb}
-            mediaId={music.idAlbum}
-            mediaCat="musique"
-          />
-        ))
-      ) : (
-        <MediaCard
-          title="Not Found"
-          count={1}
-          total={1}
-          image={notFoundImg}
-          mediaCat="musique"
-        />
-      )}
-    </Carousel>
+    // <Carousel
+    //   responsive={responsive}
+    //   ssr
+    //   infinite
+    //   keyBoardControl
+    //   containerClass="carousel-container"
+    //   removeArrowOnDeviceType={["tablet", "mobile"]}
+    //   itemClass="carousel-item"
+    // >
+    //   {mediaList ? (
+    //     mediaList.map((music, index) => (
+    //       <MediaCard
+    //         key={music.idAlbum}
+    //         title={music.strAlbum}
+    //         count={index + 1}
+    //         total={mediaList.length}
+    //         image={music.strAlbumThumb}
+    //         mediaId={music.idAlbum}
+    //         mediaCat="musique"
+    //       />
+    //     ))
+    //   ) : (
+    //     <MediaCard
+    //       title="Not Found"
+    //       count={1}
+    //       total={1}
+    //       image={notFoundImg}
+    //       mediaCat="musique"
+    //     />
+    //   )}
+    // </Carousel>
+    <MediaCard
+      title="Not Found"
+      count={1}
+      total={1}
+      image={notFoundImg}
+      mediaCat="film"
+    />
   );
 };

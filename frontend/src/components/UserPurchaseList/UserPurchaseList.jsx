@@ -1,7 +1,7 @@
 import React from "react";
 import { UserPurchase } from "@components/";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 import "./UserPurchaseList.scss";
 import { usePurchaseContext } from "@context/PurchaseContext";
 
