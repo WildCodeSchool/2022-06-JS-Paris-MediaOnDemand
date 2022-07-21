@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./UserCart.scss";
 import notFoundImg from "@assets/media_non_trouve.svg";
 import { useNavigate } from "react-router-dom";
@@ -16,6 +16,10 @@ export const UserCart = () => {
     setWindowWidth(window.innerWidth);
   });
 
+  const [trigger, setTrigger] = useState(true);
+
+  const update = () => setTrigger(!trigger);
+
   const handleClick = (article) => {
     navigate(`../${article.path}/${article.articleId}`);
   };
@@ -25,77 +29,63 @@ export const UserCart = () => {
     setCart([...newData]);
   };
 
-  const cleanArray = (newPurchase) => {
-    // console.log("clean", newPurchase.length);
-    if (windowWidth >= 1440) {
-      if (newPurchase.length === 0) {
-        setPurchase([
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null1" },
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null2" },
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null3" },
-        ]);
-      } else if (newPurchase.length === 1) {
-        setPurchase([
-          ...newPurchase,
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null2" },
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null3" },
-        ]);
-      } else if (newPurchase.length === 2) {
-        setPurchase([
-          ...newPurchase,
-          {
-            newPurchaseImage: notFoundImg,
-            notFound: true,
-            id: "null3",
-          },
-        ]);
-      }
-    } else if (windowWidth >= 768) {
-      if (newPurchase.length === 0) {
-        setPurchase([
-          ...newPurchase,
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null2" },
-          { newPurchaseImage: notFoundImg, notFound: true, id: "null3" },
-        ]);
-      } else if (newPurchase.length === 1) {
-        setPurchase([
-          ...newPurchase,
-          {
-            newPurchaseImage: notFoundImg,
-            notFound: true,
-            id: "null3",
-          },
-        ]);
-      }
-    } else if (windowWidth < 768) {
-      if (purchase.length === 0) {
-        setPurchase([
-          ...purchase,
-          {
-            purchaseImage: notFoundImg,
-            notFound: true,
-            id: "null3",
-          },
-        ]);
-      }
-    }
-  };
-
   const handlePurchase = (article) => {
+    // let isArticle = false;
+    // purchase.map((item) => {
+    //   if (item.purchaseId === article.purchaseId) {
+    //     isArticle = true;
+    //   }
+    //   return isArticle;
+    // });
+    // if (!isArticle) {
     setPurchase([
-      ...purchase,
       {
         purchaseTitle: article.articleTitle,
         purchaseImage: article.articleImage,
         purchaseId: article.articleId,
       },
+      ...purchase,
     ]);
-    const newPurchase = purchase;
-    cleanArray(newPurchase);
     deleteStorage(article.articleId);
+    update();
   };
 
-  // console.log("2", purchase);
+  useEffect(() => {
+    if (purchase[3] && purchase[3].notFound) {
+      const tempPurchase = [...purchase];
+      tempPurchase.pop();
+      setPurchase([...tempPurchase]);
+    }
+    if (windowWidth >= 1440) {
+      if (purchase.length === 1) {
+        setPurchase([
+          ...purchase,
+          { purchaseImage: notFoundImg, notFound: true, purchaseId: "null2" },
+          { purchaseImage: notFoundImg, notFound: true, purchaseId: "null3" },
+        ]);
+      } else if (purchase.length === 2) {
+        setPurchase([
+          ...purchase,
+          {
+            purchaseImage: notFoundImg,
+            notFound: true,
+            purchaseId: "null3",
+          },
+        ]);
+      }
+    } else if (windowWidth >= 768) {
+      if (purchase.length === 1) {
+        setPurchase([
+          ...purchase,
+          {
+            purchaseImage: notFoundImg,
+            notFound: true,
+            purchaseId: "null3",
+          },
+        ]);
+      }
+    }
+  }, [trigger]);
 
   return (
     <div className="cart">

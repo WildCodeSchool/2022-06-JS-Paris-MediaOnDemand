@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { UserPurchase } from "@components/";
 import AliceCarousel from "react-alice-carousel";
 import "./UserPurchaseList.scss";
+import { usePurchaseContext } from "@context/PurchaseContext";
 
-export const UserPurchaseList = ({ purchase }) => {
+export const UserPurchaseList = () => {
+  const { purchase } = usePurchaseContext();
   const responsive = {
     0: {
       items: 1,
@@ -26,12 +27,11 @@ export const UserPurchaseList = ({ purchase }) => {
       disableDotsControls
       infinite
     >
-      {purchase?.map((item) => (
+      {purchase.map((item) => (
         <UserPurchase
           key={item.purchaseId}
           title={item.purchaseTitle}
           image={item.purchaseImage}
-          isNotFound={item.notFound}
         />
       ))}
     </AliceCarousel>
