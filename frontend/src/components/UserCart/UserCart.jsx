@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UserCart.scss";
 import { useNavigate } from "react-router-dom";
 import { CartIcon, DeleteIcon } from "@assets/svgIcon";
+import { FormStripe } from "@components";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 import { usePurchaseContext } from "@context/PurchaseContext";
-import { useCartContext } from "../../context";
+import { useCartContext } from "@context";
 
 export const UserCart = () => {
   const { cart, setCart } = useCartContext();
   const { purchase, setPurchase } = usePurchaseContext();
+  const [isPay, setIsPay] = useState(false);
+  const [stripeArticle, setStripeArticle] = useState();
   const navigate = useNavigate();
+
+  const STRIPE_PUBLIC = import.meta.env.VITE_STRIPE_PUBLIC;
+  const stripePromise = loadStripe(STRIPE_PUBLIC);
 
   const handleClick = (article) => {
     navigate(`../${article.path}/${article.articleId}`);
@@ -17,6 +25,11 @@ export const UserCart = () => {
   const deleteStorage = (articleId) => {
     const newData = cart.filter((id) => id.articleId !== articleId);
     setCart([...newData]);
+  };
+
+  const handleStripePay = (article) => {
+    setStripeArticle(article);
+    setIsPay(true);
   };
 
   const handlePurchase = (article) => {
@@ -29,6 +42,7 @@ export const UserCart = () => {
       },
     ]);
     deleteStorage(article.articleId);
+    setIsPay(false);
   };
 
   return (
@@ -46,7 +60,7 @@ export const UserCart = () => {
             <CartIcon
               width="48px"
               height="48px"
-              onClick={() => handlePurchase(article)}
+              onClick={() => handleStripePay(article)}
             />
             <DeleteIcon
               onClick={() => {
@@ -56,6 +70,15 @@ export const UserCart = () => {
           </div>
         </div>
       ))}
+      {isPay && (
+        <Elements stripe={stripePromise}>
+          <FormStripe
+            handlePurchase={handlePurchase}
+            stripeArticle={stripeArticle}
+            setIsPay={setIsPay}
+          />
+        </Elements>
+      )}
     </div>
   );
 };

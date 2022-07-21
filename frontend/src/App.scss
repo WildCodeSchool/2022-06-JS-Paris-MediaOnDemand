@@ -175,7 +175,7 @@ code {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #cdc692 #000000;
+  scrollbar-color: #cdc692 transparent;
 }
 
 /* Chrome, Edge, and Safari */
@@ -184,7 +184,7 @@ code {
 }
 
 *::-webkit-scrollbar-track {
-  background: #000000;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {

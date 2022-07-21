@@ -20,3 +20,4 @@ export { UserCart } from "./UserCart/UserCart";
 export { TabUser } from "./TabUser/TabUser";
 export { UserPurchase } from "./UserPurchase/UserPurchase";
 export { UserPurchaseList } from "./UserPurchaseList/UserPurchaseList";
+export { FormStripe } from "./FormStripe/FormStripe";
