@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./UserCart.scss";
+import notFoundImg from "@assets/media_non_trouve.svg";
 import { useNavigate } from "react-router-dom";
 import { CartIcon, DeleteIcon } from "@assets/svgIcon";
 import { FormStripe } from "@components";
@@ -14,6 +15,14 @@ export const UserCart = () => {
   const [isPay, setIsPay] = useState(false);
   const [stripeArticle, setStripeArticle] = useState();
   const navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => {
+    setWindowWidth(window.innerWidth);
+  });
+
+  const [trigger, setTrigger] = useState(true);
+
+  const update = () => setTrigger(!trigger);
 
   const STRIPE_PUBLIC = import.meta.env.VITE_STRIPE_PUBLIC;
   const stripePromise = loadStripe(STRIPE_PUBLIC);
@@ -33,29 +42,75 @@ export const UserCart = () => {
   };
 
   const handlePurchase = (article) => {
+    // let isArticle = false;
+    // purchase.map((item) => {
+    //   if (item.purchaseId === article.purchaseId) {
+    //     isArticle = true;
+    //   }
+    //   return isArticle;
+    // });
+    // if (!isArticle) {
     setPurchase([
-      ...purchase,
       {
         purchaseTitle: article.articleTitle,
         purchaseImage: article.articleImage,
         purchaseId: article.articleId,
       },
+      ...purchase,
     ]);
     deleteStorage(article.articleId);
     setIsPay(false);
+    update();
   };
+
+  useEffect(() => {
+    if (purchase[3] && purchase[3].notFound) {
+      const tempPurchase = [...purchase];
+      tempPurchase.pop();
+      setPurchase([...tempPurchase]);
+    }
+    if (windowWidth >= 1440) {
+      if (purchase.length === 1) {
+        setPurchase([
+          ...purchase,
+          { purchaseImage: notFoundImg, notFound: true, purchaseId: "null2" },
+          { purchaseImage: notFoundImg, notFound: true, purchaseId: "null3" },
+        ]);
+      } else if (purchase.length === 2) {
+        setPurchase([
+          ...purchase,
+          {
+            purchaseImage: notFoundImg,
+            notFound: true,
+            purchaseId: "null3",
+          },
+        ]);
+      }
+    } else if (windowWidth >= 768) {
+      if (purchase.length === 1) {
+        setPurchase([
+          ...purchase,
+          {
+            purchaseImage: notFoundImg,
+            notFound: true,
+            purchaseId: "null3",
+          },
+        ]);
+      }
+    }
+  }, [trigger]);
 
   return (
     <div className="cart">
       {cart.map((article) => (
         <div key={article.articleId} className="item">
-          <li
+          <p
             key={article.articleId}
             onClick={() => handleClick(article)}
             aria-hidden="true"
           >
-            {article.articleTitle}
-          </li>
+            <span>●</span> {article.articleTitle}
+          </p>
           <div className="icons">
             <CartIcon
               width="48px"

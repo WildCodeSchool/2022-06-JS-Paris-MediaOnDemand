@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { UserPurchase } from "@components/";
 import AliceCarousel from "react-alice-carousel";
