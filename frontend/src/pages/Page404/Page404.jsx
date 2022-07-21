@@ -1,10 +1,12 @@
 import React from "react";
-import "./PageNul.scss";
+import "./Page404.scss";
 
-export const PageNul = () => {
+const Page404 = () => {
   return (
     <>
       <div className="nul" />;
     </>
   );
 };
+
+export default Page404;

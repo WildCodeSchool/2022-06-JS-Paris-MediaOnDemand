@@ -1,21 +1,46 @@
 .legal-container {
   height: 100%;
-  overflow-y: scroll;
+  overflow: hidden;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: #ebe8d0;
 }
+
 .page-container {
+  position: relative;
+  animation: marquee 50s infinite;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 70px;
   backdrop-filter: blur(5px);
   padding-top: 5%;
   padding-bottom: 10%;
   text-decoration: none;
+  animation-duration: alternate;
+  padding: 0 10%;
+}
+
+@keyframes marquee {
+  0% {
+    top: 130%;
+  }
+  100% {
+    top: -510%;
+  }
+}
+
+.stop {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../assets/Yvens.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .identite-container {
@@ -95,4 +120,52 @@ ol {
   align-items: center;
   gap: 10px;
   list-style: decimal;
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes marquee {
+    0% {
+      top: 130%;
+    }
+    100% {
+      top: -560%;
+    }
+  }
+
+  .stop {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @keyframes marquee {
+    0% {
+      top: 125%;
+    }
+    100% {
+      top: -344%;
+    }
+  }
+
+  .stop {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  @keyframes marquee {
+    0% {
+      top: 125%;
+    }
+    100% {
+      top: -333%;
+    }
+  }
+
+  .stop {
+    width: 800px;
+    height: 500px;
+  }
 }

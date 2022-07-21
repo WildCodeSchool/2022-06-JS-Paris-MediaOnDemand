@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowIcon } from "@assets/iconsCard";
+import ReactAudioPlayer from "react-audio-player";
+import song from "@assets/dallas.ogg";
 import "./LegalPage.scss";
 
 const LegalPage = () => {
   return (
     <div className="legal-container">
       <Link to="/">
+        <ReactAudioPlayer src={song} autoPlay /* controls */ />
         <div className="page-container">
           <div className="identite-container">
             <h2>IDENTITÉ</h2>
@@ -175,9 +177,7 @@ const LegalPage = () => {
               </li>
             </ol>
           </div>
-          <div>
-            <ArrowIcon />
-          </div>
+          <div className="stop" />
         </div>
       </Link>
     </div>

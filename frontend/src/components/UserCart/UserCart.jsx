@@ -91,13 +91,13 @@ export const UserCart = () => {
     <div className="cart">
       {cart.map((article) => (
         <div key={article.articleId} className="item">
-          <li
+          <p
             key={article.articleId}
             onClick={() => handleClick(article)}
             aria-hidden="true"
           >
-            {article.articleTitle}
-          </li>
+            <span>●</span> {article.articleTitle}
+          </p>
           <div className="icons">
             <CartIcon
               width="48px"
