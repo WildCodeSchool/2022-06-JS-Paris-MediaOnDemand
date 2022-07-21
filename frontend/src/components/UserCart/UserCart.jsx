@@ -42,14 +42,6 @@ export const UserCart = () => {
   };
 
   const handlePurchase = (article) => {
-    // let isArticle = false;
-    // purchase.map((item) => {
-    //   if (item.purchaseId === article.purchaseId) {
-    //     isArticle = true;
-    //   }
-    //   return isArticle;
-    // });
-    // if (!isArticle) {
     setPurchase([
       {
         purchaseTitle: article.articleTitle,
@@ -64,12 +56,12 @@ export const UserCart = () => {
   };
 
   useEffect(() => {
-    if (purchase[3] && purchase[3].notFound) {
-      const tempPurchase = [...purchase];
-      tempPurchase.pop();
-      setPurchase([...tempPurchase]);
-    }
     if (windowWidth >= 1440) {
+      if (purchase[3] && purchase[3].notFound) {
+        const tempPurchase = [...purchase];
+        tempPurchase.pop();
+        setPurchase([...tempPurchase]);
+      }
       if (purchase.length === 1) {
         setPurchase([
           ...purchase,
@@ -87,6 +79,11 @@ export const UserCart = () => {
         ]);
       }
     } else if (windowWidth >= 768) {
+      if (purchase[2] && purchase[2].notFound) {
+        const tempPurchase = [...purchase];
+        tempPurchase.pop();
+        setPurchase([...tempPurchase]);
+      }
       if (purchase.length === 1) {
         setPurchase([
           ...purchase,
