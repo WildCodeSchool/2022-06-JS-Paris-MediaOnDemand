@@ -32,6 +32,7 @@ export const UserPurchaseList = () => {
           key={item.purchaseId}
           title={item.purchaseTitle}
           image={item.purchaseImage}
+          isNotFound={item.notFound}
         />
       ))}
     </AliceCarousel>
