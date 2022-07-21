@@ -1,58 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import { MediaCard } from "@components";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import AliceCarousel from "react-alice-carousel";
+import "./MediaCardList.scss";
 import notFoundImg from "@assets/media_non_trouve.svg";
 
-import "./MediaCardList.scss";
-
 export const MovieCardList = ({ movieList }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => {
+    setWindowWidth(window.innerWidth);
+  });
+
+  if (windowWidth >= 1440) {
+    if (movieList.length === 0) {
+      movieList.push(
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" },
+        { poster_path: notFoundImg, notFound: true, id: "null3" }
+      );
+    } else if (movieList.length === 1) {
+      movieList.push(
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" }
+      );
+    } else if (movieList.length === 2) {
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
+    }
+  } else if (windowWidth >= 768) {
+    if (movieList.length === 0) {
+      movieList.push(
+        { poster_path: notFoundImg, notFound: true, id: "null1" },
+        { poster_path: notFoundImg, notFound: true, id: "null2" }
+      );
+    } else if (movieList.length === 1) {
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
+    }
+  } else if (windowWidth < 768) {
+    if (movieList.length === 0) {
+      movieList.push({ poster_path: notFoundImg, notFound: true, id: "null1" });
+    }
+  }
+
   const responsive = {
-    desktop: {
-      breakpoint: { max: 4000, min: 1440 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1439, min: 768 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 767, min: 0 },
+    0: {
       items: 1,
-      slidesToSlide: 1,
+    },
+    767: {
+      items: 2,
+    },
+    1439: {
+      items: 3,
     },
   };
+
   return (
-    <Carousel
+    <AliceCarousel
       responsive={responsive}
+      controlsStrategy="alternate"
+      mouseTracking
+      touchTracking
+      disableDotsControls
       infinite
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass="carousel-item"
     >
-      {movieList ? (
-        movieList.map((movie, index) => (
-          <MediaCard
-            key={movie.id}
-            title={movie.title}
-            count={index + 1}
-            total={movieList.length}
-            image={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
-            mediaId={movie.id}
-            mediaCat="film"
-          />
-        ))
-      ) : (
+      {movieList.map((movie, index) => (
         <MediaCard
-          title="Not Found"
-          count={1}
-          total={1}
-          image={notFoundImg}
+          key={movie.id}
+          title={movie.title}
+          count={index + 1}
+          total={movieList.length}
+          image={
+            movie.poster_path === notFoundImg
+              ? movie.poster_path
+              : `https://image.tmdb.org/t/p/original${movie.poster_path}`
+          }
+          mediaId={movie.id}
           mediaCat="film"
+          isNotFound={movie.notFound}
         />
-      )}
-    </Carousel>
+      ))}
+    </AliceCarousel>
   );
 };

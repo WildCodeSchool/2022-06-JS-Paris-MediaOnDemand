@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import {
   SearchInput,
   TabBar,
@@ -154,6 +155,7 @@ const SearchPage = () => {
             </div>
           )}
       </div>
+
       <TabBar />
     </div>
   );

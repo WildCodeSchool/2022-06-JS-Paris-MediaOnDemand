@@ -9,7 +9,7 @@ export const fetchMusic = (artist, setState) => {
   axios
     .get(finalUrl)
     .then((response) => response.data)
-    .then((data) => setState(data.album))
+    .then((data) => setState(data.album || []))
     .catch((error) => console.error(error));
 };
 

@@ -17,12 +17,13 @@ export const Button = ({
   onClick,
   buttonStyle = "ligth",
   buttonSize = "small",
+  isSubmit,
 }) => {
   return (
     <button
       className={`btn_size--${buttonSize} btn--${buttonStyle}Background`}
       onClick={onClick}
-      type="button"
+      type={isSubmit ? "submit" : "button"}
     >
       {children}
     </button>

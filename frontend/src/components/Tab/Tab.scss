@@ -106,6 +106,16 @@
   overflow: auto;
 }
 
+.animations {
+  transition: transform 0.1s;
+}
+
+.animations:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 768px) {
   // tabs on right side
   .tab__globalComponent {

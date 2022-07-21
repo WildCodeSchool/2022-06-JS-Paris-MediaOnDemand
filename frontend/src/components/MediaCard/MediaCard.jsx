@@ -14,6 +14,7 @@ export const MediaCard = ({
   image,
   mediaCat,
   mediaId,
+  isNotFound,
 }) => {
   const navigate = useNavigate();
   const { cart, setCart } = useCartContext();
@@ -67,7 +68,7 @@ export const MediaCard = ({
         style={{ backgroundImage: `url(${image})` }}
         className="mediaCard__image"
       >
-        {mediaId && (
+        {!isNotFound && (
           <>
             <div className="mediaCard__iconUp">
               <div className="mediaCard__counter">
@@ -87,15 +88,17 @@ export const MediaCard = ({
           </>
         )}
       </div>
-      <h3 className="mediaCard__title">{title}</h3>
-      {mediaId && (
-        <Button
-          buttonSize="small"
-          buttonStyle="dark"
-          onClick={() => handleClick()}
-        >
-          Infos
-        </Button>
+      {!isNotFound && (
+        <>
+          <h3 className="mediaCard__title">{title}</h3>
+          <Button
+            buttonSize="small"
+            buttonStyle="dark"
+            onClick={() => handleClick()}
+          >
+            Infos
+          </Button>
+        </>
       )}
     </div>
   );

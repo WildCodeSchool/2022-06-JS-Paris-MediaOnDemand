@@ -1,8 +1,8 @@
+import React from "react";
 import "./Favorite.scss";
 import { PlusIcon } from "@assets/iconsCard";
 import { useNavigate } from "react-router-dom";
 import { BrokenHeartIcon } from "@assets/svgIcon";
-import React from "react";
 import { useFavoriteContext, useCartContext } from "@context/";
 
 export const Favorite = () => {
@@ -45,13 +45,14 @@ export const Favorite = () => {
     <div className="favorite">
       {favorites.map((article) => (
         <div key={article.favId} className="item">
-          <li
+          <p
             key={article.favId}
             onClick={() => handleClick(article)}
             aria-hidden="true"
           >
-            {article.favTitle}
-          </li>
+            <span>●</span> {article.favTitle}
+          </p>
+
           <div className="icons">
             <PlusIcon onClick={() => handleAddToCart(article)} />
             <BrokenHeartIcon

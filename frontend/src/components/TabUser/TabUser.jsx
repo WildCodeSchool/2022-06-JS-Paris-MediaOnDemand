@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { HeartIcon } from "@assets/iconsCard";
 import { CartIcon, DownloadIcon } from "@assets/svgIcon";
-import React, { useState } from "react";
 import { Favorite, UserCart, UserPurchaseList } from "@components/";
 import "./TabUser.scss";
 
