@@ -26,6 +26,7 @@ export const UserPurchaseList = () => {
       touchTracking
       disableDotsControls
       infinite
+      touchMoveDefaultEvents
     >
       {purchase.map((item) => (
         <UserPurchase

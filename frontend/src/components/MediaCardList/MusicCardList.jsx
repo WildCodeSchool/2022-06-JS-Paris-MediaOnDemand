@@ -72,6 +72,7 @@ export const MusicCardList = ({ musicList }) => {
       touchTracking
       disableDotsControls
       infinite
+      touchMoveDefaultEvents
     >
       {musicList.map((music, index) => (
         <MediaCard

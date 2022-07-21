@@ -60,6 +60,7 @@ export const MovieCardList = ({ movieList }) => {
       touchTracking
       disableDotsControls
       infinite
+      touchMoveDefaultEvents
     >
       {movieList.map((movie, index) => (
         <MediaCard
