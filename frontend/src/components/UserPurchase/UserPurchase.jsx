@@ -4,7 +4,7 @@ import "./UserPurchase.scss";
 import "@components/Button/Button.scss";
 import { DownloadIcon } from "@assets/svgIcon";
 
-export const UserPurchase = ({ title, image }) => {
+export const UserPurchase = ({ title, image, isNotFound }) => {
   const [download, setDownload] = useState(false);
   const [barWidth, setBarWidth] = useState(100);
   const [counter, setCounter] = useState(0);
@@ -39,7 +39,7 @@ export const UserPurchase = ({ title, image }) => {
         className="purchaseCard__image"
       />{" "}
       <h3 className="purchaseCard__title">{title}</h3>
-      <DownloadIcon onClick={() => handleClick()} />
+      {!isNotFound && <DownloadIcon onClick={() => handleClick()} />}
     </div>
   ) : (
     <div className="downloadCard">
